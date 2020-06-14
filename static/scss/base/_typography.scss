@@ -1,0 +1,30 @@
+/**
+ * Basic typography style for copy text
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Parisienne&family=Roboto&display=swap");
+
+$font-parisienne: 'Parisienne', serif;
+$font-roboto: 'Roboto', serif;
+$font-cabin: 'Cabin', serif;
+
+$fw-n: 400;
+$fw-bold: 700;
+
+
+.logo-1{
+  line-height: 1.1;
+  font-size: 7.5rem;
+}
+
+.logo-sect{
+  font-size: 5.9em;
+}
+.sect-title{
+  font-family: $font-roboto;
+  font-size: 1.7rem;
+}
+
+.sect-substitle{
+  font-family: $font-roboto;
+  font-size: 1.1em;
+}
