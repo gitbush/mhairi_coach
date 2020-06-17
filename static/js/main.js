@@ -1,9 +1,17 @@
-const toggleCollapse = document.querySelector('.toggle-collapse span');
-const nav = document.querySelector('.nav');
+(function() {
 
+  var hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('nav'),
 
-// onclick event on toggle Collapse span tag
-toggleCollapse.onclick = (e) => {
-    nav.classList.toggle("collapse");
-    e.target.classList.toggle("toggle-click");
-}
+    doToggle: function(e) {
+      e.preventDefault();
+      this.navToggle.classList.toggle('expanded');
+      this.nav.classList.toggle('expanded');
+    }
+  };
+
+  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());

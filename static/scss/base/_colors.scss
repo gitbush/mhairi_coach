@@ -4,3 +4,16 @@ $dark-pink: rgba(250,220,210,1);
 $gray: rgba(240,243,243,1);
 
 $base-text-color: rgba(59,64,63,1);
+
+
+$-aqua: #28dde0;
+$-ink: #2b3742;
+$-plum: #5634d1;
+$-snow: #ffffff;
+
+$colors: (
+	primary: $-plum,
+	accent: $-aqua,
+	black: $-ink,
+	white: $-snow,
+);

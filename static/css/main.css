@@ -346,12 +346,15 @@ template {
  * Basic typography style for copy text
  */
 .logo-1 {
+  font-family: "Parisienne", serif;
   line-height: 1.1;
-  font-size: 7.5rem;
+  font-size: 3em;
 }
 
 .logo-sect {
-  font-size: 5.9em;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+  font-size: .8em;
 }
 
 .sect-title {
@@ -390,7 +393,6 @@ html {
 }
 
 body {
-  color: white;
   font-family: "Roboto", serif;
   line-height: 1.5;
 }
@@ -454,160 +456,140 @@ body {
   width: 1px;
 }
 
-/* ------------------ navbar ----------------- */
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+#header {
+  text-align: left;
+  margin-left: 1.5em;
 }
 
-a {
-  text-decoration: none;
+@media only screen and (min-width: 576px) {
+  #header {
+    text-align: center;
+  }
 }
 
-.text-black {
-  color: var(--bg-color);
-}
-
-body {
-  margin: 0%;
-  background: url("./assets/bg-01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-nav {
-  padding: 0 2rem;
-  background: var(--sky);
-  position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 0rem;
-  min-height: 10vh;
-  overflow-y: hidden;
-  -webkit-transition: height 1s cubic-bezier(0.26, -0.01, 0, 1.01);
-  transition: height 1s cubic-bezier(0.26, -0.01, 0, 1.01);
-}
-
-nav .nav-brand a {
-  display: block;
-  padding: 1rem 0;
-  font-family: var(--lexend);
-  font-size: 1.6rem;
-}
-
-nav .nav-items {
-  list-style-type: none;
-  margin: 0;
-}
-
-nav .nav-items .nav-link {
-  padding: 1.3rem 1rem;
-  font-family: var(--livvic);
-  font-size: 1.1rem;
-}
-
-nav .nav-items .nav-link:hover {
-  background: var(--bg-color);
-}
-
-nav .nav-items .nav-link:hover a {
-  color: white;
-}
-
-nav .social {
-  padding: 1.4rem 0;
-}
-
-nav .social i {
-  padding: 0 .2rem;
-}
-
-nav .toggle-collapse {
-  position: absolute;
-  top: 0%;
-  width: 100%;
+.nav {
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+  background: #fbf2ec;
+  color: 0;
   cursor: pointer;
-  display: none;
+  right: -25rem;
+  padding: 4rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 15px;
+  height: 24em;
+  width: 20em;
+  z-index: 1;
 }
 
-nav .toggle-collapse .toggle-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1.4rem 4rem;
+@media only screen and (min-width: 576px) {
+  .nav {
+    right: -20rem;
+    height: 24em;
+    width: 20em;
+  }
 }
 
-nav .toggle-collapse .toggle-icons i {
-  font-size: 1.4rem;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav {
+    height: 20em;
+    width: 15em;
+  }
 }
 
-.collapse {
-  height: 30rem;
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .nav {
+    height: 15em;
+    width: 12em;
+  }
 }
 
-/* creating own toggle icons  */
-.icon, .icon::before, .icon::after {
-  position: relative;
-  width: 10px;
-  border: 2px solid var(--text-gray);
-  border-radius: 3rem;
-  display: inline-block;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
-  -webkit-transition-property: width, left;
-  transition-property: width, left;
+.nav.expanded {
+  right: 15px;
 }
 
-.icon::before {
-  content: " ";
+.nav ul {
   position: absolute;
-  top: 5px;
-  width: 20px;
-  left: -12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 2;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.icon::after {
-  content: " ";
+.nav-item a {
+  color: #3b403f;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  right: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 2.2rem;
+  z-index: 2;
+}
+
+.nav-toggle:hover {
+  opacity: 0.8;
+}
+
+.nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
   position: absolute;
-  top: 12px;
-  left: -2px;
+  top: 50%;
+  right: 0.3%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: black;
+  content: '';
+  height: 0.2rem;
+  width: 100%;
 }
 
-.toggle-click, .toggle-click::before, .toggle-click::after {
-  width: 20px;
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0;
 }
 
-.toggle-click::before {
-  left: -2px;
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.6rem;
 }
 
-@media only screen and (max-width: 800px) {
-  nav .nav-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  nav {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    display: block !important;
-  }
-  nav .toggle-collapse {
-    display: initial;
-  }
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.6rem;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: black;
+  margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */
