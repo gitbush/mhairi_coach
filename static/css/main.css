@@ -364,12 +364,19 @@ template {
 
 .sect-title {
   font-family: "Roboto", serif;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.3e;
 }
 
 .sect-substitle {
   font-family: "Roboto", serif;
   font-size: 1.1em;
+}
+
+.normal-text {
+  font-size: .7em;
 }
 
 /**
@@ -710,5 +717,43 @@ body {
     font-size: .9em;
     font-weight: 700;
   }
+}
+
+.home-coaching {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr [coaching-1-1] 11em 2em [coaching-free] 11em 2fr;
+      grid-template-columns: 2fr [coaching-1-1] 11em 2em [coaching-free] 11em 2fr;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.coaching-img {
+  width: auto;
+  margin: 0;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 13em;
+}
+
+.coaching-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.coaching-1-1 {
+  grid-column: coaching-1-1;
+}
+
+.coaching-free {
+  grid-column: coaching-free;
+}
+
+.coaching-text {
+  background-color: #fbf2ec;
+  padding: 0.6em;
 }
 /*# sourceMappingURL=main.css.map */
