@@ -10,6 +10,10 @@ $font-cabin: 'Cabin', serif;
 $fw-n: 400;
 $fw-bold: 700;
 
+.logo-font{
+  font-family: $font-parisienne;
+  letter-spacing: .2em;
+}
 
 .logo-1{
   font-family: $font-parisienne;

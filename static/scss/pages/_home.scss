@@ -1,3 +1,60 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.home-hero{
+
+    // position: relative;
+    // left: 50%;
+    
+
+    @media #{$breakpoint-sm} {
+        display: grid;
+        grid-template-columns: minmax(4em, 2fr) [text-start] minmax(6em, 1fr) [img-start] minmax(6em, 1fr) [text-end] minmax(6em, 1fr) [img-end] minmax(4em, 2fr);
+    
+        .home-hero-text{
+            grid-column: text-start / text-end;
+            grid-row: 1 / 2;
+            z-index: 99;
+        }
+        .home-hero-img{
+            grid-column: img-start / img-end;
+            grid-row: 1 / 2;
+        }
+    }
+  
+}
+
+.home-hero-img{
+    // position: relative;
+    // left: -50%;
+    img{
+        width: 100%;
+    }
+    
+}
+
+.home-hero-text{
+    position: absolute;
+    top: 11em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
+    width: 13em;
+    margin: auto;
+    p {
+        display: flex;
+        text-transform: uppercase;
+        background-color: $light-pink;
+        width: auto;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: .2em;
+    }
+    .logo-font {
+        font-size: .9em;
+        font-weight: 700;
+    }
+}
