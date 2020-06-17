@@ -9,6 +9,7 @@
     @media #{$breakpoint-xs} {
         position: relative;
         top: 8em;
+        height: 48em;
     }
 
     @media #{$breakpoint-min-sm} {
@@ -48,12 +49,9 @@
         }
     }
 
-    @media #{$breakpoint-md}, #{$breakpoint-lg} {
-        grid-template-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
-    }
-
-    @media #{$breakpoint-xl} {
-        grid-template-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+        // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
+        grid-template-columns: auto [text-start] minmax(7em, 10em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
     }
 }
 
@@ -98,16 +96,25 @@
 // Home coaching section
 // ---------------------------------------------------------------
 
+
 .home-coaching{
-    display: grid;
-    grid-template-columns: 2fr [coaching-1-1] 11em 2em [coaching-free] 11em 2fr; 
-    margin-top: 3em;
-    text-align: center;
+
+    @media #{$breakpoint-min-sm} {
+        display: grid;
+        grid-template-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr; 
+        margin-top: 3em;
+        text-align: center;
+        .coaching-1-1{
+            grid-column: coaching-1-1;
+        }
+        
+        .coaching-free{
+            grid-column: coaching-free;
+        }
+    }
+    
 }
 
-// .coaching{
-//     width: 100%;
-// }
 .coaching-img{
     width: auto;
     margin: 0;
@@ -120,14 +127,6 @@
         height: 100%;
     }
    
-}
-
-.coaching-1-1{
-    grid-column: coaching-1-1;
-}
-
-.coaching-free{
-    grid-column: coaching-free;
 }
 
 .coaching-text{

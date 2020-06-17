@@ -364,7 +364,7 @@ template {
 
 .sect-title {
   font-family: "Roboto", serif;
-  font-size: 1.2rem;
+  font-size: .8rem;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.3e;
@@ -615,6 +615,7 @@ body {
   .home-hero {
     position: relative;
     top: 8em;
+    height: 48em;
   }
 }
 
@@ -668,17 +669,10 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
-        grid-template-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .home-hero {
-    -ms-grid-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
-        grid-template-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
+    -ms-grid-columns: auto [text-start] minmax(7em, 10em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
+        grid-template-columns: auto [text-start] minmax(7em, 10em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
   }
 }
 
@@ -719,13 +713,21 @@ body {
   }
 }
 
-.home-coaching {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr [coaching-1-1] 11em 2em [coaching-free] 11em 2fr;
-      grid-template-columns: 2fr [coaching-1-1] 11em 2em [coaching-free] 11em 2fr;
-  margin-top: 3em;
-  text-align: center;
+@media only screen and (min-width: 576px) {
+  .home-coaching {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr;
+        grid-template-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr;
+    margin-top: 3em;
+    text-align: center;
+  }
+  .home-coaching .coaching-1-1 {
+    grid-column: coaching-1-1;
+  }
+  .home-coaching .coaching-free {
+    grid-column: coaching-free;
+  }
 }
 
 .coaching-img {
@@ -742,14 +744,6 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.coaching-1-1 {
-  grid-column: coaching-1-1;
-}
-
-.coaching-free {
-  grid-column: coaching-free;
 }
 
 .coaching-text {
