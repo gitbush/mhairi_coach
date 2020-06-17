@@ -472,6 +472,12 @@ body {
   }
 }
 
+.header-xs-logo {
+  text-align: center;
+  position: relative;
+  top: 5em;
+}
+
 .nav {
   -webkit-transition: right 0.5s ease;
   transition: right 0.5s ease;
@@ -598,12 +604,20 @@ body {
   transform: rotate(-45deg);
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (max-width: 576px) {
+  .home-hero {
+    position: relative;
+    top: 8em;
+  }
+}
+
+@media only screen and (min-width: 576px) {
   .home-hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: minmax(4em, 2fr) [text-start] minmax(6em, 1fr) [img-start] minmax(6em, 1fr) [text-end] minmax(6em, 1fr) [img-end] minmax(4em, 2fr);
-        grid-template-columns: minmax(4em, 2fr) [text-start] minmax(6em, 1fr) [img-start] minmax(6em, 1fr) [text-end] minmax(6em, 1fr) [img-end] minmax(4em, 2fr);
+    -ms-grid-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
+        grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
+    margin-top: 3em;
   }
   .home-hero .home-hero-text {
     grid-column: text-start / text-end;
@@ -611,12 +625,53 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     z-index: 99;
+    margin: auto 0;
+  }
+  .home-hero .home-hero-text p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+    background-color: #fbf2ec;
+    width: auto;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: .2em;
+  }
+  .home-hero .home-hero-text .logo-font {
+    font-size: .9em;
+    font-weight: 700;
   }
   .home-hero .home-hero-img {
     grid-column: img-start / img-end;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    height: 21em;
+  }
+  .home-hero .home-hero-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-hero {
+    -ms-grid-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
+        grid-template-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-hero {
+    -ms-grid-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
+        grid-template-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
   }
 }
 
@@ -624,36 +679,36 @@ body {
   width: 100%;
 }
 
-.home-hero-text {
-  position: absolute;
-  top: 11em;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 2em;
-  width: 13em;
-  margin: auto;
-}
-
-.home-hero-text p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-transform: uppercase;
-  background-color: #fbf2ec;
-  width: auto;
-  height: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: .2em;
-}
-
-.home-hero-text .logo-font {
-  font-size: .9em;
-  font-weight: 700;
+@media only screen and (max-width: 576px) {
+  .home-hero-text {
+    position: absolute;
+    top: 8em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
+    width: 13em;
+    margin: auto;
+  }
+  .home-hero-text p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+    background-color: #fbf2ec;
+    width: auto;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: .2em;
+  }
+  .home-hero-text .logo-font {
+    font-size: .9em;
+    font-weight: 700;
+  }
 }
 /*# sourceMappingURL=main.css.map */

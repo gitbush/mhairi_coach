@@ -3,26 +3,55 @@
 // -----------------------------------------------------------------------------
 
 .home-hero{
+    @media #{$breakpoint-xs} {
+        position: relative;
+        top: 8em;
+    }
 
-    // position: relative;
-    // left: 50%;
-    
-
-    @media #{$breakpoint-sm} {
+    @media #{$breakpoint-min-sm} {
         display: grid;
-        grid-template-columns: minmax(4em, 2fr) [text-start] minmax(6em, 1fr) [img-start] minmax(6em, 1fr) [text-end] minmax(6em, 1fr) [img-end] minmax(4em, 2fr);
-    
+        grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
+        margin-top: 3em;
         .home-hero-text{
             grid-column: text-start / text-end;
             grid-row: 1 / 2;
             z-index: 99;
+            margin: auto 0;
+
+            p {
+                display: flex;
+                text-transform: uppercase;
+                background-color: $light-pink;
+                width: auto;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: .2em;
+            }
+            .logo-font {
+                font-size: .9em;
+                font-weight: 700;
+            }
         }
         .home-hero-img{
             grid-column: img-start / img-end;
             grid-row: 1 / 2;
+            height: 21em;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
-  
+
+    @media #{$breakpoint-md}, #{$breakpoint-lg} {
+        grid-template-columns: 9em [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] 9em;
+    }
+
+    @media #{$breakpoint-xl} {
+        grid-template-columns: 13em [text-start] minmax(7em, 9em) [img-start] minmax(7em, 9em) [text-end] minmax(7em, 15em) [img-end] 13em;
+    }
 }
 
 .home-hero-img{
@@ -35,26 +64,29 @@
 }
 
 .home-hero-text{
-    position: absolute;
-    top: 11em;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 2em;
-    width: 13em;
-    margin: auto;
-    p {
-        display: flex;
-        text-transform: uppercase;
-        background-color: $light-pink;
-        width: auto;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: .2em;
-    }
-    .logo-font {
-        font-size: .9em;
-        font-weight: 700;
+    @media #{$breakpoint-xs}{
+        position: absolute;
+        top: 8em;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 2em;
+        width: 13em;
+        margin: auto;
+        p {
+            display: flex;
+            text-transform: uppercase;
+            background-color: $light-pink;
+            width: auto;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .2em;
+        }
+        .logo-font {
+            font-size: .9em;
+            font-weight: 700;
+        }
+    
     }
 }
