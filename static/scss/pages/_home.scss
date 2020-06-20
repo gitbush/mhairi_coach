@@ -178,10 +178,46 @@
 .home-about{
     background-color: $gray;
     margin-top: 2em;
-    // height: 1000px;
     text-align: center;
     display: grid;
     grid-template-rows: auto 32em minmax(auto, 41em) 7em;
+
+    @media #{$breakpoint-sm} {
+        grid-template-rows: auto 36em minmax(auto, 24em) 4em;
+    }
+    @media #{$breakpoint-min-md} {
+        background-color: white;
+        height: 500px;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+        grid-template-rows:repeat(3, 1fr);
+        .home-about-title{
+            grid-column: 3/5;
+            grid-row: 1/1;
+            text-align: start;
+            padding: 0 1em;
+        }
+        .home-about-img{
+            grid-column: 2/3;
+            grid-row: 1/5;
+        }
+        .about-text{
+            grid-column: 3/5;
+            grid-row: 2/3;
+            text-align: start;
+            padding: 0 0 0 1.5em;
+        }
+        .about-cta-btn{
+            grid-column: 3/5;
+            grid-row: 3/3;
+        }
+    }
+    @media #{$breakpoint-lg} {
+        grid-template-columns: 5em 17em repeat(2, 1fr) 5em;
+    }
+    @media #{$breakpoint-xl} {
+        grid-template-columns: 6em 18em repeat(2, 1fr) 6em;
+        height: 580px;
+    }
 }
 
 .home-about-title{
@@ -197,6 +233,13 @@
     height: 90%;
     background-color: white;
     padding: 20px;
+    @media #{$breakpoint-sm} {
+        width: 65vw;
+    }
+    @media #{$breakpoint-min-md} {
+        width: 100%;
+        background-color: $light-pink;
+    }
 
     img{
         object-fit: cover;
@@ -209,4 +252,22 @@
 .about-text{
     padding: 0 2.5em;
     margin: auto;
+    @media #{$breakpoint-sm} {
+        padding: 0 5.5em;
+    }
+}
+
+// ---------------------------------------------------------------
+// Home cta parallex section
+// ---------------------------------------------------------------
+
+// .cta-parallax{
+//     height: 250px;
+//     width: 400px;
+//     margin: auto;
+// }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }

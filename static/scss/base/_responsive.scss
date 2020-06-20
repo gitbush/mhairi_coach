@@ -7,10 +7,10 @@ $breakpoint-min-lg: 'only screen and (min-width:992px)';
 $breakpoint-md: 'only screen and (min-width:768px) and (max-width:991px)';
 $breakpoint-min-md: 'only screen and (min-width:768px)';
 // Small Breakpoint
-$breakpoint-sm: 'only screen and (min-width:576px) and (max-width:767px)';
+$breakpoint-sm: 'only screen and (min-width:500px) and (max-width:767px)';
 // Min Small Breakpoint
-$breakpoint-min-sm: 'only screen and (min-width:576px)';
+$breakpoint-min-sm: 'only screen and (min-width:500px)';
 // Xtra Small Breakpoint
-$breakpoint-xs: 'only screen and (max-width:576px)';
+$breakpoint-xs: 'only screen and (max-width:500px)';
 // Xtra Small Landscape Breakpoint
 $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767px)';

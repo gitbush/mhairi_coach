@@ -361,6 +361,13 @@ template {
   margin: 0;
 }
 
+.logo-2 {
+  font-family: "Parisienne", serif;
+  line-height: 1.1;
+  font-size: 3em;
+  margin: 10px 0;
+}
+
 .logo-sect {
   font-family: "Roboto", serif;
   text-transform: uppercase;
@@ -369,7 +376,7 @@ template {
 
 .sect-title {
   font-family: "Roboto", serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
@@ -400,7 +407,7 @@ template {
   color: #3b403f;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .normal-text {
     font-size: 1em;
   }
@@ -507,13 +514,13 @@ body {
   height: 50px;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   #header {
     height: 50px;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 500px) {
   #header {
     text-align: center;
   }
@@ -561,7 +568,7 @@ body {
   height: 105px;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .logo-xs-container {
     height: 10em;
   }
@@ -587,7 +594,7 @@ body {
   z-index: 1;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 500px) {
   .nav {
     right: -20rem;
     height: 24em;
@@ -649,7 +656,7 @@ body {
   z-index: 2;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 500px) {
   .nav-toggle {
     top: 1rem;
   }
@@ -799,14 +806,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     position: relative;
     height: 39em;
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     height: 40em;
   }
@@ -873,7 +880,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
     top: 8em;
@@ -906,7 +913,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (max-width: 500px) and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     top: 10em;
     width: 16em;
@@ -927,7 +934,7 @@ body {
           justify-content: center;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
@@ -943,7 +950,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
     -ms-grid-rows: 25em 22em;
@@ -1019,6 +1026,73 @@ body {
       grid-template-rows: auto 32em minmax(auto, 41em) 7em;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-about {
+    -ms-grid-rows: auto 36em minmax(auto, 24em) 4em;
+        grid-template-rows: auto 36em minmax(auto, 24em) 4em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-about {
+    background-color: white;
+    height: 500px;
+    -ms-grid-columns: 4em 15em (1fr)[2] 4em;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .home-about .home-about-title {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    text-align: start;
+    padding: 0 1em;
+  }
+  .home-about .home-about-img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  .home-about .about-text {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: start;
+    padding: 0 0 0 1.5em;
+  }
+  .home-about .about-cta-btn {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-about {
+    -ms-grid-columns: 5em 17em (1fr)[2] 5em;
+        grid-template-columns: 5em 17em repeat(2, 1fr) 5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-about {
+    -ms-grid-columns: 6em 18em (1fr)[2] 6em;
+        grid-template-columns: 6em 18em repeat(2, 1fr) 6em;
+    height: 580px;
+  }
+}
+
 .home-about-title {
   margin: 2em auto 0 auto;
   text-align: center;
@@ -1034,6 +1108,19 @@ body {
   padding: 20px;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-about-img {
+    width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-about-img {
+    width: 100%;
+    background-color: #fbf2ec;
+  }
+}
+
 .home-about-img img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1045,5 +1132,16 @@ body {
 .about-text {
   padding: 0 2.5em;
   margin: auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .about-text {
+    padding: 0 5.5em;
+  }
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 /*# sourceMappingURL=main.css.map */
