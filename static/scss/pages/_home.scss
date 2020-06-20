@@ -126,7 +126,7 @@
 
     @media #{$breakpoint-min-md} {
         display: grid;
-        grid-template-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr; 
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr; 
         margin-top: 3em;
         text-align: center;
         .coaching-1-1{
@@ -135,6 +135,12 @@
         
         .coaching-free{
             grid-column: coaching-free;
+        }
+        .coaching-1-1,
+        .coaching-free{
+            display: grid;
+            grid-template-rows: 18em auto;
+            height: 100%;
         }
     }
     

@@ -6,18 +6,25 @@
 #header{
     text-align:left;
     margin-left: 1.5em;
-    @media #{$breakpoint-xs}, #{$breakpoint-sm}{
+    height: 50px;
+    @media #{$breakpoint-sm}{
         height: 50px;
     }
     @media #{$breakpoint-min-sm}{
         text-align: center;
         
     }
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         display: flex;
         align-items: flex-end;
         justify-content: center;
         height: 105px;
+    }
+    @media #{$breakpoint-lg}{
+        height: 130px;
+    }
+    @media #{$breakpoint-xl}{
+        height: 150px;
     }
 
 }
@@ -25,7 +32,7 @@
 .logo-xs-container{
     display: flex;
     text-align: center;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     position: relative; 
     height: 105px;

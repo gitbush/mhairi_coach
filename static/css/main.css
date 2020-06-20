@@ -373,6 +373,18 @@ template {
   color: #3b403f;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sect-title {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .sect-title {
+    font-size: .9em;
+  }
+}
+
 .sect-substitle {
   font-family: "Roboto", serif;
   font-size: 1.1em;
@@ -383,9 +395,15 @@ template {
   color: #3b403f;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .normal-text {
     font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .normal-text {
+    font-size: .7em;
   }
 }
 
@@ -481,9 +499,10 @@ body {
 #header {
   text-align: left;
   margin-left: 1.5em;
+  height: 50px;
 }
 
-@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   #header {
     height: 50px;
   }
@@ -495,7 +514,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   #header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -510,14 +529,26 @@ body {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #header {
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #header {
+    height: 150px;
+  }
+}
+
 .logo-xs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -609,7 +640,7 @@ body {
   right: 2rem;
   position: fixed;
   top: 2rem;
-  width: 2.2rem;
+  width: 2.4rem;
   z-index: 2;
 }
 
@@ -633,8 +664,14 @@ body {
   transition: all 0.5s ease;
   background: black;
   content: '';
-  height: 0.2rem;
+  height: 0.1rem;
   width: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+    height: 0.1rem;
+  }
 }
 
 .nav-toggle .nav-toggle-bar {
@@ -642,11 +679,23 @@ body {
 }
 
 .nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.4rem;
+  }
 }
 
 .nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.6rem;
+  margin-top: -0.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.4rem;
+  }
 }
 
 .nav-toggle.expanded .nav-toggle-bar {
@@ -820,8 +869,8 @@ body {
   .home-coaching {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr;
-        grid-template-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
     margin-top: 3em;
     text-align: center;
   }
@@ -830,6 +879,14 @@ body {
   }
   .home-coaching .coaching-free {
     grid-column: coaching-free;
+  }
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 18em auto;
+        grid-template-rows: 18em auto;
+    height: 100%;
   }
 }
 
