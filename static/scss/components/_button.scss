@@ -60,3 +60,12 @@
         width: 7em;
     }
 }
+
+.btn-light-pink{
+    background-color: $light-pink;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.1em;
+    padding: .6em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+}

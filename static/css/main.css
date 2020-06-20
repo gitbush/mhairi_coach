@@ -806,6 +806,16 @@ body {
   }
 }
 
+.btn-light-pink {
+  background-color: #fbf2ec;
+  text-transform: uppercase;
+  color: #3b403f;
+  font-size: 1.1em;
+  padding: .6em;
+  -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
+          box-shadow: 3px 5px 9px -7px #3b403f;
+}
+
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     position: relative;
@@ -1036,7 +1046,7 @@ body {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 500px;
+    height: 540px;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -1075,6 +1085,7 @@ body {
     grid-column: 3/5;
     -ms-grid-row: 3;
     grid-row: 3/3;
+    margin: 0 auto auto auto;
   }
 }
 
@@ -1143,5 +1154,28 @@ body {
 .parallax-window {
   min-height: 400px;
   background: transparent;
+  position: relative;
+  text-align: center;
+}
+
+.parallax-window h2 {
+  padding: .8em;
+  margin: 0;
+}
+
+.parallax-window p {
+  padding: .7em;
+}
+
+.cta-parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18em;
+  width: 24em;
+  margin: auto;
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */
