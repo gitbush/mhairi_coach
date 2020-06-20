@@ -870,41 +870,37 @@ body {
   }
 }
 
-@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .home-coaching {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2 auto);
-    -ms-grid-columns: 65vw;
-        grid-template-columns: 65vw;
-    grid-row-gap: 3em;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.home-coaching {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2 auto);
+  -ms-grid-columns: 65vw;
+      grid-template-columns: 65vw;
+  grid-row-gap: 3em;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
   }
 }
 
-@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 25em 28em;
-        grid-template-rows: 25em 28em;
-    height: 100%;
-  }
+.home-coaching .coaching-1-1,
+.home-coaching .coaching-free {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25em 28em;
+      grid-template-rows: 25em 28em;
+  height: 100%;
 }
 
-@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
     -ms-grid-rows: 25em 22em;
@@ -914,12 +910,9 @@ body {
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
     margin-top: 3em;
-    text-align: center;
   }
   .home-coaching .coaching-1-1 {
     grid-column: coaching-1-1;
@@ -929,33 +922,24 @@ body {
   }
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-rows: 15em 17em;
         grid-template-rows: 15em 17em;
-    height: 100%;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-rows: 15em 15em;
         grid-template-rows: 15em 15em;
-    height: 100%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-rows: 15em 14.8em;
         grid-template-rows: 15em 14.8em;
-    height: 100%;
   }
 }
 
