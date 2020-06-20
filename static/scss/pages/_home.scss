@@ -118,8 +118,11 @@
         .coaching-1-1,
         .coaching-free{
             display: grid;
-            grid-template-rows: 25em auto;
+            grid-template-rows: 25em 28em;
             height: 100%;
+            @media #{$breakpoint-sm}{
+                grid-template-rows: 25em 22em;
+            }
         }
     }
     
@@ -139,7 +142,24 @@
         .coaching-1-1,
         .coaching-free{
             display: grid;
-            grid-template-rows: 18em auto;
+            grid-template-rows: 15em 17em;
+            height: 100%;
+        }
+    }
+
+    @media #{$breakpoint-lg} {
+        .coaching-1-1,
+        .coaching-free{
+            display: grid;
+            grid-template-rows: 15em 15em;
+            height: 100%;
+        }
+    }
+    @media #{$breakpoint-xl} {
+        .coaching-1-1,
+        .coaching-free{
+            display: grid;
+            grid-template-rows: 15em 14.8em;
             height: 100%;
         }
     }
@@ -161,6 +181,7 @@
 }
 
 .coaching-text{
+    position: relative;
     background-color: $light-pink;
     height: 100%;
     padding: 0.6em;

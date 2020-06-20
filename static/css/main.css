@@ -367,6 +367,7 @@ template {
   font-family: "Roboto", serif;
   font-size: 1.8rem;
   font-weight: 600;
+  padding: 5px;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.2em;
@@ -717,6 +718,44 @@ body {
   transform: rotate(-45deg);
 }
 
+.coach-cta-btn {
+  height: 35px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+  background-color: white;
+  -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
+          box-shadow: 3px 5px 9px -7px #3b403f;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .coach-cta-btn {
+    width: 7em;
+  }
+}
+
+.btn-white-sm {
+  background-color: white;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
 @media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
   .home-hero {
     position: relative;
@@ -859,9 +898,17 @@ body {
   .home-coaching .coaching-free {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 25em auto;
-        grid-template-rows: 25em auto;
+    -ms-grid-rows: 25em 28em;
+        grid-template-rows: 25em 28em;
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    -ms-grid-rows: 25em 22em;
+        grid-template-rows: 25em 22em;
   }
 }
 
@@ -884,8 +931,30 @@ body {
   .home-coaching .coaching-free {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 18em auto;
-        grid-template-rows: 18em auto;
+    -ms-grid-rows: 15em 17em;
+        grid-template-rows: 15em 17em;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 15em 15em;
+        grid-template-rows: 15em 15em;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 15em 14.8em;
+        grid-template-rows: 15em 14.8em;
     height: 100%;
   }
 }
@@ -907,6 +976,7 @@ body {
 }
 
 .coaching-text {
+  position: relative;
   background-color: #fbf2ec;
   height: 100%;
   padding: 0.6em;
