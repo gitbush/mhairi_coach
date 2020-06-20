@@ -74,6 +74,10 @@ $nav-toggle-z-index: 2;
   top: 2rem;
   width: 2.2rem;
   z-index: 2;
+  @media #{$breakpoint-xs}{
+    top: 1rem;
+    
+}
 }
 
 .nav-toggle:hover { opacity: 0.8; }

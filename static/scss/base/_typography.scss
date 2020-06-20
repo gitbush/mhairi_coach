@@ -19,6 +19,7 @@ $fw-bold: 700;
   font-family: $font-parisienne;
   line-height: 1.1;
   font-size: 3em;
+  margin: 0;
 }
 
 .logo-sect{
@@ -28,10 +29,12 @@ $fw-bold: 700;
 }
 .sect-title{
   font-family: $font-roboto;
-  font-size: .8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2;
-  letter-spacing: 0.3e
+  letter-spacing: 0.2em;
+  color: $base-text-color
 }
 
 .sect-substitle{
@@ -40,5 +43,9 @@ $fw-bold: 700;
 }
 
 .normal-text{
-  font-size: .7em;
+  font-size: 1.2em;
+  color: $base-text-color;
+  @media #{$breakpoint-min-sm} {
+    font-size: 1.1em;
+  }
 }

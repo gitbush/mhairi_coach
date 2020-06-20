@@ -6,13 +6,15 @@
 // Home hero section
 // ---------------------------------------------------------------
 .home-hero{
-    @media #{$breakpoint-xs} {
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
         position: relative;
-        top: 8em;
-        height: 48em;
+        height: 39em;
+    }
+    @media #{$breakpoint-sm}{
+        height: 40em;
     }
 
-    @media #{$breakpoint-min-sm} {
+    @media #{$breakpoint-min-md} {
         display: grid;
         grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
         margin-top: 3em;
@@ -65,7 +67,7 @@
 }
 
 .home-hero-text{
-    @media #{$breakpoint-xs}{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm}{
         position: absolute;
         top: 8em;
         left: 0;
@@ -88,6 +90,10 @@
             font-size: .9em;
             font-weight: 700;
         }
+        @media #{$breakpoint-sm}{
+            top: 10em;
+            width: 16em;
+        }
     
     }
 }
@@ -98,8 +104,27 @@
 
 
 .home-coaching{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm}{
+        display: grid;
+        grid-template-rows: repeat(2 auto); 
+        grid-template-columns: 65vw;
+        grid-row-gap: 3em;
+        text-align: center;
+        justify-content: center;
 
-    @media #{$breakpoint-min-sm} {
+        @media #{$breakpoint-sm}{
+            grid-template-columns: 50vw;
+        }
+        .coaching-1-1,
+        .coaching-free{
+            display: grid;
+            grid-template-rows: 25em auto;
+            height: 100%;
+        }
+    }
+    
+
+    @media #{$breakpoint-min-md} {
         display: grid;
         grid-template-columns: 2fr [coaching-1-1] 11em 3em [coaching-free] 11em 2fr; 
         margin-top: 3em;
@@ -120,7 +145,7 @@
     margin: 0;
     width: auto;
     object-fit: cover;
-    height: 13em;
+    height: 100%;
     img{
         object-fit: cover;
         width: 100%;
@@ -131,6 +156,7 @@
 
 .coaching-text{
     background-color: $light-pink;
+    height: 100%;
     padding: 0.6em;
     
 }

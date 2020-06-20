@@ -354,6 +354,7 @@ template {
   font-family: "Parisienne", serif;
   line-height: 1.1;
   font-size: 3em;
+  margin: 0;
 }
 
 .logo-sect {
@@ -364,10 +365,12 @@ template {
 
 .sect-title {
   font-family: "Roboto", serif;
-  font-size: .8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2;
-  letter-spacing: 0.3e;
+  letter-spacing: 0.2em;
+  color: #3b403f;
 }
 
 .sect-substitle {
@@ -376,7 +379,14 @@ template {
 }
 
 .normal-text {
-  font-size: .7em;
+  font-size: 1.2em;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 576px) {
+  .normal-text {
+    font-size: 1.1em;
+  }
 }
 
 /**
@@ -473,16 +483,57 @@ body {
   margin-left: 1.5em;
 }
 
+@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+  #header {
+    height: 50px;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   #header {
     text-align: center;
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 105px;
+  }
+}
+
+.logo-xs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 105px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .logo-xs-container {
+    height: 10em;
+  }
+}
+
 .header-xs-logo {
   text-align: center;
   position: relative;
-  top: 5em;
 }
 
 .nav {
@@ -562,6 +613,12 @@ body {
   z-index: 2;
 }
 
+@media only screen and (max-width: 576px) {
+  .nav-toggle {
+    top: 1rem;
+  }
+}
+
 .nav-toggle:hover {
   opacity: 0.8;
 }
@@ -611,15 +668,20 @@ body {
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
   .home-hero {
     position: relative;
-    top: 8em;
-    height: 48em;
+    height: 39em;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .home-hero {
+    height: 40em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .home-hero {
     display: -ms-grid;
     display: grid;
@@ -680,7 +742,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
     top: 8em;
@@ -713,7 +775,48 @@ body {
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+  .home-hero-text {
+    top: 10em;
+    width: 16em;
+  }
+}
+
+@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .home-coaching {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2 auto);
+    -ms-grid-columns: 65vw;
+        grid-template-columns: 65vw;
+    grid-row-gap: 3em;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) and (min-width: 576px) and (max-width: 767px) {
+  .home-coaching {
+    -ms-grid-columns: 50vw;
+        grid-template-columns: 50vw;
+  }
+}
+
+@media only screen and (max-width: 576px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 25em auto;
+        grid-template-rows: 25em auto;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .home-coaching {
     display: -ms-grid;
     display: grid;
@@ -736,7 +839,7 @@ body {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 13em;
+  height: 100%;
 }
 
 .coaching-img img {
@@ -748,6 +851,7 @@ body {
 
 .coaching-text {
   background-color: #fbf2ec;
+  height: 100%;
   padding: 0.6em;
 }
 /*# sourceMappingURL=main.css.map */

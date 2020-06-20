@@ -6,14 +6,36 @@
 #header{
     text-align:left;
     margin-left: 1.5em;
+    @media #{$breakpoint-xs}, #{$breakpoint-sm}{
+        height: 50px;
+    }
     @media #{$breakpoint-min-sm}{
         text-align: center;
         
     }
+    @media #{$breakpoint-md}{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 105px;
+    }
+
 }
 
+.logo-xs-container{
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative; 
+    height: 105px;
+    @media #{$breakpoint-sm}{
+        height: 10em;
+        
+    }
+}
 .header-xs-logo{
     text-align: center;
     position: relative; 
-    top: 5em;
+    
 }
