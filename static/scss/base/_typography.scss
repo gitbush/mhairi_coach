@@ -7,7 +7,10 @@ $font-parisienne: 'Parisienne', serif;
 $font-roboto: 'Roboto', serif;
 $font-cabin: 'Cabin', serif;
 
-$fw-n: 400;
+.fw-n{ 
+  font-weight:400 !important;
+}
+
 $fw-bold: 700;
 
 .logo-font{
@@ -18,7 +21,7 @@ $fw-bold: 700;
 .logo-1{
   font-family: $font-parisienne;
   line-height: 1.1;
-  font-size: 3em;
+  font-size: 3.6em;
   margin: 0;
 }
 
@@ -29,7 +32,7 @@ $fw-bold: 700;
 }
 .sect-title{
   font-family: $font-roboto;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
@@ -53,7 +56,7 @@ $fw-bold: 700;
   font-size: 1.2em;
   color: $base-text-color;
   @media #{$breakpoint-sm} {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   @media #{$breakpoint-min-md} {
     font-size: .7em;

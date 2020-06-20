@@ -30,3 +30,33 @@
     letter-spacing: 0.2em;
 }
 
+.btn-pink{
+    background-color: rgba(245,140,124,1);
+    color: white;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.about-cta-btn{
+    height: 35px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 12em;
+    background-color: rgba(245,140,124,1);
+    color: white;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-min-md} {
+        width: 7em;
+    }
+}
