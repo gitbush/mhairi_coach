@@ -361,6 +361,12 @@ template {
   margin: 0;
 }
 
+@media only screen and (min-width: 1200px) {
+  .logo-1 {
+    font-size: 3.1em;
+  }
+}
+
 .logo-2 {
   font-family: "Parisienne", serif;
   line-height: 1.1;
@@ -386,10 +392,10 @@ template {
   }
 }
 
-.logo-sect {
+.logo-subtitle {
   font-family: "Roboto", serif;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: .7em;
 }
 
 .sect-title {
@@ -605,7 +611,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   #header {
-    height: 150px;
+    height: 165px;
   }
 }
 
@@ -926,15 +932,9 @@ body {
   .home-hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
-        grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
     margin-top: 3em;
   }
   .home-hero .home-hero-text {
-    grid-column: text-start / text-end;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
     z-index: 99;
     margin: auto 0;
   }
@@ -968,10 +968,6 @@ body {
     font-weight: 700;
   }
   .home-hero .home-hero-img {
-    grid-column: img-start / img-end;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
     height: 21em;
   }
   .home-hero .home-hero-img img {
@@ -983,8 +979,24 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
-        grid-template-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
+    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 10em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 10em) auto;
+  }
+  .home-hero .home-hero-text {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .home-hero .home-hero-img {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3 / 6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
   }
 }
 
@@ -1216,8 +1228,8 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .home-about {
-    -ms-grid-columns: 11em 12em (13em)[2] 11em;
-        grid-template-columns: 11em 12em repeat(2, 13em) 11em;
+    -ms-grid-columns: auto 12em (13em)[2] auto;
+        grid-template-columns: auto 12em repeat(2, 13em) auto;
     height: 560px;
   }
 }

@@ -16,11 +16,8 @@
     }
     @media #{$breakpoint-min-md} {
         display: grid;
-        grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
         margin-top: 3em;
         .home-hero-text{
-            grid-column: text-start / text-end;
-            grid-row: 1 / 2;
             z-index: 99;
             margin: auto 0;
     
@@ -44,8 +41,6 @@
     
         }
         .home-hero-img{
-            grid-column: img-start / img-end;
-            grid-row: 1 / 2;
             height: 21em;
     
             img {
@@ -57,7 +52,15 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
-        grid-template-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 10em) auto;
+        .home-hero-text{
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+        }
+        .home-hero-img{
+            grid-column: 3 / 6;
+            grid-row: 1 / 2;
+        }
     }
 }
 
@@ -227,7 +230,7 @@
         height: 550px;
     }
     @media #{$breakpoint-xl} {
-        grid-template-columns:  11em 12em repeat(2, 13em) 11em;
+        grid-template-columns:  auto 12em repeat(2, 13em) auto;
         height: 560px;
     }
 }

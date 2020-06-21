@@ -23,6 +23,9 @@ $fw-bold: 700;
   line-height: 1.1;
   font-size: 3.6em;
   margin: 0;
+  @media #{$breakpoint-xl} {
+    font-size: 3.1em;
+  }
 }
 
 .logo-2{
@@ -41,10 +44,10 @@ $fw-bold: 700;
   }
 }
 
-.logo-sect{
+.logo-subtitle{
   font-family: $font-roboto;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: .7em;
 }
 .sect-title{
   font-family: $font-roboto;
