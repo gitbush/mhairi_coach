@@ -363,7 +363,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .logo-1 {
-    font-size: 3.1em;
+    font-size: 2.9em;
   }
 }
 
@@ -479,6 +479,13 @@ template {
   color: #f58c7c;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.quote-text-dark {
+  color: #3b403f;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .3em;
 }
 
 /**
@@ -979,8 +986,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 10em) auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 10em) auto;
+    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
   }
   .home-hero .home-hero-text {
     -ms-grid-column: 2;
@@ -1157,7 +1164,7 @@ body {
 .home-about {
   background-color: #f0f3f3;
   margin-top: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -1220,9 +1227,9 @@ body {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about {
-    -ms-grid-columns: 7em 15em (1fr)[2] 7em;
-        grid-template-columns: 7em 15em repeat(2, 1fr) 7em;
-    height: 550px;
+    -ms-grid-columns: auto 15em (11em)[2] auto;
+        grid-template-columns: auto 15em repeat(2, 11em) auto;
+    height: 30em;
   }
 }
 
@@ -1230,13 +1237,19 @@ body {
   .home-about {
     -ms-grid-columns: auto 12em (13em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 13em) auto;
-    height: 560px;
+    height: 27em;
   }
 }
 
 .home-about-title {
-  margin: 1em auto 0 auto;
+  margin: auto auto 0 auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-about-title {
+    margin: 2em auto 0 auto;
+  }
 }
 
 .home-about-img {
@@ -1295,7 +1308,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-window {
-    min-height: 600px;
+    min-height: 500px;
   }
 }
 
@@ -1359,14 +1372,14 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .quote {
-    height: 8em;
-    width: 29em;
-    padding: .8em;
+    height: 7em;
+    width: 27em;
+    padding: .6em;
   }
   .quote .quote-text {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0 2em;
-    margin: 0.6em .6em .2em .6em;
+    margin: 0.6em .6em .1em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -1489,6 +1502,115 @@ body {
 @media only screen and (min-width: 1200px) {
   .cta-btn {
     bottom: 1.6em;
+  }
+}
+
+.testimonial-parallax-window {
+  min-height: 480px;
+  background: transparent;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-parallax-window {
+    min-height: 320px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-parallax-window {
+    min-height: 345px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-parallax-window {
+    min-height: 350px;
+  }
+}
+
+.testimonial-parallax {
+  text-align: center;
+  width: 23em;
+  height: 25em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-parallax {
+    width: 29em;
+    height: 20em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-parallax {
+    width: 29em;
+    height: 13em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .testimonial-parallax {
+    width: 32em;
+    height: 8em;
+  }
+}
+
+.testimonial-parallax .quote-text-dark {
+  font-size: 1.8em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-parallax .quote-text-dark {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-parallax .quote-text-dark {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-parallax .quote-text-dark {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-parallax .quote-text-dark {
+    font-size: 1em;
+  }
+}
+
+.love-hearts {
+  font-size: 2em;
+  color: #bac5ca;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .love-hearts {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .love-hearts {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .love-hearts {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

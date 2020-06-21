@@ -52,7 +52,7 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 10em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
         .home-hero-text{
             grid-column: 2 / 4;
             grid-row: 1 / 2;
@@ -190,7 +190,7 @@
 .home-about{
     background-color: $gray;
     margin-top: 2em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
     text-align: center;
     display: grid;
     grid-template-rows: auto 32em minmax(auto, 41em) 7em;
@@ -226,18 +226,21 @@
         }
     }
     @media #{$breakpoint-lg} {
-        grid-template-columns: 7em 15em repeat(2, 1fr) 7em;
-        height: 550px;
+        grid-template-columns: auto 15em repeat(2, 11em) auto;
+        height: 30em;
     }
     @media #{$breakpoint-xl} {
         grid-template-columns:  auto 12em repeat(2, 13em) auto;
-        height: 560px;
+        height: 27em;
     }
 }
 
 .home-about-title{
-    margin: 1em auto 0 auto;
+    margin: auto auto 0 auto;
     text-align: center;
+    @media #{$breakpoint-md}, #{$breakpoint-lg} {
+        margin: 2em auto 0 auto;
+    }
 }
 
 .home-about-img{
@@ -288,7 +291,7 @@
     } 
 
     @media #{$breakpoint-xl} {
-        min-height: 600px;
+        min-height: 500px;
     }
 }
 
@@ -338,23 +341,19 @@
         }
     }
     @media #{$breakpoint-xl} {
-        height: 8em;
-        width: 29em;
-        padding: .8em;
+        height: 7em;
+        width: 27em;
+        padding: .6em;
         .quote-text{
-            font-size: 1.2em;
+            font-size: 1em;
             padding: 0 2em;
-            margin: 0.6em .6em .2em .6em;
+            margin: 0.6em .6em .1em .6em;
         }
         .quote-author{
             font-size: .6em;
         }
     }
 }
-
-
-
-
 
 // ---------------------------------------------------------------
 // Home cta section
@@ -452,3 +451,77 @@
     }
 }
 
+
+// ---------------------------------------------------------------
+// Home testimonials section
+// ---------------------------------------------------------------
+
+.testimonial-parallax-window{
+    min-height: 480px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    @media #{$breakpoint-md}{
+        min-height: 320px;
+    }
+    @media #{$breakpoint-lg}{
+        min-height: 345px;
+    }
+    @media #{$breakpoint-xl}{
+        min-height: 350px;
+    }
+}
+
+.testimonial-parallax{
+    text-align: center;
+    width: 23em;
+    height: 25em;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    @media #{$breakpoint-sm}{
+        width: 29em;
+        height: 20em;
+    }
+    @media #{$breakpoint-md}{
+        width: 29em;
+        height: 13em;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        width: 32em;
+        height: 8em;
+    }
+    .quote-text-dark{
+        font-size: 1.8em;
+        @media #{$breakpoint-sm}{
+            font-size: 1.8em;
+        }
+        @media #{$breakpoint-md}{
+            font-size: 1.4em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: 1.3em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: 1em;
+        }
+    }
+}
+
+.love-hearts{
+    font-size: 2em;
+    color: rgba(186,197,202,1);
+    @media #{$breakpoint-md}{
+        font-size: 1.3em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1.3em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: 1em;
+    }
+}
