@@ -409,9 +409,29 @@ template {
   }
 }
 
-.sect-substitle {
+.sect-subtitle {
   font-family: "Roboto", serif;
+  color: #3b403f;
   font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sect-subtitle {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .sect-subtitle {
+    font-size: .7em;
+    margin-bottom: 0;
+  }
 }
 
 .normal-text {
@@ -441,6 +461,12 @@ template {
   .normal-text {
     font-size: .56em;
   }
+}
+
+.quote-text {
+  color: #f58c7c;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 /**
@@ -1236,6 +1262,98 @@ body {
   }
 }
 
+.quote-parallax-window {
+  min-height: 480px;
+  background: transparent;
+  position: relative;
+  text-align: center;
+}
+
+.quote-parallax-window h2 {
+  padding: .8em;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote-parallax-window {
+    min-height: 600px;
+  }
+}
+
+.quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 19em;
+  width: 23em;
+  margin: auto;
+  padding: 1.5em;
+  background: white;
+}
+
+.quote .quote-text {
+  font-size: 1.9em;
+  margin: 0.6em .6em 0 .6em;
+  letter-spacing: .3em;
+}
+
+.quote .quote-author {
+  font-size: .8em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .quote {
+    height: 18em;
+    padding: 1.5em;
+  }
+  .quote .quote-text {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote {
+    height: 10em;
+    width: 31em;
+    padding: 1em;
+  }
+  .quote .quote-text {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .quote {
+    height: 10em;
+    width: 31em;
+    padding: 1em;
+  }
+  .quote .quote-text {
+    font-size: 1.6em;
+  }
+  .quote .quote-author {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote {
+    height: 8em;
+    width: 29em;
+    padding: .8em;
+  }
+  .quote .quote-text {
+    font-size: 1.2em;
+    padding: 0 2em;
+    margin: 0.6em .6em .2em .6em;
+  }
+  .quote .quote-author {
+    font-size: .6em;
+  }
+}
+
 .parallax-window {
   min-height: 400px;
   background: transparent;
@@ -1246,10 +1364,6 @@ body {
 .parallax-window h2 {
   padding: .8em;
   margin: 0;
-}
-
-.parallax-window p {
-  padding: .7em;
 }
 
 .cta-parallax {

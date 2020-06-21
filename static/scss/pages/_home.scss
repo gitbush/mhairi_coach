@@ -269,6 +269,90 @@
 }
 
 // ---------------------------------------------------------------
+// Home quote parallex section
+// ---------------------------------------------------------------
+
+.quote-parallax-window {
+    min-height: 480px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+
+    h2 {
+        padding: .8em;
+        margin: 0;
+    } 
+
+    @media #{$breakpoint-xl} {
+        min-height: 600px;
+    }
+}
+
+.quote{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 19em;
+    width: 23em;
+    margin: auto;
+    padding: 1.5em;
+    background: white;
+    .quote-text{
+        font-size: 1.9em;
+        margin: 0.6em .6em 0 .6em;
+        letter-spacing: .3em;
+    }
+    .quote-author{
+        font-size: .8em;
+    }
+    @media #{$breakpoint-sm} {
+        height: 18em;
+        padding: 1.5em;
+        .quote-text{
+            font-size: 1.8em;
+        }
+    }
+    @media #{$breakpoint-md} {
+        height: 10em;
+        width: 31em;
+        padding: 1em;
+        .quote-text{
+            font-size: 1.4em;
+        }
+    }
+    @media #{$breakpoint-lg} {
+        height: 10em;
+        width: 31em;
+        padding: 1em;
+        .quote-text{
+            font-size: 1.6em;
+        }
+        .quote-author{
+            font-size: .6em;
+        }
+    }
+    @media #{$breakpoint-xl} {
+        height: 8em;
+        width: 29em;
+        padding: .8em;
+        .quote-text{
+            font-size: 1.2em;
+            padding: 0 2em;
+            margin: 0.6em .6em .2em .6em;
+        }
+        .quote-author{
+            font-size: .6em;
+        }
+    }
+}
+
+
+
+
+
+// ---------------------------------------------------------------
 // Home cta parallex section
 // ---------------------------------------------------------------
 
@@ -282,9 +366,7 @@
         padding: .8em;
         margin: 0;
     }
-    p {
-        padding: .7em;
-    }
+    
 }
 .cta-parallax{
     position: absolute;

@@ -37,7 +37,7 @@
 }
 
 .btn-pink{
-    background-color: rgba(245,140,124,1);
+    background-color: $pink;
     color: white;
     height: 100%;
     position: relative;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     width: 12em;
-    background-color: rgba(245,140,124,1);
+    background-color: $pink;
     color: white;
     box-shadow: 3px 5px 9px -7px #3b403f;
     @media #{$breakpoint-min-md} {

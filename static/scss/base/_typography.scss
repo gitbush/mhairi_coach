@@ -60,9 +60,23 @@ $fw-bold: 700;
   }
 }
 
-.sect-substitle{
+.sect-subtitle{
   font-family: $font-roboto;
+  color: $base-text-color;
   font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  @media #{$breakpoint-md} {
+    font-size: .9em;
+  }
+  @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+    font-size: .7em;
+    margin-bottom: 0;
+  }
 }
 
 .normal-text{
@@ -81,4 +95,10 @@ $fw-bold: 700;
     font-size: .56em;
   }
   
+}
+
+.quote-text{
+  color: $pink;
+  text-transform: uppercase;
+  font-weight: 400;
 }
