@@ -852,6 +852,30 @@ body {
           box-shadow: 3px 5px 9px -7px #3b403f;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .btn-light-pink {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btn-light-pink {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .btn-light-pink {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-light-pink {
+    font-size: .7em;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
@@ -1238,5 +1262,87 @@ body {
   width: 24em;
   margin: auto;
   background: white;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .cta-parallax {
+    height: 13em;
+    width: 26em;
+    padding: 0 .8em;
+  }
+  .cta-parallax .normal-text {
+    font-size: .9em;
+  }
+  .cta-parallax .sect-title {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cta-parallax {
+    height: 12em;
+  }
+  .cta-parallax .normal-text {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cta-parallax {
+    height: 11em;
+    width: 22em;
+    padding: 0 .7em;
+  }
+  .cta-parallax .normal-text {
+    font-size: .8em;
+  }
+  .cta-parallax .sect-title {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta-parallax {
+    height: 9em;
+    width: 21em;
+    padding: 0 .8em;
+  }
+  .cta-parallax .normal-text {
+    font-size: .65em;
+  }
+  .cta-parallax .sect-title {
+    font-size: .8em;
+  }
+}
+
+.cta-parallax-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .cta-parallax-btn {
+    bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cta-parallax-btn {
+    bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cta-parallax-btn {
+    bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta-parallax-btn {
+    bottom: 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
