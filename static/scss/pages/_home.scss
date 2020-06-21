@@ -353,12 +353,12 @@
 
 
 // ---------------------------------------------------------------
-// Home cta parallex section
+// Home cta section
 // ---------------------------------------------------------------
 
-.parallax-window {
+.home-cta {
     min-height: 400px;
-    background: transparent;
+    background: $lightest-pink;
     position: relative;
     text-align: center;
 
@@ -366,24 +366,32 @@
         padding: .8em;
         margin: 0;
     }
+    @media #{$breakpoint-xl} {
+        min-height: 500px
+    }
     
 }
-.cta-parallax{
+.home-cta-window{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 18em;
+    height: 17em;
     width: 24em;
     margin: auto;
     background: white;
+
+    .normal-text{
+        padding: .3em;
+        font-size: 1.2em;
+    }
     @media #{$breakpoint-sm} {
         height: 13em;
         width: 26em;
         padding: 0 .8em;
         .normal-text{
-            font-size: .9em;
+            font-size: 1em;
         }
         .sect-title{
             font-size: 1.1em;
@@ -391,9 +399,9 @@
     }
     @media #{$breakpoint-md} {
         height: 12em;
-
+        padding: 0 .8em;
         .normal-text{
-            font-size: .9em;
+            font-size: .85em;
         }
     }
     @media #{$breakpoint-lg} {
@@ -408,11 +416,12 @@
         }
     }
     @media #{$breakpoint-xl} {
-        height: 9em;
+        height: 11em;
         width: 21em;
-        padding: 0 .8em;
+        padding: 0 .9em;
         .normal-text{
-            font-size: .65em;
+            font-size: .7em;
+            padding: 1em;
         }
         .sect-title{
             font-size: .8em;
@@ -420,7 +429,7 @@
     }
 }
 
-.cta-parallax-btn{
+.cta-btn{
     position: absolute;
     left: 0;
     right: 0;
@@ -435,7 +444,7 @@
         bottom: 2em;
     }
     @media #{$breakpoint-xl} {
-        bottom: 1em;
+        bottom: 1.6em;
     }
 }
 

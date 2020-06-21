@@ -72,7 +72,7 @@
     text-transform: uppercase;
     color: $base-text-color;
     font-size: 1.1em;
-    padding: .6em;
+    padding: .6em 1em;
     box-shadow: 3px 5px 9px -7px #3b403f;
     @media #{$breakpoint-sm} {
         font-size: 1em;
@@ -84,6 +84,6 @@
         font-size: .8em;
     }
     @media #{$breakpoint-xl} {
-        font-size: .7em;
+        font-size: .6em;
     }
 }

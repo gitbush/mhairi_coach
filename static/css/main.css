@@ -873,7 +873,7 @@ body {
   text-transform: uppercase;
   color: #3b403f;
   font-size: 1.1em;
-  padding: .6em;
+  padding: .6em 1em;
   -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
           box-shadow: 3px 5px 9px -7px #3b403f;
 }
@@ -898,7 +898,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .btn-light-pink {
-    font-size: .7em;
+    font-size: .6em;
   }
 }
 
@@ -1354,82 +1354,95 @@ body {
   }
 }
 
-.parallax-window {
+.home-cta {
   min-height: 400px;
-  background: transparent;
+  background: rgba(251, 242, 236, 0.6);
   position: relative;
   text-align: center;
 }
 
-.parallax-window h2 {
+.home-cta h2 {
   padding: .8em;
   margin: 0;
 }
 
-.cta-parallax {
+@media only screen and (min-width: 1200px) {
+  .home-cta {
+    min-height: 500px;
+  }
+}
+
+.home-cta-window {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 18em;
+  height: 17em;
   width: 24em;
   margin: auto;
   background: white;
 }
 
+.home-cta-window .normal-text {
+  padding: .3em;
+  font-size: 1.2em;
+}
+
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .cta-parallax {
+  .home-cta-window {
     height: 13em;
     width: 26em;
     padding: 0 .8em;
   }
-  .cta-parallax .normal-text {
-    font-size: .9em;
+  .home-cta-window .normal-text {
+    font-size: 1em;
   }
-  .cta-parallax .sect-title {
+  .home-cta-window .sect-title {
     font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cta-parallax {
+  .home-cta-window {
     height: 12em;
+    padding: 0 .8em;
   }
-  .cta-parallax .normal-text {
-    font-size: .9em;
+  .home-cta-window .normal-text {
+    font-size: .85em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cta-parallax {
+  .home-cta-window {
     height: 11em;
     width: 22em;
     padding: 0 .7em;
   }
-  .cta-parallax .normal-text {
+  .home-cta-window .normal-text {
     font-size: .8em;
   }
-  .cta-parallax .sect-title {
+  .home-cta-window .sect-title {
     font-size: .9em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .cta-parallax {
-    height: 9em;
+  .home-cta-window {
+    height: 11em;
     width: 21em;
-    padding: 0 .8em;
+    padding: 0 .9em;
   }
-  .cta-parallax .normal-text {
-    font-size: .65em;
+  .home-cta-window .normal-text {
+    font-size: .7em;
+    padding: 1em;
   }
-  .cta-parallax .sect-title {
+  .home-cta-window .sect-title {
     font-size: .8em;
   }
 }
 
-.cta-parallax-btn {
+.cta-btn {
   position: absolute;
   left: 0;
   right: 0;
@@ -1437,26 +1450,26 @@ body {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .cta-parallax-btn {
+  .cta-btn {
     bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cta-parallax-btn {
+  .cta-btn {
     bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cta-parallax-btn {
+  .cta-btn {
     bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .cta-parallax-btn {
-    bottom: 1em;
+  .cta-btn {
+    bottom: 1.6em;
   }
 }
 /*# sourceMappingURL=main.css.map */
