@@ -1306,9 +1306,15 @@ body {
   margin: 0;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .quote-parallax-window {
+    min-height: 400px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .quote-parallax-window {
-    min-height: 500px;
+    min-height: 400px;
   }
 }
 
@@ -1398,9 +1404,21 @@ body {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-cta {
+    min-height: 17em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-cta {
+    min-height: 18em;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .home-cta {
-    min-height: 500px;
+    min-height: 17em;
   }
 }
 
@@ -1514,19 +1532,19 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-parallax-window {
-    min-height: 320px;
+    min-height: 15em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-parallax-window {
-    min-height: 345px;
+    min-height: 13em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-parallax-window {
-    min-height: 350px;
+    min-height: 11em;
   }
 }
 

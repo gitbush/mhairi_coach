@@ -289,9 +289,11 @@
         padding: .8em;
         margin: 0;
     } 
-
+    @media #{$breakpoint-lg} {
+        min-height: 400px;
+    }
     @media #{$breakpoint-xl} {
-        min-height: 500px;
+        min-height: 400px;
     }
 }
 
@@ -369,8 +371,14 @@
         padding: .8em;
         margin: 0;
     }
+    @media #{$breakpoint-md} {
+        min-height: 17em
+    }
+    @media #{$breakpoint-lg} {
+        min-height: 18em
+    }
     @media #{$breakpoint-xl} {
-        min-height: 500px
+        min-height: 17em
     }
     
 }
@@ -462,13 +470,13 @@
     position: relative;
     text-align: center;
     @media #{$breakpoint-md}{
-        min-height: 320px;
+        min-height: 15em;
     }
     @media #{$breakpoint-lg}{
-        min-height: 345px;
+        min-height: 13em;
     }
     @media #{$breakpoint-xl}{
-        min-height: 350px;
+        min-height: 11em;
     }
 }
 
