@@ -816,15 +816,24 @@ body {
           box-shadow: 3px 5px 9px -7px #3b403f;
 }
 
-@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 39em;
+    height: 53em;
+  }
+  .home-hero .home-hero-img {
+    height: 34em;
+  }
+  .home-hero .home-hero-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
+    position: relative;
     height: 40em;
   }
 }
@@ -837,6 +846,9 @@ body {
         grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
     margin-top: 3em;
   }
+}
+
+@media only screen and (min-width: 768px) {
   .home-hero .home-hero-text {
     grid-column: text-start / text-end;
     -ms-grid-row: 1;
@@ -881,8 +893,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: auto [text-start] minmax(7em, 10em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
-        grid-template-columns: auto [text-start] minmax(7em, 10em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
+    -ms-grid-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
+        grid-template-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
   }
 }
 
@@ -893,11 +905,11 @@ body {
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
-    top: 8em;
+    top: 16em;
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     width: 13em;
     margin: auto;
   }
@@ -925,7 +937,7 @@ body {
 
 @media only screen and (max-width: 500px) and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
-    top: 10em;
+    top: 12em;
     width: 16em;
   }
 }
@@ -963,8 +975,8 @@ body {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 25em 22em;
-        grid-template-rows: 25em 22em;
+    -ms-grid-rows: 25em 21em;
+        grid-template-rows: 25em 21em;
   }
 }
 
