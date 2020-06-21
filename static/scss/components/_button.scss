@@ -13,8 +13,14 @@
     left: 0;
     right: 0;
     bottom: 20px;
+    @media #{$breakpoint-sm} {
+        height: 30px;
+    }
     @media #{$breakpoint-min-md} {
-        width: 7em;
+        width: 6.5em;
+    }
+    @media #{$breakpoint-xl} {
+        width: 5.5em;
     }
 }
 

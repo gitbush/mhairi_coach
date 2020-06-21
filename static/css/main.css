@@ -368,6 +368,18 @@ template {
   margin: 10px 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-2 {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo-2 {
+    font-size: 2.7em;
+  }
+}
+
 .logo-sect {
   font-family: "Roboto", serif;
   text-transform: uppercase;
@@ -387,13 +399,13 @@ template {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sect-title {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .sect-title {
-    font-size: .9em;
+    font-size: .8em;
   }
 }
 
@@ -413,9 +425,21 @@ template {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .normal-text {
-    font-size: .7em;
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .normal-text {
+    font-size: .69em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .normal-text {
+    font-size: .56em;
   }
 }
 
@@ -745,9 +769,21 @@ body {
   bottom: 20px;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .coach-cta-btn {
+    height: 30px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .coach-cta-btn {
-    width: 7em;
+    width: 6.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coach-cta-btn {
+    width: 5.5em;
   }
 }
 
@@ -821,14 +857,6 @@ body {
     position: relative;
     height: 53em;
   }
-  .home-hero .home-hero-img {
-    height: 34em;
-  }
-  .home-hero .home-hero-img img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -846,9 +874,6 @@ body {
         grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
     margin-top: 3em;
   }
-}
-
-@media only screen and (min-width: 768px) {
   .home-hero .home-hero-text {
     grid-column: text-start / text-end;
     -ms-grid-row: 1;
@@ -873,6 +898,15 @@ body {
             align-items: center;
     letter-spacing: .2em;
   }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .home-hero .home-hero-text p {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .home-hero .home-hero-text .logo-font {
     font-size: .9em;
     font-weight: 700;
@@ -896,10 +930,6 @@ body {
     -ms-grid-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
         grid-template-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
   }
-}
-
-.home-hero-img img {
-  width: 100%;
 }
 
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
@@ -940,6 +970,17 @@ body {
     top: 12em;
     width: 16em;
   }
+}
+
+.home-hero-img {
+  height: 34em;
+}
+
+.home-hero-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-coaching {
@@ -1010,8 +1051,15 @@ body {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 15em 14.8em;
-        grid-template-rows: 15em 14.8em;
+    -ms-grid-rows: 12em 12em;
+        grid-template-rows: 12em 12em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-coaching {
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
   }
 }
 
@@ -1058,9 +1106,9 @@ body {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 540px;
-    -ms-grid-columns: 4em 15em (1fr)[2] 4em;
-        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+    height: 610px;
+    -ms-grid-columns: 6em 15em (1fr)[2] 6em;
+        grid-template-columns: 6em 15em repeat(2, 1fr) 6em;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
@@ -1103,21 +1151,22 @@ body {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about {
-    -ms-grid-columns: 5em 17em (1fr)[2] 5em;
-        grid-template-columns: 5em 17em repeat(2, 1fr) 5em;
+    -ms-grid-columns: 7em 15em (1fr)[2] 7em;
+        grid-template-columns: 7em 15em repeat(2, 1fr) 7em;
+    height: 550px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-about {
-    -ms-grid-columns: 6em 18em (1fr)[2] 6em;
-        grid-template-columns: 6em 18em repeat(2, 1fr) 6em;
-    height: 580px;
+    -ms-grid-columns: 8em 15em (1fr)[2] 8em;
+        grid-template-columns: 8em 15em repeat(2, 1fr) 8em;
+    height: 540px;
   }
 }
 
 .home-about-title {
-  margin: 2em auto 0 auto;
+  margin: 1em auto 0 auto;
   text-align: center;
 }
 

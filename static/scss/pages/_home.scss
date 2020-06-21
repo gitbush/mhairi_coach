@@ -9,34 +9,21 @@
     @media #{$breakpoint-xs} {
         position: relative;
         height: 53em;
-
-        .home-hero-img{
-            height: 34em;
-
-            img {
-                height: 100%;
-                object-fit: cover;
-            }
-        }
     }
     @media #{$breakpoint-sm}{
         position: relative;
         height: 40em;
     }
-
     @media #{$breakpoint-min-md} {
         display: grid;
         grid-template-columns: minmax(4em, 5em) [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] minmax(4em, 5em);
         margin-top: 3em;
-    }
-
-    @media #{$breakpoint-min-md} {
         .home-hero-text{
             grid-column: text-start / text-end;
             grid-row: 1 / 2;
             z-index: 99;
             margin: auto 0;
-
+    
             p {
                 display: flex;
                 text-transform: uppercase;
@@ -46,37 +33,32 @@
                 justify-content: center;
                 align-items: center;
                 letter-spacing: .2em;
+                @media #{$breakpoint-min-md} {
+                    height: 70px;
+                }
             }
             .logo-font {
                 font-size: .9em;
                 font-weight: 700;
             }
+    
         }
         .home-hero-img{
             grid-column: img-start / img-end;
             grid-row: 1 / 2;
             height: 21em;
-
+    
             img {
                 height: 100%;
                 object-fit: cover;
             }
         }
-    }
 
+    }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
         grid-template-columns: auto [text-start] minmax(7em, 8em) [img-start] minmax(7em, 10em) [text-end] minmax(7em, 10em) [img-end] auto;
     }
-}
-
-.home-hero-img{
-    // position: relative;
-    // left: -50%;
-    img{
-        width: 100%;
-    }
-    
 }
 
 .home-hero-text{
@@ -110,6 +92,17 @@
     
     }
 }
+
+.home-hero-img{
+    height: 34em;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 
 // ---------------------------------------------------------------
 // Home coaching section
@@ -152,12 +145,15 @@
         .coaching-free{
             grid-template-rows: 15em 17em;
             @media #{$breakpoint-lg} {
-                    grid-template-rows: 15em 15em;
-                }
+                grid-template-rows: 15em 15em;
+            }
             @media #{$breakpoint-xl} {
-                    grid-template-rows: 15em 14.8em;
-                }
+                grid-template-rows: 12em 12em;
+            }
         }
+    }
+    @media #{$breakpoint-xl} {
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
     }  
 }
 
@@ -200,8 +196,8 @@
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 540px;
-        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+        height: 610px;
+        grid-template-columns: 6em 15em repeat(2, 1fr) 6em;
         grid-template-rows:repeat(3, 1fr);
         .home-about-title{
             grid-column: 3/5;
@@ -226,16 +222,17 @@
         }
     }
     @media #{$breakpoint-lg} {
-        grid-template-columns: 5em 17em repeat(2, 1fr) 5em;
+        grid-template-columns: 7em 15em repeat(2, 1fr) 7em;
+        height: 550px;
     }
     @media #{$breakpoint-xl} {
-        grid-template-columns: 6em 18em repeat(2, 1fr) 6em;
-        height: 580px;
+        grid-template-columns:  8em 15em repeat(2, 1fr) 8em;
+        height: 540px;
     }
 }
 
 .home-about-title{
-    margin: 2em auto 0 auto;
+    margin: 1em auto 0 auto;
     text-align: center;
 }
 
