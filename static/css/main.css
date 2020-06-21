@@ -380,6 +380,12 @@ template {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .logo-2 {
+    font-size: 2.7em;
+  }
+}
+
 .logo-sect {
   font-family: "Roboto", serif;
   text-transform: uppercase;
@@ -459,7 +465,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .normal-text {
-    font-size: .56em;
+    font-size: .58em;
   }
 }
 
@@ -1101,8 +1107,8 @@ body {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 12em;
-        grid-template-rows: 12em 12em;
+    -ms-grid-rows: 12em 13.5em;
+        grid-template-rows: 12em 13.5em;
   }
 }
 
@@ -1139,6 +1145,7 @@ body {
 .home-about {
   background-color: #f0f3f3;
   margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -1209,9 +1216,9 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .home-about {
-    -ms-grid-columns: 8em 15em (1fr)[2] 8em;
-        grid-template-columns: 8em 15em repeat(2, 1fr) 8em;
-    height: 540px;
+    -ms-grid-columns: 11em 12em (13em)[2] 11em;
+        grid-template-columns: 11em 12em repeat(2, 13em) 11em;
+    height: 560px;
   }
 }
 
@@ -1225,7 +1232,7 @@ body {
   margin: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 90%;
+  height: 85%;
   background-color: white;
   padding: 20px;
 }

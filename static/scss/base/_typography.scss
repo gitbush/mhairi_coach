@@ -36,6 +36,9 @@ $fw-bold: 700;
   @media #{$breakpoint-lg} {
     font-size: 2.7em;
   }
+  @media #{$breakpoint-xl} {
+    font-size: 2.7em;
+  }
 }
 
 .logo-sect{
@@ -92,7 +95,7 @@ $fw-bold: 700;
     font-size: .69em;
   }
   @media #{$breakpoint-xl} {
-    font-size: .56em;
+    font-size: .58em;
   }
   
 }
