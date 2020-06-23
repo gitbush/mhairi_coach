@@ -395,7 +395,32 @@ template {
 .logo-subtitle {
   font-family: "Roboto", serif;
   text-transform: uppercase;
-  font-size: .7em;
+  letter-spacing: .2em;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .logo-subtitle {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-subtitle {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo-subtitle {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-subtitle {
+    font-size: .6em;
+  }
 }
 
 .sect-title {
@@ -447,7 +472,7 @@ template {
 }
 
 .normal-text {
-  font-size: 1.2em;
+  font-size: 1.01em;
   color: #3b403f;
 }
 
@@ -459,7 +484,7 @@ template {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .normal-text {
-    font-size: .75em;
+    font-size: .69em;
   }
 }
 
@@ -606,7 +631,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 105px;
+    height: 125px;
   }
 }
 
@@ -618,7 +643,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   #header {
-    height: 165px;
+    height: 150px;
   }
 }
 
@@ -634,7 +659,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 105px;
+  height: 115px;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -731,6 +756,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .nav-toggle {
+    top: 1rem;
+    width: 2rem;
+  }
+}
+
 .nav-toggle:hover {
   opacity: 0.8;
 }
@@ -749,9 +781,15 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
     height: 0.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+    height: 0.06rem;
   }
 }
 
@@ -763,9 +801,15 @@ body {
   margin-top: 0.5rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav-toggle .nav-toggle-bar::after {
     margin-top: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.3rem;
   }
 }
 
@@ -773,9 +817,15 @@ body {
   margin-top: -0.5rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav-toggle .nav-toggle-bar::before {
     margin-top: -0.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.3rem;
   }
 }
 
@@ -811,7 +861,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: .7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -905,7 +955,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .btn-light-pink {
-    font-size: .9em;
+    font-size: .8em;
   }
 }
 
@@ -931,7 +981,7 @@ body {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     position: relative;
-    height: 40em;
+    height: 52em;
   }
 }
 
@@ -939,7 +989,7 @@ body {
   .home-hero {
     display: -ms-grid;
     display: grid;
-    margin-top: 3em;
+    margin-top: 2em;
   }
   .home-hero .home-hero-text {
     z-index: 99;
@@ -951,6 +1001,7 @@ body {
     display: flex;
     text-transform: uppercase;
     background-color: #fbf2ec;
+    letter-spacing: .3em;
     width: auto;
     height: 50px;
     -webkit-box-pack: center;
@@ -986,8 +1037,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 8em) auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 9em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 9em) auto;
   }
   .home-hero .home-hero-text {
     -ms-grid-column: 2;
@@ -1034,15 +1085,25 @@ body {
             align-items: center;
     letter-spacing: .2em;
   }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
+  .home-hero-text p {
+    letter-spacing: .2em;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text .logo-font {
-    font-size: .9em;
+    font-size: .7em;
     font-weight: 700;
   }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
-    top: 12em;
+    top: 17em;
     width: 16em;
   }
 }
@@ -1083,16 +1144,16 @@ body {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 25em 28em;
-      grid-template-rows: 25em 28em;
+  -ms-grid-rows: 21em 23.5em;
+      grid-template-rows: 21em 23.5em;
   height: 100%;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 25em 21em;
-        grid-template-rows: 25em 21em;
+    -ms-grid-rows: 16em 20em;
+        grid-template-rows: 16em 20em;
   }
 }
 
@@ -1110,16 +1171,16 @@ body {
   }
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 15em 17em;
-        grid-template-rows: 15em 17em;
+    -ms-grid-rows: 12em 15em;
+        grid-template-rows: 12em 15em;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 15em 15em;
-        grid-template-rows: 15em 15em;
+    -ms-grid-rows: 13em 14em;
+        grid-template-rows: 13em 14em;
   }
 }
 
@@ -1168,8 +1229,8 @@ body {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em minmax(auto, 41em) 7em;
-      grid-template-rows: auto 32em minmax(auto, 41em) 7em;
+  -ms-grid-rows: auto 32em minmax(auto, 34em) 7em;
+      grid-template-rows: auto 32em minmax(auto, 34em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1244,6 +1305,7 @@ body {
 .home-about-title {
   margin: auto auto 0 auto;
   text-align: center;
+  padding-top: 3em;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1306,6 +1368,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote-parallax-window {
+    min-height: 20em;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote-parallax-window {
     min-height: 400px;
@@ -1353,23 +1421,23 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quote {
-    height: 10em;
+    height: 9em;
     width: 31em;
     padding: 1em;
   }
   .quote .quote-text {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote {
-    height: 10em;
+    height: 9em;
     width: 31em;
     padding: 1em;
   }
   .quote .quote-text {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -1428,14 +1496,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 17em;
-  width: 24em;
+  height: 19em;
+  width: 21em;
   margin: auto;
   background: white;
 }
 
 .home-cta-window .normal-text {
-  padding: .3em;
+  padding: .8em;
   font-size: 1.2em;
 }
 
@@ -1459,7 +1527,7 @@ body {
     padding: 0 .8em;
   }
   .home-cta-window .normal-text {
-    font-size: .85em;
+    font-size: .8em;
   }
 }
 
@@ -1524,10 +1592,16 @@ body {
 }
 
 .testimonial-parallax-window {
-  min-height: 480px;
+  min-height: 26em;
   background: transparent;
   position: relative;
   text-align: center;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-parallax-window {
+    min-height: 22em;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1551,7 +1625,7 @@ body {
 .testimonial-parallax {
   text-align: center;
   width: 23em;
-  height: 25em;
+  height: 20em;
   margin: auto;
   position: absolute;
   top: 0;
@@ -1563,14 +1637,14 @@ body {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .testimonial-parallax {
     width: 29em;
-    height: 20em;
+    height: 15em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-parallax {
     width: 29em;
-    height: 13em;
+    height: 12em;
   }
 }
 
@@ -1582,18 +1656,18 @@ body {
 }
 
 .testimonial-parallax .quote-text-dark {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .testimonial-parallax .quote-text-dark {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-parallax .quote-text-dark {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
@@ -1610,7 +1684,7 @@ body {
 }
 
 .love-hearts {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #bac5ca;
 }
 

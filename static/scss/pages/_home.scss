@@ -12,11 +12,11 @@
     }
     @media #{$breakpoint-sm}{
         position: relative;
-        height: 40em;
+        height: 52em;
     }
     @media #{$breakpoint-min-md} {
         display: grid;
-        margin-top: 3em;
+        margin-top: 2em;
         .home-hero-text{
             z-index: 99;
             margin: auto 0;
@@ -25,6 +25,7 @@
                 display: flex;
                 text-transform: uppercase;
                 background-color: $light-pink;
+                letter-spacing: .3em;
                 width: auto;
                 height: 50px;
                 justify-content: center;
@@ -52,7 +53,7 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 9em) auto;
         .home-hero-text{
             grid-column: 2 / 4;
             grid-row: 1 / 2;
@@ -83,13 +84,17 @@
             justify-content: center;
             align-items: center;
             letter-spacing: .2em;
+            @media #{$breakpoint-sm}{
+                letter-spacing: .2em;
+                font-size: 1.1em;
+            }
         }
         .logo-font {
-            font-size: .9em;
+            font-size: .7em;
             font-weight: 700;
         }
         @media #{$breakpoint-sm}{
-            top: 12em;
+            top: 17em;
             width: 16em;
         }
     
@@ -127,10 +132,10 @@
     .coaching-1-1,
     .coaching-free{
         display: grid;
-        grid-template-rows: 25em 28em;
+        grid-template-rows: 21em 23.5em;
         height: 100%;
         @media #{$breakpoint-sm}{
-            grid-template-rows: 25em 21em;
+            grid-template-rows: 16em 20em;
         }
     }
     
@@ -146,9 +151,9 @@
         }
         .coaching-1-1,
         .coaching-free{
-            grid-template-rows: 15em 17em;
+            grid-template-rows: 12em 15em;
             @media #{$breakpoint-lg} {
-                grid-template-rows: 15em 15em;
+                grid-template-rows: 13em 14em;
             }
             @media #{$breakpoint-xl} {
                 grid-template-rows: 12em 13.5em;
@@ -193,7 +198,7 @@
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 32em minmax(auto, 41em) 7em;
+    grid-template-rows: auto 32em minmax(auto, 34em) 7em;
 
     @media #{$breakpoint-sm} {
         grid-template-rows: auto 36em minmax(auto, 24em) 4em;
@@ -238,6 +243,7 @@
 .home-about-title{
     margin: auto auto 0 auto;
     text-align: center;
+    padding-top: 3em;
     @media #{$breakpoint-md}, #{$breakpoint-lg} {
         margin: 2em auto 0 auto;
     }
@@ -289,6 +295,9 @@
         padding: .8em;
         margin: 0;
     } 
+    @media #{$breakpoint-md} {
+        min-height: 20em;
+    }
     @media #{$breakpoint-lg} {
         min-height: 400px;
     }
@@ -324,19 +333,19 @@
         }
     }
     @media #{$breakpoint-md} {
-        height: 10em;
+        height: 9em;
+        width: 31em;
+        padding: 1em;
+        .quote-text{
+            font-size: 1.3em;
+        }
+    }
+    @media #{$breakpoint-lg} {
+        height: 9em;
         width: 31em;
         padding: 1em;
         .quote-text{
             font-size: 1.4em;
-        }
-    }
-    @media #{$breakpoint-lg} {
-        height: 10em;
-        width: 31em;
-        padding: 1em;
-        .quote-text{
-            font-size: 1.6em;
         }
         .quote-author{
             font-size: .6em;
@@ -388,13 +397,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 17em;
-    width: 24em;
+    height: 19em;
+    width: 21em;
     margin: auto;
     background: white;
 
     .normal-text{
-        padding: .3em;
+        padding: .8em;
         font-size: 1.2em;
     }
     @media #{$breakpoint-sm} {
@@ -412,7 +421,7 @@
         height: 12em;
         padding: 0 .8em;
         .normal-text{
-            font-size: .85em;
+            font-size: .8em;
         }
     }
     @media #{$breakpoint-lg} {
@@ -465,10 +474,13 @@
 // ---------------------------------------------------------------
 
 .testimonial-parallax-window{
-    min-height: 480px;
+    min-height: 26em;
     background: transparent;
     position: relative;
     text-align: center;
+    @media #{$breakpoint-sm}{
+        min-height: 22em;
+    }
     @media #{$breakpoint-md}{
         min-height: 15em;
     }
@@ -483,7 +495,7 @@
 .testimonial-parallax{
     text-align: center;
     width: 23em;
-    height: 25em;
+    height: 20em;
     margin: auto;
     position: absolute;
     top: 0;
@@ -493,23 +505,23 @@
 
     @media #{$breakpoint-sm}{
         width: 29em;
-        height: 20em;
+        height: 15em;
     }
     @media #{$breakpoint-md}{
         width: 29em;
-        height: 13em;
+        height: 12em;
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
         width: 32em;
         height: 8em;
     }
     .quote-text-dark{
-        font-size: 1.8em;
+        font-size: 1.5em;
         @media #{$breakpoint-sm}{
-            font-size: 1.8em;
+            font-size: 1.6em;
         }
         @media #{$breakpoint-md}{
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         @media #{$breakpoint-lg}{
             font-size: 1.3em;
@@ -521,7 +533,7 @@
 }
 
 .love-hearts{
-    font-size: 2em;
+    font-size: 1.8em;
     color: rgba(186,197,202,1);
     @media #{$breakpoint-md}{
         font-size: 1.3em;

@@ -47,7 +47,20 @@ $fw-bold: 700;
 .logo-subtitle{
   font-family: $font-roboto;
   text-transform: uppercase;
-  font-size: .7em;
+  letter-spacing: .2em;
+  font-size: 1.1em;
+  @media #{$breakpoint-sm} {
+    font-size: .9em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: .7em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: .6em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: .6em;
+  }
 }
 .sect-title{
   font-family: $font-roboto;
@@ -86,13 +99,13 @@ $fw-bold: 700;
 }
 
 .normal-text{
-  font-size: 1.2em;
+  font-size: 1.01em;
   color: $base-text-color;
   @media #{$breakpoint-sm} {
     font-size: 1em;
   }
   @media #{$breakpoint-md} {
-    font-size: .75em;
+    font-size: .69em;
   }
   @media #{$breakpoint-lg} {
     font-size: .69em;

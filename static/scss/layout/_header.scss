@@ -18,13 +18,13 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        height: 105px;
+        height: 125px;
     }
     @media #{$breakpoint-lg}{
         height: 130px;
     }
     @media #{$breakpoint-xl}{
-        height: 165px;
+        height: 150px;
     }
 
 }
@@ -35,7 +35,7 @@
     align-items: center;
     justify-content: center;
     position: relative; 
-    height: 105px;
+    height: 115px;
     @media #{$breakpoint-sm}{
         height: 10em;
         

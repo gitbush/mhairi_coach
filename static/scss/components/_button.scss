@@ -12,7 +12,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: .7em;
     @media #{$breakpoint-sm} {
         height: 30px;
     }
@@ -78,7 +78,7 @@
         font-size: 1em;
     }
     @media #{$breakpoint-md} {
-        font-size: .9em;
+        font-size: .8em;
     }
     @media #{$breakpoint-lg} {
         font-size: .8em;

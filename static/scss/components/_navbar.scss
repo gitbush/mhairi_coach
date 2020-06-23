@@ -77,6 +77,10 @@ $nav-toggle-z-index: 2;
   @media #{$breakpoint-xs}{
     top: 1rem;
   }
+  @media #{$breakpoint-xl}{
+    top: 1rem;
+    width: 2rem;
+  }
 }
 
 .nav-toggle:hover { opacity: 0.8; }
@@ -97,8 +101,11 @@ $nav-toggle-z-index: 2;
   content: '';
   height: 0.1rem;
   width: 100%;
-  @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+  @media #{$breakpoint-lg}{
     height: 0.1rem;
+  }
+  @media #{$breakpoint-xl}{
+    height: 0.06rem;
   }
 }
 
@@ -106,16 +113,22 @@ $nav-toggle-z-index: 2;
 
 .nav-toggle .nav-toggle-bar::after { 
   margin-top: 0.5rem; 
-  @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+  @media #{$breakpoint-md}, #{$breakpoint-lg}{
     margin-top: 0.4rem;
+  }
+  @media #{$breakpoint-xl}{
+    margin-top: 0.3rem;
   }
 
 }
 
 .nav-toggle .nav-toggle-bar::before { 
   margin-top: -0.5rem; 
-  @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+  @media #{$breakpoint-md}, #{$breakpoint-lg}{
     margin-top: -0.4rem;
+  }
+  @media #{$breakpoint-xl}{
+    margin-top: -0.3rem;
   }
 }
 
