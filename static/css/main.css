@@ -514,6 +514,11 @@ template {
   line-height: 1.2;
 }
 
+.to-top-text {
+  font-size: 1.05rem;
+  font-family: "Cabin", serif;
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -692,7 +697,8 @@ body {
 }
 
 .instagram-footer {
-  height: 10em;
+  position: relative;
+  height: 14em;
   background-color: #f0f3f3;
   text-align: center;
   text-transform: uppercase;
@@ -703,6 +709,18 @@ footer {
   background-color: #fadcd2;
   text-align: center;
   text-transform: uppercase;
+}
+
+.to-top {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
+
+.fa-long-arrow-alt-up {
+  padding-bottom: .3em;
+  font-size: 3.1em;
 }
 
 .nav {

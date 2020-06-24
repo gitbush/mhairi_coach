@@ -4,7 +4,8 @@
 
 
 .instagram-footer{
-    height: 10em;
+    position: relative;
+    height: 14em;
     background-color: $gray;
     text-align: center;
     text-transform: uppercase;
@@ -15,4 +16,16 @@ footer{
     background-color: $dark-pink;
     text-align: center;
     text-transform: uppercase;
+}
+
+.to-top{
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+}
+
+.fa-long-arrow-alt-up{
+    padding-bottom: .3em;
+    font-size: 3.1em;
 }
