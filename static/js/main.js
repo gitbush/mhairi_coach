@@ -1,3 +1,4 @@
+// toggle
 (function() {
 
   var hamburger = {
