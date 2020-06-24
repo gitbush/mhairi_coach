@@ -302,7 +302,7 @@
         min-height: 400px;
     }
     @media #{$breakpoint-xl} {
-        min-height: 400px;
+        min-height: 23em;
     }
 }
 
@@ -352,9 +352,9 @@
         }
     }
     @media #{$breakpoint-xl} {
-        height: 7em;
-        width: 27em;
-        padding: .6em;
+        height: 10em;
+        width: 25em;
+        padding: 2.2em 0;
         .quote-text{
             font-size: 1em;
             padding: 0 2em;
@@ -474,28 +474,28 @@
 // ---------------------------------------------------------------
 
 .testimonial-parallax-window{
-    min-height: 26em;
+    min-height: 23em;
     background: transparent;
     position: relative;
     text-align: center;
     @media #{$breakpoint-sm}{
-        min-height: 22em;
+        min-height: 16em;
     }
     @media #{$breakpoint-md}{
         min-height: 15em;
     }
     @media #{$breakpoint-lg}{
-        min-height: 13em;
+        min-height: 12em;
     }
     @media #{$breakpoint-xl}{
-        min-height: 11em;
+        min-height: 10em;
     }
 }
 
 .testimonial-parallax{
     text-align: center;
     width: 23em;
-    height: 20em;
+    height: 16em;
     margin: auto;
     position: absolute;
     top: 0;
@@ -505,26 +505,26 @@
 
     @media #{$breakpoint-sm}{
         width: 29em;
-        height: 15em;
+        height: 11em;
     }
     @media #{$breakpoint-md}{
         width: 29em;
-        height: 12em;
+        height: 9em;
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
         width: 32em;
-        height: 8em;
+        height: 7em;
     }
     .quote-text-dark{
         font-size: 1.5em;
         @media #{$breakpoint-sm}{
-            font-size: 1.6em;
+            font-size: 1.3em;
         }
         @media #{$breakpoint-md}{
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
         @media #{$breakpoint-lg}{
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
         @media #{$breakpoint-xl}{
             font-size: 1em;

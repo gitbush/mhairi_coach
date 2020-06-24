@@ -99,7 +99,7 @@ $fw-bold: 700;
 }
 
 .normal-text{
-  font-size: 1.01em;
+  font-size: 1.05em;
   color: $base-text-color;
   @media #{$breakpoint-sm} {
     font-size: 1em;
@@ -127,4 +127,5 @@ $fw-bold: 700;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .3em;
+  line-height: 1.2;
 }
