@@ -345,17 +345,22 @@ template {
 /**
  * Basic typography style for copy text
  */
+@font-face {
+  font-family: 'alaskan';
+  src: url("../fonts/Alaskan_malamute.ttf") format("truetype");
+}
+
 .fw-n {
   font-weight: 400 !important;
 }
 
 .logo-font {
-  font-family: "Parisienne", serif;
+  font-family: "alaskan", serif;
   letter-spacing: .2em;
 }
 
 .logo-1 {
-  font-family: "Parisienne", serif;
+  font-family: "alaskan", serif;
   line-height: 1.1;
   font-size: 3.6em;
   margin: 0;
@@ -368,7 +373,7 @@ template {
 }
 
 .logo-2 {
-  font-family: "Parisienne", serif;
+  font-family: "alaskan", serif;
   line-height: 1.1;
   font-size: 3em;
   margin: 10px 0;
@@ -1441,7 +1446,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-window {
-    min-height: 23em;
+    min-height: 17em;
   }
 }
 

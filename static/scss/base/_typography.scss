@@ -2,8 +2,13 @@
  * Basic typography style for copy text
  */
  @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Parisienne&family=Roboto&display=swap");
+ @font-face {
+  font-family: 'alaskan';
+  src: url('../fonts/Alaskan_malamute.ttf') format('truetype');
+}
 
-$font-parisienne: 'Parisienne', serif;
+
+$font-parisienne: 'alaskan', serif;
 $font-roboto: 'Roboto', serif;
 $font-cabin: 'Cabin', serif;
 
