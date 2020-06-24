@@ -5,7 +5,7 @@
 
 #header{
     text-align:left;
-    margin-left: 1.5em;
+    // margin-left: 1.5em;
     height: 50px;
     @media #{$breakpoint-sm}{
         height: 50px;
@@ -35,11 +35,28 @@
     align-items: center;
     justify-content: center;
     position: relative; 
-    height: 115px;
+    height: 11em;
     @media #{$breakpoint-sm}{
-        height: 10em;
+        height: 13em;
         
     }
+}
+
+.header-name{
+    font-family: $font-roboto;
+    color: rgba(59,64,63,1);
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 0.2em;
+    font-size: 1.6em;
+    margin: 15px 0 8px 15px;
+    font-weight: 400;
+    font-style: normal;
+    @media #{$breakpoint-sm}{
+        margin: 10px 0 5px 15px;
+        
+    }
+
 }
 .header-xs-logo{
     text-align: center;

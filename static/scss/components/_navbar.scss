@@ -63,6 +63,15 @@ $nav-toggle-z-index: 2;
   font-variant: small-caps;
 }
 
+.toggle-header{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: $gray;
+  z-index: 99;
+  text-align: initial;
+}
+
 .nav-toggle {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -71,11 +80,11 @@ $nav-toggle-z-index: 2;
   height: 2rem;
   right: 2rem;
   position: fixed;
-  top: 2rem;
+  top: .8rem;
   width: 2.4rem;
   z-index: 2;
-  @media #{$breakpoint-xs}{
-    top: 1rem;
+  @media #{$breakpoint-sm}{
+    top: .6rem;
   }
   @media #{$breakpoint-xl}{
     top: 1rem;

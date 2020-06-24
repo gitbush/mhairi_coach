@@ -605,7 +605,6 @@ body {
 
 #header {
   text-align: left;
-  margin-left: 1.5em;
   height: 50px;
 }
 
@@ -660,12 +659,30 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 115px;
+  height: 11em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .logo-xs-container {
-    height: 10em;
+    height: 13em;
+  }
+}
+
+.header-name {
+  font-family: "Roboto", serif;
+  color: #3b403f;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 0.2em;
+  font-size: 1.6em;
+  margin: 15px 0 8px 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .header-name {
+    margin: 10px 0 5px 15px;
   }
 }
 
@@ -751,6 +768,15 @@ footer {
   font-variant: small-caps;
 }
 
+.toggle-header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #f0f3f3;
+  z-index: 99;
+  text-align: initial;
+}
+
 .nav-toggle {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -760,14 +786,14 @@ footer {
   height: 2rem;
   right: 2rem;
   position: fixed;
-  top: 2rem;
+  top: .8rem;
   width: 2.4rem;
   z-index: 2;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav-toggle {
-    top: 1rem;
+    top: .6rem;
   }
 }
 
