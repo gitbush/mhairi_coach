@@ -16,7 +16,11 @@ $font-cabin: 'Cabin', serif;
   font-weight:400 !important;
 }
 
-$fw-bold: 700;
+.fw-b{
+  font-weight: 700;
+}
+
+
 
 .logo-font{
   font-family: $font-parisienne;
@@ -113,7 +117,7 @@ $fw-bold: 700;
     font-size: 1em;
   }
   @media #{$breakpoint-md} {
-    font-size: .69em;
+    font-size: .78em;
   }
   @media #{$breakpoint-lg} {
     font-size: .69em;
