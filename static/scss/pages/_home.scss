@@ -53,7 +53,7 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 9em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
         .home-hero-text{
             grid-column: 2 / 4;
             grid-row: 1 / 2;
@@ -155,7 +155,10 @@
                 grid-template-rows: 13em 14em;
             }
             @media #{$breakpoint-xl} {
-                grid-template-rows: 12em 13.5em;
+                grid-template-rows: 12em 12.5em;
+            }
+            @media #{$breakpoint-xxl} {
+                grid-template-rows: 12em 12em;
             }
         }
     }

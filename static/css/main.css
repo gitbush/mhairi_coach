@@ -532,6 +532,12 @@ template {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .normal-text {
+    font-size: .55em;
+  }
+}
+
 .quote-text {
   color: #f58c7c;
   text-transform: uppercase;
@@ -1143,8 +1149,8 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .home-hero {
-    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 9em) auto;
-        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 9em) auto;
+    -ms-grid-columns: auto minmax(7em, 10em) (minmax(3em, 5em))[2] minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 10em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
   }
   .home-hero .home-hero-text {
     -ms-grid-column: 2;
@@ -1293,8 +1299,16 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 13.5em;
-        grid-template-rows: 12em 13.5em;
+    -ms-grid-rows: 12em 12.5em;
+        grid-template-rows: 12em 12.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1600px) {
+  .home-coaching .coaching-1-1,
+  .home-coaching .coaching-free {
+    -ms-grid-rows: 12em 12em;
+        grid-template-rows: 12em 12em;
   }
 }
 
@@ -2100,54 +2114,55 @@ footer {
 }
 
 .about-detail-title {
-  font-size: 2.1em;
+  font-size: 1.95em;
+  width: 13.4em;
   font-weight: 400;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .about-detail-title {
-    width: 80vw;
-    font-size: 1.8em;
+    width: 16em;
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-title {
-    width: 55vw;
-    font-size: 1.5em;
+    width: 23em;
+    font-size: 1.4em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-detail-title {
-    width: 55vw;
-    font-size: 1.4em;
+    width: 23em;
+    font-size: 1.35em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about-detail-title {
-    width: 55vw;
-    font-size: 1.2em;
+    width: 23em;
+    font-size: 1.15em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .about-detail-title {
-    width: 40vw;
-    font-size: 1.05em;
+    width: 22em;
+    font-size: 1em;
   }
 }
 
 .about-detail-subtitle {
-  font-size: 1.4em;
+  font-size: 1.35em;
   margin: 0.7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .about-detail-subtitle {
-    width: 85vw;
-    font-size: 1.2em;
+    width: 24em;
+    font-size: 1.1em;
   }
 }
 
@@ -2160,36 +2175,45 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-detail-subtitle {
-    width: 55vw;
+    width: 27em;
     font-size: .95em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about-detail-subtitle {
-    width: 50vw;
-    font-size: .9em;
+    width: 27em;
+    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .about-detail-subtitle {
-    width: 45vw;
-    font-size: .75em;
+    width: 25em;
+    font-size: .7em;
   }
 }
 
 .about-detail-content {
   text-align: start;
-  width: 85vw;
+  width: 24em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-detail-content {
+    width: 27em;
+  }
+  .about-detail-content .normal-text {
+    font-size: .9em;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto (1fr)[2] auto;
-        grid-template-columns: auto repeat(2, 1fr) auto;
+    -ms-grid-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
   }
   .about-detail-content .normal-text:nth-child(1) {
     -ms-grid-column: 2;
@@ -2197,9 +2221,9 @@ footer {
     grid-column: 2/3;
   }
   .about-detail-content .normal-text:nth-child(2) {
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
-    grid-column: 3/4;
+    grid-column: 4/5;
   }
 }
 
@@ -2207,8 +2231,8 @@ footer {
   .about-detail-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 3em (1fr)[2] 3em;
-        grid-template-columns: 3em repeat(2, 1fr) 3em;
+    -ms-grid-columns: auto 13em 4em 13em auto;
+        grid-template-columns: auto 13em 4em 13em auto;
   }
   .about-detail-content .normal-text:nth-child(1) {
     -ms-grid-column: 2;
@@ -2216,9 +2240,9 @@ footer {
     grid-column: 2/3;
   }
   .about-detail-content .normal-text:nth-child(2) {
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
-    grid-column: 3/4;
+    grid-column: 4/5;
   }
 }
 
@@ -2226,11 +2250,11 @@ footer {
   .about-detail-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 3em (1fr)[2] 3em;
-        grid-template-columns: 3em repeat(2, 1fr) 3em;
+    -ms-grid-columns: auto 13em 4em 13em auto;
+        grid-template-columns: auto 13em 4em 13em auto;
   }
   .about-detail-content .normal-text {
-    font-size: .7em;
+    font-size: .65em;
   }
   .about-detail-content .normal-text:nth-child(1) {
     -ms-grid-column: 2;
@@ -2238,9 +2262,9 @@ footer {
     grid-column: 2/3;
   }
   .about-detail-content .normal-text:nth-child(2) {
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
-    grid-column: 3/4;
+    grid-column: 4/5;
   }
 }
 
@@ -2252,7 +2276,7 @@ footer {
         grid-template-columns: auto 13em 4em 13em auto;
   }
   .about-detail-content .normal-text {
-    font-size: .6em;
+    font-size: .55em;
   }
   .about-detail-content .normal-text:nth-child(1) {
     -ms-grid-column: 2;
@@ -2268,18 +2292,21 @@ footer {
 
 .about-detail-quote {
   margin: 3em 0;
+  width: 23em;
   font-style: italic;
+  font-size: 1.1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .about-detail-quote {
-    width: 75vw;
+    width: 27em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-quote {
-    width: 70vw;
+    width: 30em;
+    font-size: .9em;
   }
 }
 
