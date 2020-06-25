@@ -615,6 +615,7 @@ body {
 
 #header {
   text-align: left;
+  width: 100vw;
   height: 50px;
 }
 
@@ -693,6 +694,12 @@ body {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .header-name {
     margin: 10px 0 5px 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-name {
+    display: none;
   }
 }
 
@@ -794,10 +801,18 @@ footer {
 .toggle-header {
   position: fixed;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-color: #f0f3f3;
+  top: 0;
+  bottom: 0;
   z-index: 99;
   text-align: initial;
+}
+
+@media only screen and (min-width: 768px) {
+  .toggle-header {
+    background-color: transparent;
+  }
 }
 
 .nav-toggle {
@@ -808,7 +823,7 @@ footer {
   cursor: pointer;
   height: 2rem;
   right: 2rem;
-  position: fixed;
+  position: absolute;
   top: .8rem;
   width: 2.4rem;
   z-index: 2;
@@ -1187,7 +1202,7 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2 auto);
+      grid-template-rows: repeat(2, auto);
   -ms-grid-columns: 65vw;
       grid-template-columns: 65vw;
   grid-row-gap: 3em;

@@ -5,7 +5,7 @@
 
 #header{
     text-align:left;
-    // margin-left: 1.5em;
+    width: 100vw;
     height: 50px;
     @media #{$breakpoint-sm}{
         height: 50px;
@@ -53,8 +53,10 @@
     font-weight: 400;
     font-style: normal;
     @media #{$breakpoint-sm}{
-        margin: 10px 0 5px 15px;
-        
+        margin: 10px 0 5px 15px; 
+    }
+    @media #{$breakpoint-min-md}{
+        display: none; 
     }
 
 }
