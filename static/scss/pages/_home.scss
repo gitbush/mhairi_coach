@@ -472,11 +472,16 @@
 // Home testimonials section
 // ---------------------------------------------------------------
 
+.testimonial-container{
+    position: relative;
+}
+
 .testimonial-parallax-window{
     min-height: 23em;
     background: transparent;
     position: relative;
     text-align: center;
+    opacity: 0.5;
     @media #{$breakpoint-sm}{
         min-height: 16em;
     }

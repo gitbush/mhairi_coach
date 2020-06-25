@@ -1655,11 +1655,16 @@ footer {
   }
 }
 
+.testimonial-container {
+  position: relative;
+}
+
 .testimonial-parallax-window {
   min-height: 23em;
   background: transparent;
   position: relative;
   text-align: center;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
