@@ -217,7 +217,7 @@
             grid-column: 2/3;
             grid-row: 1/5;
         }
-        .about-text{
+        .home-about-text{
             grid-column: 3/5;
             grid-row: 2/3;
             text-align: start;
@@ -272,7 +272,7 @@
     }
 }
 
-.about-text{
+.home-about-text{
     padding: 0 2.5em;
     margin: auto;
     @media #{$breakpoint-sm} {

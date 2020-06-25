@@ -36,7 +36,7 @@ $fw-bold: 700;
 .logo-2{
   font-family: $font-parisienne;
   line-height: 1.1;
-  font-size: 3em;
+  font-size: 3.5em;
   margin: 10px 0;
   @media #{$breakpoint-md} {
     font-size: 2.3em;
@@ -46,6 +46,9 @@ $fw-bold: 700;
   }
   @media #{$breakpoint-xl} {
     font-size: 2.7em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 2.3em;
   }
 }
 

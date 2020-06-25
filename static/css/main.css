@@ -375,7 +375,7 @@ template {
 .logo-2 {
   font-family: "alaskan", serif;
   line-height: 1.1;
-  font-size: 3em;
+  font-size: 3.5em;
   margin: 10px 0;
 }
 
@@ -394,6 +394,12 @@ template {
 @media only screen and (min-width: 1200px) {
   .logo-2 {
     font-size: 2.7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .logo-2 {
+    font-size: 2.3em;
   }
 }
 
@@ -1345,7 +1351,7 @@ footer {
     -ms-grid-row-span: 4;
     grid-row: 1/5;
   }
-  .home-about .about-text {
+  .home-about .home-about-text {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3/5;
@@ -1424,13 +1430,13 @@ footer {
   height: 100%;
 }
 
-.about-text {
+.home-about-text {
   padding: 0 2.5em;
   margin: auto;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .about-text {
+  .home-about-text {
     padding: 0 5.5em;
   }
 }
@@ -1787,6 +1793,278 @@ footer {
 @media only screen and (min-width: 1200px) {
   .love-hearts {
     font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto (14em)[2] 2em 17em auto;
+        grid-template-columns: auto repeat(2, 14em) 2em 17em auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto (13em)[2] 2em 17em auto;
+        grid-template-columns: auto repeat(2, 13em) 2em 17em auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto (14em)[2] 3em 16em auto;
+        grid-template-columns: auto repeat(2, 14em) 3em 16em auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto (12em)[2] 3em 14em auto;
+        grid-template-columns: auto repeat(2, 12em) 3em 14em auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+.about-hero-img {
+  text-align: center;
+  height: 28em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero-img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-hero-img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    height: 23em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero-img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-hero-img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    height: 18em;
+  }
+}
+
+.about-hero-img img {
+  width: 90vw;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero-img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-hero-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero-img img {
+    width: 100%;
+  }
+}
+
+.about-hero-text {
+  text-align: center;
+  margin: 3.5em 1.5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero-text {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-hero-text {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    margin: 0em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero-text {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    margin: 0em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+}
+
+.about-hero-content {
+  width: 22em;
+  margin: auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .about-hero-content {
+    width: 22em;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero-content {
+    width: 15em;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-hero-content {
+    width: 17em;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-hero-content {
+    width: 15em;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-hero-content {
+    width: 13em;
+    margin: auto;
+  }
+}
+
+.about-text {
+  letter-spacing: 0.2em;
+  margin: 1.4em 0 0 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-text {
+    font-size: .9em;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-text {
+    font-size: .9em;
+    margin: 0;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-text {
+    font-size: .9em;
+    margin: 0;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-text {
+    font-size: .6em;
+    margin: 0;
+    letter-spacing: 0.2em;
+  }
+}
+
+.about-title {
+  color: #bac5ca;
+  font-size: 2.5em;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-title {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-title {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-title {
+    font-size: 1.8em;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

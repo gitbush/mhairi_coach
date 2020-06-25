@@ -1,0 +1,168 @@
+// ---------------------------------------------------------------
+// About hero section
+// ---------------------------------------------------------------
+.about-hero{
+    @media #{$breakpoint-md} {
+        display: grid;
+        grid-template-columns: auto repeat(2, 14em) 2em 17em auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    @media #{$breakpoint-lg} {
+        display: grid;
+        grid-template-columns: auto repeat(2, 13em) 2em 17em auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    @media #{$breakpoint-xl} {
+        display: grid;
+        grid-template-columns: auto repeat(2, 14em) 3em 16em auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    @media #{$breakpoint-xxl} {
+        display: grid;
+        grid-template-columns: auto repeat(2, 12em) 3em 14em auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
+.about-hero-img{
+    text-align: center;
+    height: 28em;
+
+    @media #{$breakpoint-md} {
+        grid-column: 2/4;
+        height: 21em;
+    }
+    @media #{$breakpoint-lg} {
+        grid-column: 2/4;
+        height: 23em;
+    }
+    @media #{$breakpoint-xl} {
+        grid-column: 2/4;
+        height: 21em;
+    }
+    @media #{$breakpoint-xxl}{
+        grid-column: 2/4;
+        height: 18em;
+    }
+
+    img{
+        width: 90vw;
+        height: 100%;
+
+        @media #{$breakpoint-md} {
+            width: 90%;
+        }
+        @media #{$breakpoint-lg} {
+            width: 100%;
+        }
+        @media #{$breakpoint-xl} {
+            width: 100%;
+        }
+    }
+}
+
+.about-hero-text{
+    text-align: center;
+    margin: 3.5em 1.5em;
+    @media #{$breakpoint-md} {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-column: 4/5;
+        margin: 0;
+    }
+    @media #{$breakpoint-lg} {
+        grid-column: 5/6;
+        margin: 0em;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    @media #{$breakpoint-xl} {
+        grid-column: 5/6;
+        margin: 0em;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.about-hero-content{
+    width: 22em;
+    margin: auto;
+    @media #{$breakpoint-sm} {
+        width: 22em;
+        margin: auto;
+    }
+    @media #{$breakpoint-md} {
+        width: 15em;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg} {
+        width: 17em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xl} {
+        width: 15em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xxl} {
+        width: 13em;
+        margin: auto;
+    }
+}
+
+
+.about-text{
+    letter-spacing: 0.2em;
+    margin: 1.4em 0 0 0;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0;
+    @media #{$breakpoint-md} {
+        font-size: .9em;
+        letter-spacing: 0.2em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .9em;
+        margin: 0;
+        letter-spacing: 0.2em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .9em;
+        margin: 0;
+        letter-spacing: 0.2em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .6em;
+        margin: 0;
+        letter-spacing: 0.2em;
+    }
+}
+
+.about-title{
+    color: $light-gray;
+    font-size: 2.5em;
+    font-family: $font-roboto;
+    text-transform: uppercase;
+    @media #{$breakpoint-md} {
+        font-size: 2em;
+        margin: 0;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: 2em;
+        margin: 0;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: 2em;
+        margin: 0;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: 1.8em;
+        margin: 0;
+    }
+}
