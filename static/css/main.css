@@ -2196,10 +2196,15 @@ footer {
 
 .about-detail-content {
   text-align: start;
-  width: 24em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 500px) {
+  .about-detail-content {
+    width: 24em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .about-detail-content {
     width: 27em;
   }
@@ -2328,6 +2333,150 @@ footer {
   .about-detail-quote {
     width: 40vw;
     font-size: .6em;
+  }
+}
+
+.known-for {
+  width: 85%;
+  margin: 3em auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .known-for {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .known-for {
+    width: 85%;
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .known-for {
+    width: 75%;
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .known-for {
+    width: 70%;
+    margin: 2em auto 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .known-for {
+    width: 60%;
+    margin: 2em auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .known-for-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.known-for-title {
+  text-align: center;
+}
+
+.known-for-item {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7em 1fr;
+      grid-template-columns: 7em 1fr;
+  margin: 4em 0;
+}
+
+.known-for-item .fas {
+  font-size: 3.4em;
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .known-for-item .fas {
+    font-size: 3.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .known-for-item .fas {
+    font-size: 2.4em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .known-for-item .fas {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .known-for-item .fas {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .known-for-item .fas {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .known-for-item {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto 6em;
+        grid-template-rows: auto 6em;
+    margin: 2em 0.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .known-for-item {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto 6em;
+        grid-template-rows: auto 6em;
+    margin: 2em .5em 0 0.5em;
+  }
+}
+
+.fa-glass-cheers {
+  color: #f58c7c;
+}
+
+.fa-graduation-cap {
+  color: grey;
+}
+
+.fa-microphone-alt {
+  color: #fadcd2;
+}
+
+.fa-praying-hands {
+  color: #f7d989;
+}
+
+.known-for-text {
+  text-align: initial;
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .known-for-text {
+    text-align: center;
+    margin: 1.9em 0 0 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

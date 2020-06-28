@@ -234,8 +234,10 @@
 
 .about-detail-content{
     text-align: start;
-    width: 24em;
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-xs} {
+        width: 24em;
+    }
+    @media #{$breakpoint-sm} {
         width: 27em;
         .normal-text{
             font-size: .9em;
@@ -314,3 +316,120 @@
         font-size: .6em;
     }
 }
+
+// ---------------------------------------------------------------
+// What I'm known for section
+// ---------------------------------------------------------------
+
+.known-for{
+    width: 85%;
+    margin: 3em auto;
+    @media #{$breakpoint-sm} {
+        width: 70%
+    }
+    @media #{$breakpoint-md} {
+        width: 85%;
+        margin: 2em auto;
+    }
+    @media #{$breakpoint-lg} {
+        width: 75%;
+        margin: 2em auto;
+    }
+    @media #{$breakpoint-xl} {
+        width: 70%;
+        margin: 2em auto 1em auto;
+    }
+    @media #{$breakpoint-xxl} {
+        width: 60%;
+        margin: 2em auto 0 auto;
+    }
+
+    
+}
+
+.known-for-content{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+
+    }
+}
+
+.known-for-title{
+    text-align: center;
+    
+    .sect-title{
+        // font-size: 1.9em;
+        // margin: 2em 0 0 0;
+        // @media #{$breakpoint-sm} {
+        //     font-size: 1.7em;
+        // }
+    }
+}
+
+.known-for-item{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 7em 1fr;
+    margin: 4em 0;
+
+    .fas{
+        font-size: 3.4em;
+        margin: auto 0;
+        @media #{$breakpoint-sm} {
+            font-size: 3.3em;
+        }
+        @media #{$breakpoint-md} {
+            font-size: 2.4em;
+        }
+        @media #{$breakpoint-lg} {
+            font-size: 2.3em;
+        }
+        @media #{$breakpoint-xl} {
+            font-size: 2em;
+        }
+        @media #{$breakpoint-xxl} {
+            font-size: 1.8em;
+        }
+    }
+
+    @media #{$breakpoint-md}, #{$breakpoint-lg} {
+        grid-template-columns: auto;
+        grid-template-rows: auto 6em;
+        margin: 2em 0.3em;
+        
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+        grid-template-columns: auto;
+        grid-template-rows: auto 6em;
+        margin: 2em .5em 0 0.5em;
+        
+    }
+}
+
+.fa-glass-cheers{
+    color: rgba(245,140,124,1);
+}
+
+.fa-graduation-cap{
+    color: grey;
+}
+
+.fa-microphone-alt{
+    color:  rgba(250,220,210,1);
+}
+
+.fa-praying-hands{
+    color: rgba(247,217,137,1);
+}
+
+.known-for-text{
+    text-align: initial;
+    margin: auto 0;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+        text-align: center;
+        margin: 1.9em 0 0 0;
+        
+    }
+}
+
