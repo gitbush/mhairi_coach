@@ -2657,7 +2657,7 @@ footer {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 46em;
+  height: 43em;
   right: 0;
 }
 
@@ -2713,7 +2713,7 @@ footer {
 
 .numbers-item {
   text-align: center;
-  height: 12em;
+  height: 11em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {

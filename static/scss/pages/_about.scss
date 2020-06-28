@@ -462,7 +462,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    height: 46em;
+    height: 43em;
     right: 0;
     @media #{$breakpoint-sm}{
         height: 39em;
@@ -498,7 +498,7 @@
 
 .numbers-item{
     text-align: center;
-    height: 12em;
+    height: 11em;
     @media #{$breakpoint-sm}{
         height: 10em;
     }
