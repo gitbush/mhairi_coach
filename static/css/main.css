@@ -2839,6 +2839,13 @@ footer {
       grid-template-columns: repeat(2, 1fr);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .crazy-about-content {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .crazy-about-img {
   height: 100%;
   width: 100%;
@@ -2869,11 +2876,23 @@ footer {
   font-size: 1.2em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .crazy-about-text .fw-b {
+    font-size: .8em;
+  }
+}
+
 .favourite-text {
   color: #3b403f;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
   font-size: 1.1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .favourite-text {
+    font-size: .7em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -579,6 +579,9 @@
 .crazy-about-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media #{$breakpoint-md}{
+        grid-template-columns: repeat(5, 1fr);
+    }
 
 }
 
@@ -604,8 +607,16 @@
 .crazy-about-text{
     margin: auto;
     width: 80%;
+    @media #{$breakpoint-md}{
+        
+        
+    }
+
     .fw-b{
         font-size: 1.2em;
+        @media #{$breakpoint-md}{
+            font-size: .8em;
+        }
     }
     
 }
@@ -616,5 +627,8 @@
     letter-spacing: 0.2em;
     text-align: center;
     font-size: 1.1em;
+    @media #{$breakpoint-md}{
+        font-size: .7em;
+    }
     
 }
