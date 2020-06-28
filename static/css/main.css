@@ -646,6 +646,44 @@ body {
   width: 1px;
 }
 
+[data-aos="numbers-slide"] {
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+}
+
+[data-aos="numbers-slide"].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  [data-aos="numbers-slide"] {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+  [data-aos="numbers-slide"].aos-animate {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  [data-aos="numbers-text-slide"] {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  [data-aos="numbers-text-slide"].aos-animate {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 #header {
   text-align: left;
   width: 100vw;
@@ -2386,6 +2424,12 @@ footer {
 
 .known-for-title {
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .known-for-title .sect-title {
+    font-size: 1.6em;
+  }
 }
 
 .known-for-item {
