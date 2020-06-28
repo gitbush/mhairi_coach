@@ -358,11 +358,6 @@
 .known-for-title{
     text-align: center;
     
-    .sect-title{
-        @media #{$breakpoint-xs} {
-            font-size: 1.6em;
-        }
-    }
 }
 
 .known-for-item{
@@ -572,4 +567,54 @@
         text-align: center;
         width: 60%;
     }
+}
+
+// ---------------------------------------------------------------
+// Crazy about section
+// ---------------------------------------------------------------
+
+.crazy-about-sect{
+    margin-top: 2em;
+}
+.crazy-about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.crazy-about-img{
+    height: 100%;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.crazy-about-title{
+    height: 5em;
+
+    .sect-title{
+        height: auto;
+        margin: auto;
+    }
+}
+
+.crazy-about-text{
+    margin: auto;
+    width: 80%;
+    .fw-b{
+        font-size: 1.2em;
+    }
+    
+}
+
+.favourite-text{
+    color: $base-text-color;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 1.1em;
+    
 }
