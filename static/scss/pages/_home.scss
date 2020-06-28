@@ -181,6 +181,23 @@
    
 }
 
+.coaching-title{
+    font-family: $font-roboto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    color: $base-text-color;
+    @media #{$breakpoint-md} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+        font-size: .8em;
+    }
+}
+
 .coaching-text{
     position: relative;
     background-color: $light-pink;
@@ -248,6 +265,23 @@
     padding-top: 3em;
     @media #{$breakpoint-md}, #{$breakpoint-lg} {
         margin: 2em auto 0 auto;
+    }
+}
+
+.home-about-subtitle{
+    font-family: $font-roboto;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    color: $base-text-color;
+    @media #{$breakpoint-md} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        font-size: .8em;
     }
 }
 
@@ -451,6 +485,30 @@
     }
 }
 
+.home-cta-title{
+    font-family: $font-roboto;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    color: $base-text-color;
+  
+    @media #{$breakpoint-sm} {
+        font-size: 1.1em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .9em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .8em;
+    }
+}
+
 .cta-btn{
     position: absolute;
     left: 0;
@@ -535,6 +593,9 @@
         }
         @media #{$breakpoint-xl}{
             font-size: 1em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .98em;
         }
     }
 }

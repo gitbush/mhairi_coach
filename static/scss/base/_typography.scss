@@ -76,7 +76,7 @@ $font-cabin: 'Cabin', serif;
 }
 .sect-title{
   font-family: $font-roboto;
-  font-size: 1.3rem;
+  font-size: 1.6em;
   font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
@@ -84,10 +84,16 @@ $font-cabin: 'Cabin', serif;
   letter-spacing: 0.2em;
   color: $base-text-color;
   @media #{$breakpoint-md} {
+    font-size: 1.1em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 1.1em;
+  }
+  @media #{$breakpoint-xl} {
     font-size: 1em;
   }
-  @media #{$breakpoint-lg}, #{$breakpoint-xl} {
-    font-size: .8em;
+  @media #{$breakpoint-xxl} {
+    font-size: .9em;
   }
 }
 

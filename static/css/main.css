@@ -457,7 +457,7 @@ template {
 
 .sect-title {
   font-family: "Roboto", serif;
-  font-size: 1.3rem;
+  font-size: 1.6em;
   font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
@@ -468,13 +468,25 @@ template {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sect-title {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sect-title {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sect-title {
     font-size: 1em;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
   .sect-title {
-    font-size: .8em;
+    font-size: .9em;
   }
 }
 
@@ -664,8 +676,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   [data-aos="numbers-slide"] {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   [data-aos="numbers-slide"].aos-animate {
     -webkit-transform: translateY(0);
@@ -675,8 +687,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   [data-aos="numbers-text-slide"] {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
   }
   [data-aos="numbers-text-slide"].aos-animate {
     -webkit-transform: translateX(0);
@@ -1373,6 +1385,29 @@ footer {
   height: 100%;
 }
 
+.coaching-title {
+  font-family: "Roboto", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-title {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-title {
+    font-size: .8em;
+  }
+}
+
 .coaching-text {
   position: relative;
   background-color: #fbf2ec;
@@ -1469,6 +1504,29 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about-title {
     margin: 2em auto 0 auto;
+  }
+}
+
+.home-about-subtitle {
+  font-family: "Roboto", serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-about-subtitle {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .home-about-subtitle {
+    font-size: .8em;
   }
 }
 
@@ -1718,6 +1776,41 @@ footer {
   }
 }
 
+.home-cta-title {
+  font-family: "Roboto", serif;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-cta-title {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-cta-title {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-cta-title {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-cta-title {
+    font-size: .8em;
+  }
+}
+
 .cta-btn {
   position: absolute;
   left: 0;
@@ -1843,6 +1936,12 @@ footer {
 @media only screen and (min-width: 1200px) {
   .testimonial-parallax .quote-text-dark {
     font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-parallax .quote-text-dark {
+    font-size: .98em;
   }
 }
 
@@ -2528,7 +2627,7 @@ footer {
   background-color: #fadcd2;
   height: 80vh;
   position: relative;
-  opacity: .95;
+  opacity: .9;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {

@@ -13,7 +13,7 @@
     }
   
     @media #{$breakpoint-min-md} {
-      transform: translateY(-1000px);
+      transform: translateY(-2000px);
   
       &.aos-animate {
         transform: translateY(0);
@@ -24,7 +24,7 @@
 [data-aos="numbers-text-slide"] {
 
     @media #{$breakpoint-min-md} {
-        transform: translateX(-1000px);
+        transform: translateX(-2000px);
 
         &.aos-animate {
         transform: translateX(0);
