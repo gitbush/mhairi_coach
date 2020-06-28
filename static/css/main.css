@@ -2625,14 +2625,14 @@ footer {
 
 .numbers-sect {
   background-color: #fadcd2;
-  height: 80vh;
+  height: 50em;
   position: relative;
   opacity: .9;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .numbers-sect {
-    height: 85vh;
+    height: 47em;
   }
 }
 

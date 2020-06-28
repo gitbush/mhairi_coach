@@ -437,11 +437,11 @@
 
 .numbers-sect{
     background-color: $dark-pink;
-    height: 80vh;
+    height: 50em;
     position: relative;
     opacity: .9;
     @media #{$breakpoint-sm}{
-        height: 85vh;
+        height: 47em;
         
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}{
