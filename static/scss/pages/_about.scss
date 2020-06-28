@@ -235,7 +235,7 @@
 .about-detail-content{
     text-align: start;
     @media #{$breakpoint-xs} {
-        width: 24em;
+        width: 21em;
     }
     @media #{$breakpoint-sm} {
         width: 27em;
@@ -438,7 +438,7 @@
 // ---------------------------------------------------------------
 
 .numbers-sect{
-    background-color: $light-pink;
+    background-color: $dark-pink;
     height: 80vh;
     position: relative;
     opacity: .95;
