@@ -433,3 +433,145 @@
     }
 }
 
+// ---------------------------------------------------------------
+// Numbers section
+// ---------------------------------------------------------------
+
+.numbers-sect{
+    background-color: $light-pink;
+    height: 80vh;
+    position: relative;
+    opacity: .95;
+    @media #{$breakpoint-sm}{
+        height: 85vh;
+        
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
+        height: 10em;
+        
+    }
+    @media #{$breakpoint-xl} {
+        height: 8em;
+    }
+}
+
+.numbers-content{
+    font-family: $font-cabin;
+    text-transform: uppercase;
+    background: transparent;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 46em;
+    right: 0;
+    @media #{$breakpoint-sm}{
+        height: 39em;
+        
+    }
+    @media #{$breakpoint-md},#{$breakpoint-lg}{
+        height: 100%;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        height: 100%;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media #{$breakpoint-xl}{
+        height: 100%;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media #{$breakpoint-xxl}{
+        height: 100%;
+        width: 60vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+}
+
+.numbers-item{
+    text-align: center;
+    height: 12em;
+    @media #{$breakpoint-sm}{
+        height: 10em;
+    }
+    @media #{$breakpoint-md}{
+        height: 6em;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg}{
+        height: 5em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xl}{
+        height: 5em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 4.5em;
+        margin: auto;
+    }
+}
+
+.numbers-text{
+    font-size: 3.8em;
+    @media #{$breakpoint-sm}{
+        font-size: 3.4em;
+        margin-bottom: 0;
+    }
+    @media #{$breakpoint-md}{
+        font-size: 2.2em;
+        margin-bottom: 0;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 2.2em;
+        margin-bottom: 0.3em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: 1.7em;
+        margin-bottom: 0.3em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: 1.6em;
+        margin-bottom: 0.3em;
+    }
+}
+
+.number-desc{
+    font-size: 1em;
+    letter-spacing: .2em;
+    width: 50%;
+    margin: auto;
+    @media #{$breakpoint-sm}{
+        font-size: .9em;
+    }
+    @media #{$breakpoint-md}{
+        font-size: .7em;
+        text-align: center;
+        width: 80%;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: .65em;
+        text-align: center;
+        width: 80%;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .6em;
+        text-align: center;
+        width: 80%;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .5em;
+        text-align: center;
+        width: 60%;
+    }
+}
