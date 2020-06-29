@@ -2837,12 +2837,22 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  margin: auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .crazy-about-content {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .crazy-about-content {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    max-width: 1100px;
   }
 }
 
@@ -2856,6 +2866,33 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .crazy-about-img:nth-of-type(1) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .crazy-about-img:nth-of-type(2) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .crazy-about-img:nth-of-type(5) {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .crazy-about-img:nth-of-type(8) {
+    -ms-grid-column: 5;
+    grid-column: 5;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
 }
 
 .crazy-about-title {
@@ -2872,13 +2909,52 @@ footer {
   width: 80%;
 }
 
+@media only screen and (min-width: 768px) {
+  .crazy-about-text:nth-of-type(3) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .crazy-about-text {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .crazy-about-text {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .crazy-about-text {
+    width: 50%;
+  }
+}
+
 .crazy-about-text .fw-b {
   font-size: 1.2em;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .crazy-about-text .fw-b {
-    font-size: .8em;
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .crazy-about-text .fw-b {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .crazy-about-text .fw-b {
+    font-size: .66em;
   }
 }
 
@@ -2892,7 +2968,19 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .favourite-text {
-    font-size: .7em;
+    font-size: .65em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .favourite-text {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .favourite-text {
+    font-size: .56em;
   }
 }
 /*# sourceMappingURL=main.css.map */
