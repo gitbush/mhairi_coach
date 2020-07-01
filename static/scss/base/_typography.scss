@@ -56,6 +56,25 @@ $font-cabin: 'Cabin', serif;
   }
 }
 
+.logo-3{
+  font-family: $font-parisienne;
+  line-height: 1.1;
+  font-size: 2.6em;
+  margin: 10px 0;
+  @media #{$breakpoint-md} {
+    font-size: 2.3em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 2.7em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 2.7em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 2.3em;
+  }
+}
+
 .logo-subtitle{
   font-family: $font-roboto;
   text-transform: uppercase;

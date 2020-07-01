@@ -424,6 +424,37 @@ template {
   }
 }
 
+.logo-3 {
+  font-family: "alaskan", serif;
+  line-height: 1.1;
+  font-size: 2.6em;
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-3 {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo-3 {
+    font-size: 2.7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-3 {
+    font-size: 2.7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .logo-3 {
+    font-size: 2.3em;
+  }
+}
+
 .logo-subtitle {
   font-family: "Roboto", serif;
   text-transform: uppercase;
@@ -1129,6 +1160,40 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .btn-light-pink {
+    font-size: .6em;
+  }
+}
+
+.btn-dark-pink {
+  background-color: #fadcd2;
+  text-transform: uppercase;
+  color: #3b403f;
+  font-size: 1.1em;
+  padding: .6em 1em;
+  -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
+          box-shadow: 3px 5px 9px -7px #3b403f;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .btn-dark-pink {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btn-dark-pink {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .btn-dark-pink {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-dark-pink {
     font-size: .6em;
   }
 }
@@ -2982,5 +3047,77 @@ footer {
   .favourite-text {
     font-size: .56em;
   }
+}
+
+.things-about-me {
+  text-align: center;
+  height: 44em;
+  margin: 4em 0;
+}
+
+.things-slider {
+  width: 25em !important;
+  height: 22em;
+  margin: auto;
+}
+
+.things-title {
+  margin-bottom: 3em;
+}
+
+.slide-title {
+  font-family: "alaskan", serif;
+  color: #f58c7c;
+  font-size: 1em;
+}
+
+.slick-next {
+  background-color: #fadcd2;
+  margin: 2em;
+  border: none;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #3b403f;
+  font-size: 1.1em;
+  padding: .7em 2em;
+  -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
+          box-shadow: 3px 5px 9px -7px #3b403f;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .slick-next {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slick-next {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slick-next {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slick-next {
+    font-size: .6em;
+  }
+}
+
+.slick-dots,
+.slick-prev {
+  display: none !important;
+}
+
+.slider-item {
+  width: 25em !important;
+}
+
+.slider-item img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

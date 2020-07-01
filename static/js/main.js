@@ -28,3 +28,18 @@ AOS.init({
   duration: 600, // values from 0 to 3000, with step 50ms
   once: true,
 });
+
+// slick carousel
+$(document).ready(function(){
+  $('.things-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
+  $('.slick-next').html("Next thing")
+
+});
+

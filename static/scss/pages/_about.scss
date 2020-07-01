@@ -680,3 +680,68 @@
     }
     
 }
+
+// ---------------------------------------------------------------
+// Things about me slider section
+// ---------------------------------------------------------------
+
+.things-about-me{
+    text-align: center;
+    height: 44em;
+    margin: 4em 0;
+}
+.things-slider{
+    width: 25em!important;
+    height: 22em;
+    margin: auto;
+}
+
+.things-title{
+    margin-bottom: 3em;
+}
+
+.slide-title{
+    font-family: $font-parisienne;
+    color: $pink;
+    font-size: 1em;
+}
+
+.slick-next{
+    background-color: $dark-pink;
+    margin: 2em;
+    border: none;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.1em;
+    padding: .7em 2em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .6em;
+    }
+}
+
+.slick-list{
+}
+
+.slick-dots,
+.slick-prev{
+    display: none!important;
+}
+
+.slider-item{
+    width: 25em!important;
+
+    img{
+        width: 100%;
+    }
+}
