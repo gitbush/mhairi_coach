@@ -553,7 +553,7 @@ template {
 }
 
 .normal-text {
-  font-size: 1.05em;
+  font-size: 1.15em;
   color: #3b403f;
 }
 
@@ -1377,8 +1377,8 @@ footer {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 21em 23.5em;
-      grid-template-rows: 21em 23.5em;
+  -ms-grid-rows: 21em 24.5em;
+      grid-template-rows: 21em 24.5em;
   height: 100%;
 }
 
@@ -1783,7 +1783,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 19em;
+  height: 21em;
   width: 21em;
   margin: auto;
   background: white;
