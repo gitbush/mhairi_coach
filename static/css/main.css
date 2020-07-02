@@ -3051,7 +3051,7 @@ footer {
 
 .things-about-me {
   text-align: center;
-  height: 44em;
+  height: 50em;
   margin: 4em 0;
 }
 
@@ -3068,12 +3068,21 @@ footer {
 .slide-title {
   font-family: "alaskan", serif;
   color: #f58c7c;
-  font-size: 1em;
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.slide-text {
+  margin: 2em 0;
+}
+
+*:focus {
+  outline: 0 !important;
 }
 
 .slick-next {
   background-color: #fadcd2;
-  margin: 2em;
+  margin: 1em 0;
   border: none;
   letter-spacing: .2em;
   text-transform: uppercase;

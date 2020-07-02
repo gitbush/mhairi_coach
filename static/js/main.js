@@ -40,6 +40,6 @@ $(document).ready(function(){
   });
 
   $('.slick-next').html("Next thing")
-
+  
 });
 
