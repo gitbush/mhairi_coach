@@ -759,10 +759,11 @@
 .things-title{
     margin-bottom: 3em;
     @media #{$breakpoint-md} {
+        width: 100%;
         position: absolute;
         margin-bottom: 0;
         top: 1em;
-        left: 15.99999%;
+        left: -10em;
     }
     @media #{$breakpoint-lg} {
         position: absolute;
@@ -848,7 +849,7 @@
         font-size: .8em;
         left: -26em;
         bottom: 3em;
-        padding: .55em 2em;
+        padding: .5em 1.7em;
     }
     @media #{$breakpoint-lg} {
         font-size: .8em;
