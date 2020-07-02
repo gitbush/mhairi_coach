@@ -3051,14 +3051,67 @@ footer {
 
 .things-about-me {
   text-align: center;
+  position: relative;
   height: 50em;
   margin: 4em 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .things-about-me {
+    height: 34em;
+  }
+}
+
 .things-slider {
-  width: 25em !important;
+  width: 25em;
+  position: relative;
   height: 22em;
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .things-slider {
+    width: 42em;
+  }
+}
+
+.slider-item {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.slider-item img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-item img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
 }
 
 .things-title {
@@ -3076,13 +3129,24 @@ footer {
   margin: 2em 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slide-text {
+    margin: 2em;
+    position: relative;
+    top: 5em;
+  }
+}
+
 *:focus {
   outline: 0 !important;
 }
 
-.slick-next {
+.slide-btn {
   background-color: #fadcd2;
-  margin: 1em 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   border: none;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -3094,39 +3158,28 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .slick-next {
+  .slide-btn {
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slick-next {
+  .slide-btn {
     font-size: .8em;
+    left: -26em;
+    bottom: 10em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .slick-next {
+  .slide-btn {
     font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .slick-next {
+  .slide-btn {
     font-size: .6em;
   }
-}
-
-.slick-dots,
-.slick-prev {
-  display: none !important;
-}
-
-.slider-item {
-  width: 25em !important;
-}
-
-.slider-item img {
-  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -687,13 +687,57 @@
 
 .things-about-me{
     text-align: center;
+    position: relative;
     height: 50em;
     margin: 4em 0;
+    @media #{$breakpoint-md}{
+        height: 34em;
+        
+    }
 }
 .things-slider{
-    width: 25em!important;
+    width: 25em;
+    position: relative;
     height: 22em;
     margin: auto;
+    @media #{$breakpoint-md}{
+        width: 42em;
+        
+    }
+}
+
+.slider-item {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1.5s;
+
+    @media #{$breakpoint-md}{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+    }
+
+    img{
+        width: 100%;
+        @media #{$breakpoint-md} {
+            order: 2;
+        }
+
+    }
+    
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
 }
 
 .things-title{
@@ -709,15 +753,23 @@
 
 .slide-text{
     margin: 2em 0;
+    @media #{$breakpoint-md} {
+        margin: 2em;
+        position: relative;
+        top: 5em;
+    }
 }
 
 *:focus {
     outline: 0 !important;
 }
 
-.slick-next{
+.slide-btn{
     background-color: $dark-pink;
-    margin: 1em 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     border: none;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -730,27 +782,13 @@
     }
     @media #{$breakpoint-md} {
         font-size: .8em;
+        left: -26em;
+        bottom: 10em;
     }
     @media #{$breakpoint-lg} {
         font-size: .8em;
     }
     @media #{$breakpoint-xl} {
         font-size: .6em;
-    }
-}
-
-.slick-list{
-}
-
-.slick-dots,
-.slick-prev{
-    display: none!important;
-}
-
-.slider-item{
-    width: 25em!important;
-
-    img{
-        width: 100%;
     }
 }
