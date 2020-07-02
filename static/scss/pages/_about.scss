@@ -691,7 +691,15 @@
     height: 50em;
     margin: 4em 0;
     @media #{$breakpoint-md}{
-        height: 34em;
+        height: 21em;
+        
+    }
+    @media #{$breakpoint-lg}{
+        height: 21em;
+        
+    }
+    @media #{$breakpoint-xl}{
+        height: 21em;
         
     }
 }
@@ -701,7 +709,15 @@
     height: 22em;
     margin: auto;
     @media #{$breakpoint-md}{
-        width: 42em;
+        width: 41em;
+        
+    }
+    @media #{$breakpoint-lg}{
+        width: 41em;
+        
+    }
+    @media #{$breakpoint-xl}{
+        width: 41em;
         
     }
 }
@@ -720,14 +736,14 @@
     -o-transition: opacity 1s;
     transition: opacity 1.5s;
 
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         display: grid;
         grid-template-columns: repeat(2, 1fr);    
     }
 
     img{
         width: 100%;
-        @media #{$breakpoint-md} {
+        @media #{$breakpoint-min-md} {
             order: 2;
         }
 
@@ -742,6 +758,32 @@
 
 .things-title{
     margin-bottom: 3em;
+    @media #{$breakpoint-md} {
+        position: absolute;
+        margin-bottom: 0;
+        top: 1em;
+        left: 15.99999%;
+    }
+    @media #{$breakpoint-lg} {
+        position: absolute;
+        margin-bottom: 0;
+        top: 1em;
+        left: 19.33333%;
+    }
+    @media #{$breakpoint-xl} {
+        position: absolute;
+        margin-bottom: 0;
+        top: 1em;
+        left: 22.9999%;
+    }
+    @media #{$breakpoint-xxl} {
+        position: absolute;
+        margin-bottom: 0;
+        top: 1em;
+        left: 26.9999%;
+    }
+
+    
 }
 
 .slide-title{
@@ -749,6 +791,9 @@
     color: $pink;
     font-size: 3em;
     margin-bottom: .5em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+        font-size: 2.2em;
+    }
 }
 
 .slide-text{
@@ -758,6 +803,23 @@
         position: relative;
         top: 5em;
     }
+    @media #{$breakpoint-lg} {
+        margin: 2em;
+        position: relative;
+        top: 5em;
+    }
+    @media #{$breakpoint-xl} {
+        margin: 2em;
+        position: relative;
+        top: 5em;
+    }
+    @media #{$breakpoint-xxl} {
+        // margin-right: 5em;
+        position: relative;
+        width: 60%;
+        top: 5em;
+        left: 7.5%;
+    }
 }
 
 *:focus {
@@ -766,6 +828,8 @@
 
 .slide-btn{
     background-color: $dark-pink;
+    position: absolute;
+    z-index: 999;
     bottom: 0;
     left: 0;
     right: 0;
@@ -783,12 +847,25 @@
     @media #{$breakpoint-md} {
         font-size: .8em;
         left: -26em;
-        bottom: 10em;
+        bottom: 3em;
+        padding: .55em 2em;
     }
     @media #{$breakpoint-lg} {
         font-size: .8em;
+        left: -26em;
+        bottom: 4em;
+        padding: .5em 2em;
     }
     @media #{$breakpoint-xl} {
+        font-size: .8em;
+        left: -26em;
+        bottom: 5em;
+        padding: .4em 1.5em;
+    }
+    @media #{$breakpoint-xxl} {
         font-size: .6em;
+        left: -36em;
+        bottom: 8em;
+        padding: .4em 1.5em;
     }
 }

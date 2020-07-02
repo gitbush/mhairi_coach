@@ -433,25 +433,25 @@ template {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .logo-3 {
-    font-size: 2.3em;
+    font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .logo-3 {
-    font-size: 2.7em;
+    font-size: 2.2em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .logo-3 {
-    font-size: 2.7em;
+    font-size: 2.2em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .logo-3 {
-    font-size: 2.3em;
+    font-size: 1.8em;
   }
 }
 
@@ -543,6 +543,12 @@ template {
   .sect-subtitle {
     font-size: .7em;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .sect-subtitle {
+    font-size: .6em;
   }
 }
 
@@ -3058,7 +3064,19 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .things-about-me {
-    height: 34em;
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .things-about-me {
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .things-about-me {
+    height: 21em;
   }
 }
 
@@ -3071,7 +3089,19 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .things-slider {
-    width: 42em;
+    width: 41em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .things-slider {
+    width: 41em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .things-slider {
+    width: 41em;
   }
 }
 
@@ -3088,7 +3118,7 @@ footer {
   transition: opacity 1.5s;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .slider-item {
     display: -ms-grid;
     display: grid;
@@ -3101,7 +3131,7 @@ footer {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .slider-item img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -3118,11 +3148,53 @@ footer {
   margin-bottom: 3em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .things-title {
+    position: absolute;
+    margin-bottom: 0;
+    top: 1em;
+    left: 15.99999%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .things-title {
+    position: absolute;
+    margin-bottom: 0;
+    top: 1em;
+    left: 19.33333%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .things-title {
+    position: absolute;
+    margin-bottom: 0;
+    top: 1em;
+    left: 22.9999%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .things-title {
+    position: absolute;
+    margin-bottom: 0;
+    top: 1em;
+    left: 26.9999%;
+  }
+}
+
 .slide-title {
   font-family: "alaskan", serif;
   color: #f58c7c;
   font-size: 3em;
   margin-bottom: .5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .slide-title {
+    font-size: 2.2em;
+  }
 }
 
 .slide-text {
@@ -3137,12 +3209,39 @@ footer {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slide-text {
+    margin: 2em;
+    position: relative;
+    top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide-text {
+    margin: 2em;
+    position: relative;
+    top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .slide-text {
+    position: relative;
+    width: 60%;
+    top: 5em;
+    left: 7.5%;
+  }
+}
+
 *:focus {
   outline: 0 !important;
 }
 
 .slide-btn {
   background-color: #fadcd2;
+  position: absolute;
+  z-index: 999;
   bottom: 0;
   left: 0;
   right: 0;
@@ -3167,19 +3266,35 @@ footer {
   .slide-btn {
     font-size: .8em;
     left: -26em;
-    bottom: 10em;
+    bottom: 3em;
+    padding: .55em 2em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slide-btn {
     font-size: .8em;
+    left: -26em;
+    bottom: 4em;
+    padding: .5em 2em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .slide-btn {
+    font-size: .8em;
+    left: -26em;
+    bottom: 5em;
+    padding: .4em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .slide-btn {
     font-size: .6em;
+    left: -36em;
+    bottom: 8em;
+    padding: .4em 1.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
