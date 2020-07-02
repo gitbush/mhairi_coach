@@ -736,14 +736,19 @@
     -o-transition: opacity 1s;
     transition: opacity 1.5s;
 
-    @media #{$breakpoint-min-md}{
+    @media #{$breakpoint-md}{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);    
+        grid-template-columns: 1fr 2em 1fr;    
+    }
+    @media #{$breakpoint-lg}{
+        display: grid;
+        grid-template-columns: 1fr 3em 1fr;    
     }
 
     img{
         width: 100%;
         @media #{$breakpoint-min-md} {
+            grid-column: 3;
             order: 2;
         }
 
@@ -766,10 +771,11 @@
         left: -10em;
     }
     @media #{$breakpoint-lg} {
+        width: 100%;
         position: absolute;
         margin-bottom: 0;
         top: 1em;
-        left: 19.33333%;
+        left: -11em;
     }
     @media #{$breakpoint-xl} {
         position: absolute;
@@ -852,9 +858,9 @@
         padding: .5em 1.7em;
     }
     @media #{$breakpoint-lg} {
-        font-size: .8em;
-        left: -26em;
-        bottom: 4em;
+        font-size: .7em;
+        left: -31em;
+        bottom: 6em;
         padding: .5em 2em;
     }
     @media #{$breakpoint-xl} {

@@ -439,7 +439,7 @@ template {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .logo-3 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 
@@ -3118,12 +3118,21 @@ footer {
   transition: opacity 1.5s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 2em 1fr;
+        grid-template-columns: 1fr 2em 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3em 1fr;
+        grid-template-columns: 1fr 3em 1fr;
   }
 }
 
@@ -3133,6 +3142,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .slider-item img {
+    -ms-grid-column: 3;
+    grid-column: 3;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -3160,10 +3171,11 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .things-title {
+    width: 100%;
     position: absolute;
     margin-bottom: 0;
     top: 1em;
-    left: 19.33333%;
+    left: -11em;
   }
 }
 
@@ -3274,9 +3286,9 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slide-btn {
-    font-size: .8em;
-    left: -26em;
-    bottom: 4em;
+    font-size: .7em;
+    left: -31em;
+    bottom: 6em;
     padding: .5em 2em;
   }
 }
