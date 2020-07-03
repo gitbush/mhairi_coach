@@ -4466,7 +4466,7 @@ footer {
     -ms-grid-columns: 6em 1fr 2em 1fr 6em;
         grid-template-columns: 6em 1fr 2em 1fr 6em;
     height: 22em;
-    margin: 3em 0;
+    margin: 3em 0 2em 0;
   }
 }
 
@@ -4477,7 +4477,7 @@ footer {
     -ms-grid-columns: auto 18em 2em 18em auto;
         grid-template-columns: auto 18em 2em 18em auto;
     height: 22em;
-    margin: 3em 0;
+    margin: 3em 0 1em 0;
   }
 }
 
@@ -4488,7 +4488,7 @@ footer {
     -ms-grid-columns: auto 16em 1em 16em auto;
         grid-template-columns: auto 16em 1em 16em auto;
     height: 22em;
-    margin: 3em 0;
+    margin: 3em 0 2em 0;
   }
 }
 
@@ -4764,7 +4764,7 @@ footer {
   justify-items: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .services-intro {
     background-color: white;
   }
@@ -4779,6 +4779,30 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .intro-title {
+    font-size: 1.2em;
+    width: 27em;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .intro-title {
+    font-size: 1.1em;
+    width: 27em;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro-title {
+    font-size: 1.1em;
+    width: 27em;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
   .intro-title {
     font-size: 1.2em;
     width: 27em;
@@ -4805,6 +4829,27 @@ footer {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-intro-subtitle {
+    font-size: 1em;
+    margin: .5em 1em 1.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services-intro-subtitle {
+    font-size: .9em;
+    margin: .5em 1em 1.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .services-intro-subtitle {
+    font-size: .9em;
+    margin: .5em 1em 1.5em 1em;
+  }
+}
+
 .intro-text {
   width: 23em;
   margin-bottom: 3em;
@@ -4819,6 +4864,24 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .intro-text {
     width: 33em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .intro-text {
+    width: 34em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro-text {
+    width: 32.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .intro-text {
+    width: 34em;
   }
 }
 /*# sourceMappingURL=main.css.map */
