@@ -131,7 +131,7 @@
             position: relative;
             width: 90%;
             margin: 1.5em auto;
-            font-size: .75em;
+            font-size: .65em;
         }
         @media #{$breakpoint-xxl}{
             position: relative;
@@ -172,7 +172,7 @@
         font-size: 1.5em;
     }
     @media #{$breakpoint-xl}{
-        font-size: 1.5em;
+        font-size: 1.45em;
     }
     @media #{$breakpoint-xxl}{
         font-size: 1.1em;
@@ -200,7 +200,7 @@
     }
     @media #{$breakpoint-xl}{
         font-family: $font-parisienne;
-        font-size: .9em;
+        font-size: .82em;
     }
     @media #{$breakpoint-xxl}{
         font-family: $font-parisienne;
