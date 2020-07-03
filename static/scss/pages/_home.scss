@@ -131,7 +131,7 @@
     .coaching-1-1,
     .coaching-free{
         display: grid;
-        grid-template-rows: 21em 24.5em;
+        grid-template-rows: 19em 24em;
         height: 100%;
         @media #{$breakpoint-sm}{
             grid-template-rows: 16em 20em;

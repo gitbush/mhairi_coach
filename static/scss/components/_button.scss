@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .coach-cta-btn{
-    height: 35px;
+    height: 30px;
     margin: 0 auto;
     display: flex;
     width: 10em;
@@ -26,6 +26,8 @@
 
 .btn-white-sm{
     background-color: white;
+    color: $base-text-color;
+    font-size: 1em;
     height: 100%;
     position: relative;
     margin: auto;
@@ -34,6 +36,21 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2em;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+      }
+      @media #{$breakpoint-md} {
+        font-size: .78em;
+      }
+      @media #{$breakpoint-lg} {
+        font-size: .69em;
+      }
+      @media #{$breakpoint-xl} {
+        font-size: .58em;
+      }
+      @media #{$breakpoint-xxl} {
+        font-size: .56em;
+      }
 }
 
 .btn-pink{

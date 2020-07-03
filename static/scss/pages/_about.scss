@@ -708,7 +708,7 @@
     }
 }
 .things-slider{
-    width: 25em;
+    width: 22em;
     position: relative;
     height: 22em;
     margin: auto;
@@ -857,8 +857,7 @@
 .slide-btn{
     background-color: $dark-pink;
     position: absolute;
-    z-index: 999;
-    bottom: 0;
+    bottom: 1em;
     left: 0;
     right: 0;
     margin: auto;
@@ -905,7 +904,6 @@
 
 .services-cta{
     position: relative;
-    z-index: 999;
     height: 35em;
     @media #{$breakpoint-md} {
         height: 20em;
@@ -973,7 +971,7 @@
     position: absolute;
     margin: auto;
     bottom: 1em;
-    width: 191px;
+    width: 220px;
     @media #{$breakpoint-lg} {
         width: 270px;
     }

@@ -31,3 +31,22 @@
         }
     }
 }
+
+[data-aos="fade-slide-left"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateX(-1000px);
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media #{$breakpoint-min-md} {
+    transform: translateX(-2000px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
+  }
+}

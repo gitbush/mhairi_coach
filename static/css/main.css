@@ -553,7 +553,7 @@ template {
 }
 
 .normal-text {
-  font-size: 1.15em;
+  font-size: 1.12em;
   color: #3b403f;
 }
 
@@ -800,6 +800,33 @@ body {
             transform: translateX(-2000px);
   }
   [data-aos="numbers-text-slide"].aos-animate {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+[data-aos="fade-slide-left"] {
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+}
+
+[data-aos="fade-slide-left"].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  [data-aos="fade-slide-left"] {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  [data-aos="fade-slide-left"].aos-animate {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -1120,7 +1147,7 @@ footer {
 }
 
 .coach-cta-btn {
-  height: 35px;
+  height: 30px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1155,6 +1182,8 @@ footer {
 
 .btn-white-sm {
   background-color: white;
+  color: #3b403f;
+  font-size: 1em;
   height: 100%;
   position: relative;
   margin: auto;
@@ -1167,6 +1196,36 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .btn-white-sm {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btn-white-sm {
+    font-size: .78em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .btn-white-sm {
+    font-size: .69em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-white-sm {
+    font-size: .58em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .btn-white-sm {
+    font-size: .56em;
+  }
 }
 
 .btn-pink {
@@ -1459,8 +1518,8 @@ footer {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 21em 24.5em;
-      grid-template-rows: 21em 24.5em;
+  -ms-grid-rows: 19em 24em;
+      grid-template-rows: 19em 24em;
   height: 100%;
 }
 
@@ -3169,7 +3228,7 @@ footer {
 }
 
 .things-slider {
-  width: 25em;
+  width: 22em;
   position: relative;
   height: 22em;
   margin: auto;
@@ -3374,8 +3433,7 @@ footer {
 .slide-btn {
   background-color: #fadcd2;
   position: absolute;
-  z-index: 999;
-  bottom: 0;
+  bottom: 1em;
   left: 0;
   right: 0;
   margin: auto;
@@ -3433,7 +3491,6 @@ footer {
 
 .services-cta {
   position: relative;
-  z-index: 999;
   height: 35em;
 }
 
@@ -3524,7 +3581,7 @@ footer {
   position: absolute;
   margin: auto;
   bottom: 1em;
-  width: 191px;
+  width: 220px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3718,8 +3775,8 @@ footer {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 21em 24.5em;
-      grid-template-rows: 21em 24.5em;
+  -ms-grid-rows: 19em 24em;
+      grid-template-rows: 19em 24em;
   height: 100%;
 }
 
