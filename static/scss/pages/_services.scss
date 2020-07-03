@@ -207,3 +207,32 @@
         font-size: .7em;
     }
 }
+
+// ---------------------------------------------------------------
+// services intro
+// ---------------------------------------------------------------
+
+.services-intro{
+    background-color: $gray;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    .normal-text{
+        width: 100%;
+    }
+}
+
+.intro-title{
+    margin-top: 2em;
+}
+
+.services-intro-subtitle{
+    font-size: 1.5em;
+    color: $pink;
+    margin: 1em 1em 1.5em 1em;
+}
+
+.intro-text{
+    width: 23em;
+    margin-bottom: 3em;
+}

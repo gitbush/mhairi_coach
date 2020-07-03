@@ -4754,4 +4754,31 @@ footer {
     font-size: .7em;
   }
 }
+
+.services-intro {
+  background-color: #f0f3f3;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.services-intro .normal-text {
+  width: 100%;
+}
+
+.intro-title {
+  margin-top: 2em;
+}
+
+.services-intro-subtitle {
+  font-size: 1.5em;
+  color: #f58c7c;
+  margin: 1em 1em 1.5em 1em;
+}
+
+.intro-text {
+  width: 23em;
+  margin-bottom: 3em;
+}
 /*# sourceMappingURL=main.css.map */
