@@ -20,7 +20,14 @@ $font-cabin: 'Cabin', serif;
   font-weight: 700;
 }
 
-
+.rob-font{
+  font-family: $font-roboto;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: $base-text-color;
+}
 
 .logo-font{
   font-family: $font-parisienne;

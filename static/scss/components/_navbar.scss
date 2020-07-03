@@ -18,14 +18,14 @@ $nav-toggle-z-index: 2;
   padding: 4rem 2rem 2rem 2rem;
   position: fixed;
   top: 15px;
-  height: 24em;
+  height: 15em;
   width: 20em;
   z-index: 1;
   
   @media #{$breakpoint-min-sm} {
     right: -20rem;
     height: 24em;
-    width: 20em;
+    width: 15em;
   }
   @media #{$breakpoint-md} {
     height: 20em;
@@ -41,6 +41,7 @@ $nav-toggle-z-index: 2;
 
 .nav ul {
   position: absolute;
+  text-align: start;
   font-size: 15px;
   text-transform: uppercase;
   line-height: 2;
@@ -56,6 +57,7 @@ $nav-toggle-z-index: 2;
 
 .nav-item a{
   color: $base-text-color;
+  line-height: 1.9;
 }
 
 .nav-item a:hover{
