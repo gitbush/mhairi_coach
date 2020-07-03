@@ -702,6 +702,10 @@
         height: 21em;
         
     }
+    @media #{$breakpoint-xxl}{
+        height: 21em;
+        
+    }
 }
 .things-slider{
     width: 25em;
@@ -713,11 +717,15 @@
         
     }
     @media #{$breakpoint-lg}{
-        width: 41em;
+        width: 47em;
         
     }
     @media #{$breakpoint-xl}{
-        width: 41em;
+        width: 47em;
+        
+    }
+    @media #{$breakpoint-xxl}{
+        width: 42em;
         
     }
 }
@@ -742,7 +750,15 @@
     }
     @media #{$breakpoint-lg}{
         display: grid;
-        grid-template-columns: 1fr 3em 1fr;    
+        grid-template-columns: 1fr 3em 1fr 2em;    
+    }
+    @media #{$breakpoint-xl}{
+        display: grid;
+        grid-template-columns: 1fr 3em 1fr 2em;    
+    }
+    @media #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: 1fr 1em 1fr 2em;    
     }
 
     img{
@@ -775,19 +791,21 @@
         position: absolute;
         margin-bottom: 0;
         top: 1em;
-        left: -11em;
+        left: -13em;
     }
     @media #{$breakpoint-xl} {
+        width: 100%;
         position: absolute;
         margin-bottom: 0;
-        top: 1em;
-        left: 22.9999%;
+        top: 2em;
+        left: -13em;
     }
     @media #{$breakpoint-xxl} {
+        width: 100%;
         position: absolute;
         margin-bottom: 0;
-        top: 1em;
-        left: 26.9999%;
+        top: 2em;
+        left: -11.5em;
     }
 
     
@@ -800,6 +818,9 @@
     margin-bottom: .5em;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         font-size: 2.2em;
+    }
+    @media  #{$breakpoint-xxl}{
+        font-size: 1.8em;
     }
 }
 
@@ -818,14 +839,14 @@
     @media #{$breakpoint-xl} {
         margin: 2em;
         position: relative;
-        top: 5em;
+        top: 6em;
     }
     @media #{$breakpoint-xxl} {
         // margin-right: 5em;
         position: relative;
         width: 60%;
         top: 5em;
-        left: 7.5%;
+        left: 6.5%;
     }
 }
 
@@ -859,20 +880,20 @@
     }
     @media #{$breakpoint-lg} {
         font-size: .7em;
-        left: -31em;
+        left: -37em;
         bottom: 6em;
         padding: .5em 2em;
     }
     @media #{$breakpoint-xl} {
-        font-size: .8em;
-        left: -26em;
-        bottom: 5em;
-        padding: .4em 1.5em;
+        font-size: .6em;
+        left: -43em;
+        bottom: 7em;
+        padding: .5em 1.8em;
     }
     @media #{$breakpoint-xxl} {
-        font-size: .6em;
-        left: -36em;
-        bottom: 8em;
-        padding: .4em 1.5em;
+        font-size: .55em;
+        left: -43em;
+        bottom: 9em;
+        padding: .5em 1.5em;
     }
 }

@@ -445,13 +445,13 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .logo-3 {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .logo-3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 }
 
@@ -583,7 +583,7 @@ template {
 
 @media only screen and (min-width: 1600px) {
   .normal-text {
-    font-size: .55em;
+    font-size: .58em;
   }
 }
 
@@ -3080,6 +3080,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .things-about-me {
+    height: 21em;
+  }
+}
+
 .things-slider {
   width: 25em;
   position: relative;
@@ -3095,13 +3101,19 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .things-slider {
-    width: 41em;
+    width: 47em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .things-slider {
-    width: 41em;
+    width: 47em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .things-slider {
+    width: 42em;
   }
 }
 
@@ -3131,8 +3143,26 @@ footer {
   .slider-item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3em 1fr;
-        grid-template-columns: 1fr 3em 1fr;
+    -ms-grid-columns: 1fr 3em 1fr 2em;
+        grid-template-columns: 1fr 3em 1fr 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3em 1fr 2em;
+        grid-template-columns: 1fr 3em 1fr 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .slider-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1em 1fr 2em;
+        grid-template-columns: 1fr 1em 1fr 2em;
   }
 }
 
@@ -3175,25 +3205,27 @@ footer {
     position: absolute;
     margin-bottom: 0;
     top: 1em;
-    left: -11em;
+    left: -13em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .things-title {
+    width: 100%;
     position: absolute;
     margin-bottom: 0;
-    top: 1em;
-    left: 22.9999%;
+    top: 2em;
+    left: -13em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .things-title {
+    width: 100%;
     position: absolute;
     margin-bottom: 0;
-    top: 1em;
-    left: 26.9999%;
+    top: 2em;
+    left: -11.5em;
   }
 }
 
@@ -3207,6 +3239,12 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .slide-title {
     font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .slide-title {
+    font-size: 1.8em;
   }
 }
 
@@ -3234,7 +3272,7 @@ footer {
   .slide-text {
     margin: 2em;
     position: relative;
-    top: 5em;
+    top: 6em;
   }
 }
 
@@ -3243,7 +3281,7 @@ footer {
     position: relative;
     width: 60%;
     top: 5em;
-    left: 7.5%;
+    left: 6.5%;
   }
 }
 
@@ -3287,7 +3325,7 @@ footer {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slide-btn {
     font-size: .7em;
-    left: -31em;
+    left: -37em;
     bottom: 6em;
     padding: .5em 2em;
   }
@@ -3295,19 +3333,19 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .slide-btn {
-    font-size: .8em;
-    left: -26em;
-    bottom: 5em;
-    padding: .4em 1.5em;
+    font-size: .6em;
+    left: -43em;
+    bottom: 7em;
+    padding: .5em 1.8em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .slide-btn {
-    font-size: .6em;
-    left: -36em;
-    bottom: 8em;
-    padding: .4em 1.5em;
+    font-size: .55em;
+    left: -43em;
+    bottom: 9em;
+    padding: .5em 1.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
