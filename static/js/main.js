@@ -15,9 +15,9 @@
   hamburger.navToggle.addEventListener('click', function(e) { 
     console.log('yes')
     hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { 
-    console.log('nav')
-    hamburger.doToggle(e); });
+  // hamburger.nav.addEventListener('click', function(e) { 
+  //   console.log('nav')
+  //   hamburger.doToggle(e); });
 
 }());
 
