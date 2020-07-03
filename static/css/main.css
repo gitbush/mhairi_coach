@@ -4424,6 +4424,18 @@ footer {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .services-hero-text {
+    margin: 3.5em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .services-hero-text {
+    height: 15em;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-hero-text {
     -ms-grid-column: 4;
@@ -4462,6 +4474,19 @@ footer {
 
 .services-hero-content {
   text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .services-hero-content {
+    width: 22em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .services-hero-content {
+    width: 32em;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4529,9 +4554,8 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-hero-content .normal-text {
     position: relative;
-    top: 3em;
     width: 90%;
-    margin: auto;
+    margin: 1.5em auto;
     font-size: .85em;
   }
 }
@@ -4539,9 +4563,8 @@ footer {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .services-hero-content .normal-text {
     position: relative;
-    top: 3em;
     width: 90%;
-    margin: auto;
+    margin: 1.5em auto;
     font-size: .8em;
   }
 }
@@ -4549,9 +4572,8 @@ footer {
 @media only screen and (min-width: 1200px) {
   .services-hero-content .normal-text {
     position: relative;
-    top: 3em;
     width: 90%;
-    margin: auto;
+    margin: 1.5em auto;
     font-size: .75em;
   }
 }
@@ -4559,9 +4581,8 @@ footer {
 @media only screen and (min-width: 1600px) {
   .services-hero-content .normal-text {
     position: relative;
-    top: 3em;
     width: 90%;
-    margin: auto;
+    margin: 1.5em auto;
     font-size: .65em;
   }
 }
@@ -4594,7 +4615,7 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-title {
-    font-size: 2.1em;
+    font-size: 1.9em;
   }
 }
 
@@ -4634,6 +4655,7 @@ footer {
   .services-subtitle {
     width: 60%;
     margin: auto;
+    font-size: 1.4em;
   }
 }
 

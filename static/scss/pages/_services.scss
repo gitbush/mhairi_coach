@@ -30,6 +30,12 @@
 }
 
 .services-hero-text{
+    @media #{$breakpoint-xs}{
+        margin: 3.5em 1.5em;
+    }
+    @media #{$breakpoint-sm}{
+        height: 15em;
+    }
     @media #{$breakpoint-md}{
         grid-column: 4;
         height: 90%;
@@ -55,7 +61,13 @@
 
 .services-hero-content{
     text-align: center;
-
+    margin: auto;
+    @media #{$breakpoint-xs}{
+        width: 22em;
+    }
+    @media #{$breakpoint-sm}{
+        width: 32em;
+    }
     @media #{$breakpoint-md}{
         position: absolute;
         left: 0;
@@ -105,30 +117,26 @@
         }
         @media #{$breakpoint-md}{
             position: relative;
-            top: 3em;
             width: 90%;
-            margin: auto;
+            margin: 1.5em auto;
             font-size: .85em;
         }
         @media #{$breakpoint-lg}{
             position: relative;
-            top: 3em;
             width: 90%;
-            margin: auto;
+            margin: 1.5em auto;
             font-size: .8em;
         }
         @media #{$breakpoint-xl}{
             position: relative;
-            top: 3em;
             width: 90%;
-            margin: auto;
+            margin: 1.5em auto;
             font-size: .75em;
         }
         @media #{$breakpoint-xxl}{
             position: relative;
-            top: 3em;
             width: 90%;
-            margin: auto;
+            margin: 1.5em auto;
             font-size: .65em;
         }
     }
@@ -155,7 +163,7 @@
     color: $base-text-color;
     font-size: 2.3em;
     @media #{$breakpoint-sm}{
-        font-size: 2.1em;
+        font-size: 1.9em;
     }
     @media #{$breakpoint-md}{
         font-size: 1.5em;
@@ -180,6 +188,7 @@
     @media #{$breakpoint-sm}{
         width: 60%;
         margin: auto;
+        font-size: 1.4em;
     }
     @media #{$breakpoint-md}{
         font-family: $font-parisienne;
