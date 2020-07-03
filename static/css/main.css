@@ -4455,7 +4455,7 @@ footer {
     -ms-grid-columns: 5em 1fr 2em 1fr 5em;
         grid-template-columns: 5em 1fr 2em 1fr 5em;
     height: 22em;
-    margin: 3em 0;
+    margin: 3em 0 2em 0;
   }
 }
 
@@ -4500,6 +4500,7 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-hero-text {
+    margin: 3.5em 1.5em;
     height: 15em;
   }
 }
@@ -4763,6 +4764,12 @@ footer {
   justify-items: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-intro {
+    background-color: white;
+  }
+}
+
 .services-intro .normal-text {
   width: 100%;
 }
@@ -4771,14 +4778,47 @@ footer {
   margin-top: 2em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .intro-title {
+    font-size: 1.2em;
+    width: 27em;
+    margin-top: 0;
+  }
+}
+
 .services-intro-subtitle {
   font-size: 1.5em;
   color: #f58c7c;
   margin: 1em 1em 1.5em 1em;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .services-intro-subtitle {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-intro-subtitle {
+    font-size: 1.1em;
+    margin: .5em 1em 1.5em 1em;
+  }
+}
+
 .intro-text {
   width: 23em;
   margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .intro-text {
+    width: 25em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .intro-text {
+    width: 33em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

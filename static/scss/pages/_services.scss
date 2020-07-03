@@ -7,7 +7,7 @@
         display: grid;
         grid-template-columns: 5em 1fr 2em 1fr 5em;
         height: 22em;
-        margin: 3em 0;
+        margin: 3em 0 2em 0;
     }
     @media #{$breakpoint-lg}{
         display: grid;
@@ -34,6 +34,7 @@
         margin: 3.5em 1.5em;
     }
     @media #{$breakpoint-sm}{
+        margin: 3.5em 1.5em;
         height: 15em;
     }
     @media #{$breakpoint-md}{
@@ -217,6 +218,9 @@
     text-align: center;
     display: grid;
     justify-items: center;
+    @media #{$breakpoint-md}{
+        background-color: white;
+    }
     .normal-text{
         width: 100%;
     }
@@ -224,15 +228,33 @@
 
 .intro-title{
     margin-top: 2em;
+    @media #{$breakpoint-md}{
+        font-size: 1.2em;
+        width: 27em;
+        margin-top: 0;
+    }
 }
 
 .services-intro-subtitle{
     font-size: 1.5em;
     color: $pink;
     margin: 1em 1em 1.5em 1em;
+    @media #{$breakpoint-sm}{
+        font-size: 1.2em;
+    }
+    @media #{$breakpoint-md}{
+        font-size: 1.1em;
+        margin: .5em 1em 1.5em 1em;
+    }
 }
 
 .intro-text{
     width: 23em;
     margin-bottom: 3em;
+    @media #{$breakpoint-sm}{
+        width: 25em;
+    }
+    @media #{$breakpoint-md}{
+        width: 33em;
+    }
 }
