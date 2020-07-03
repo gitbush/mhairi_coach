@@ -897,3 +897,91 @@
         padding: .5em 1.5em;
     }
 }
+
+
+// ---------------------------------------------------------------
+// services cta section
+// ---------------------------------------------------------------
+
+.services-cta{
+    position: relative;
+    z-index: 999;
+    height: 35em;
+    @media #{$breakpoint-md} {
+        height: 20em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 20em;
+    }
+    @media  #{$breakpoint-xl}{
+        height: 20em;
+    }
+    @media  #{$breakpoint-xxl}{
+        height: 17em;
+    }
+}
+
+.services-parallax-window{
+    min-height: 100%;
+    background: transparent;
+    position: relative;
+    text-align: center;
+}
+
+.services-parallax-window:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+
+.services-cta-content{
+    text-align: center;
+    color: white;
+    width: 23em;
+    height: 20em;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @media #{$breakpoint-md}{
+        height: 11em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 9em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 10em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 7.5em;
+    }
+}
+
+.services-cta-btn{
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    bottom: 1em;
+    width: 191px;
+    @media #{$breakpoint-lg} {
+        width: 270px;
+    }
+    @media #{$breakpoint-xl} {
+        width: 270px;
+    }
+    @media #{$breakpoint-xxl} {
+        width: 310px;
+    }
+    
+}
