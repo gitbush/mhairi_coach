@@ -30,7 +30,7 @@ $font-cabin: 'Cabin', serif;
 .logo-1{
   font-family: $font-parisienne;
   line-height: 1.1;
-  font-size: 3.6em;
+  font-size: 3.9em;
   margin: 0;
   @media #{$breakpoint-xl} {
     font-size: 2.9em;
@@ -81,7 +81,7 @@ $font-cabin: 'Cabin', serif;
   letter-spacing: .2em;
   font-size: 1.1em;
   @media #{$breakpoint-sm} {
-    font-size: .9em;
+    font-size: 1em;
   }
   @media #{$breakpoint-md} {
     font-size: .7em;

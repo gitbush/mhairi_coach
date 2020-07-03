@@ -1,0 +1,200 @@
+// ---------------------------------------------------------------
+// services hero
+// ---------------------------------------------------------------
+
+.services-hero{
+    @media #{$breakpoint-md}{
+        display: grid;
+        grid-template-columns: 5em 1fr 2em 1fr 5em;
+        height: 22em;
+        margin: 3em 0;
+    }
+    @media #{$breakpoint-lg}{
+        display: grid;
+        grid-template-columns: 6em 1fr 2em 1fr 6em;
+        height: 22em;
+        margin: 3em 0;
+    }
+    @media #{$breakpoint-xl}{
+        display: grid;
+        grid-template-columns:  auto 18em 2em 18em auto;
+        height: 22em;
+        margin: 3em 0;
+    }
+    @media #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: auto 16em 1em 16em auto;
+        height: 22em;
+        margin: 3em 0;
+    }
+}
+
+.services-hero-text{
+    @media #{$breakpoint-md}{
+        grid-column: 4;
+        height: 90%;
+        position: relative;
+    }
+    @media #{$breakpoint-lg}{
+        grid-column: 4;
+        height: 90%;
+        position: relative;
+    }
+    @media #{$breakpoint-xl}{
+        grid-column: 4;
+        height: 90%;
+        position: relative;
+    }
+    @media #{$breakpoint-xxl}{
+        grid-column: 4;
+        height: 85%;
+        position: relative;
+    }
+
+}
+
+.services-hero-content{
+    text-align: center;
+
+    @media #{$breakpoint-md}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 15em;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 14em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xl}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 13em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xxl}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 10em;
+        margin: auto;
+    }
+    
+    .normal-text{
+        margin-top: 2em;
+       
+        @media #{$breakpoint-sm}{
+            position: relative;
+            top: 3em;
+            width: 80%;
+            margin: auto;
+            font-size: 1.1em;
+        }
+        @media #{$breakpoint-md}{
+            position: relative;
+            top: 3em;
+            width: 90%;
+            margin: auto;
+            font-size: .85em;
+        }
+        @media #{$breakpoint-lg}{
+            position: relative;
+            top: 3em;
+            width: 90%;
+            margin: auto;
+            font-size: .8em;
+        }
+        @media #{$breakpoint-xl}{
+            position: relative;
+            top: 3em;
+            width: 90%;
+            margin: auto;
+            font-size: .75em;
+        }
+        @media #{$breakpoint-xxl}{
+            position: relative;
+            top: 3em;
+            width: 90%;
+            margin: auto;
+            font-size: .65em;
+        }
+    }
+        
+}
+
+.services-hero-img{
+    @media #{$breakpoint-min-md}{
+        grid-column: 2;
+    }
+    img{
+        width: 100%;
+        height: 90%;
+        @media #{$breakpoint-xxl}{
+            height: 85%;
+        }
+    }
+}
+
+.services-title{
+    font-family: $font-roboto;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: $base-text-color;
+    font-size: 2.3em;
+    @media #{$breakpoint-sm}{
+        font-size: 2.1em;
+    }
+    @media #{$breakpoint-md}{
+        font-size: 1.5em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1.5em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: 1.5em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: 1.1em;
+    }
+}
+
+.services-subtitle{
+    font-family: $font-roboto;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: $base-text-color;
+    font-size: 1.4em;
+    @media #{$breakpoint-sm}{
+        width: 60%;
+        margin: auto;
+    }
+    @media #{$breakpoint-md}{
+        font-family: $font-parisienne;
+        font-size: .9em;
+    }
+    @media #{$breakpoint-lg}{
+        font-family: $font-parisienne;
+        font-size: .9em;
+    }
+    @media #{$breakpoint-xl}{
+        font-family: $font-parisienne;
+        font-size: .9em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-family: $font-parisienne;
+        font-size: .7em;
+    }
+}
