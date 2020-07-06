@@ -176,7 +176,8 @@
         font-size: 1.45em;
     }
     @media #{$breakpoint-xxl}{
-        font-size: 1.1em;
+        letter-spacing: .25em;
+        font-size: 1.3em;
     }
 }
 
@@ -244,7 +245,7 @@
         margin-top: 0;
     }
     @media #{$breakpoint-xxl}{
-        font-size: 1.2em;
+        font-size: 1.28em;
         width: 27em;
         margin-top: 0;
     }
@@ -277,7 +278,7 @@
 
 .intro-text{
     width: 23em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     @media #{$breakpoint-sm}{
         width: 25em;
     }
@@ -293,4 +294,22 @@
     @media #{$breakpoint-xxl}{
         width: 34em;
     }
+}
+
+// ---------------------------------------------------------------
+// Who is this for
+// ---------------------------------------------------------------
+
+.who-is-this-for{
+    text-align: center;
+    margin: 4em 0;
+}
+
+.who-item{
+    margin: 3em;
+}
+
+.who-for-sub{
+    color: $pink;
+    font-size: 1.3em;
 }

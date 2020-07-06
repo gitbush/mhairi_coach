@@ -592,7 +592,7 @@ template {
 
 @media only screen and (min-width: 1600px) {
   .normal-text {
-    font-size: .56em;
+    font-size: .65em;
   }
 }
 
@@ -4708,7 +4708,8 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .services-title {
-    font-size: 1.1em;
+    letter-spacing: .25em;
+    font-size: 1.3em;
   }
 }
 
@@ -4804,7 +4805,7 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .intro-title {
-    font-size: 1.2em;
+    font-size: 1.28em;
     width: 27em;
     margin-top: 0;
   }
@@ -4852,7 +4853,7 @@ footer {
 
 .intro-text {
   width: 23em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -4883,5 +4884,19 @@ footer {
   .intro-text {
     width: 34em;
   }
+}
+
+.who-is-this-for {
+  text-align: center;
+  margin: 4em 0;
+}
+
+.who-item {
+  margin: 3em;
+}
+
+.who-for-sub {
+  color: #f58c7c;
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=main.css.map */
