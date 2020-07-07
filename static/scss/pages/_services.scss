@@ -376,3 +376,27 @@
         grid-template-columns: auto 9em 2em 9em 2em 9em auto;
     } 
 }
+
+// ---------------------------------------------------------------
+// How it works
+// ---------------------------------------------------------------
+
+.how-it-works{
+    text-align: center;
+}
+
+.how-item{
+    background-color: $lightest-pink;
+    margin: 4em 1.5em;
+    height: 32em;
+    padding: 2em 2em;
+}
+
+.how-sub{
+    color: $pink;
+    font-size: 1.25em;
+}
+
+.how-title{
+    margin: .5em .7em;
+}
