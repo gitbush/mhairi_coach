@@ -5021,12 +5021,69 @@ footer {
   padding: 2em 2em;
 }
 
-.how-sub {
-  color: #f58c7c;
-  font-size: 1.25em;
+@media only screen and (min-width: 768px) {
+  .how-item:nth-child(1) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .how-item:nth-child(2) {
+    -ms-grid-column: 4;
+    grid-column: 4;
+  }
+  .how-item:nth-child(3) {
+    -ms-grid-column: 6;
+    grid-column: 6;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-item {
+    margin: 0;
+    padding: .8em 1em;
+    height: 26em;
+    width: 100%;
+  }
 }
 
 .how-title {
-  margin: .5em .7em;
+  margin: .8em 0 0 0;
+}
+
+.how-sub {
+  color: #f58c7c;
+  font-size: 1.25em;
+  margin: .5em 0 1.5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-sub {
+    font-size: .8em;
+  }
+}
+
+.how-item-title {
+  margin: .8em .7em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-item-title {
+    margin: 0;
+    height: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .how-content {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-content {
+    margin: 2em 0 3em 0;
+    -ms-grid-columns: 2em 13em 1em 13em 1em 13em 2em;
+        grid-template-columns: 2em 13em 1em 13em 1em 13em 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
