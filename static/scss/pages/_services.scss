@@ -290,6 +290,7 @@
     }
     @media #{$breakpoint-xl}{
         width: 32.5em;
+        margin-bottom: 2em;
     }
     @media #{$breakpoint-xxl}{
         width: 34em;
@@ -305,6 +306,12 @@
     margin: 4em 0;
     @media #{$breakpoint-min-md}{
         margin: 0 0 4em 0;
+    }
+    @media #{$breakpoint-xl}{
+        margin: 0 0 2em 0;
+    }
+    @media #{$breakpoint-xxl}{
+        margin: 0 0 2em 0;
     }
 }
 
@@ -341,6 +348,14 @@
         margin-bottom: 1em;
         font-size: 1em;
     }  
+    @media #{$breakpoint-xl}{
+        margin-bottom: 1em;
+        font-size: .8em;
+    } 
+    @media #{$breakpoint-xxl}{
+        margin-bottom: 1em;
+        font-size: .7em;
+    }
 }
 
 .who-content{
@@ -351,5 +366,13 @@
     @media #{$breakpoint-lg}{
         display: grid;
         grid-template-columns: auto 11em 2em 11em 2em 11em auto;
+    } 
+    @media #{$breakpoint-xl}{
+        display: grid;
+        grid-template-columns: auto 10em 2em 10em 2em 10em auto;
+    } 
+    @media #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: auto 9em 2em 9em 2em 9em auto;
     } 
 }

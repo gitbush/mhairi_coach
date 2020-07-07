@@ -4877,6 +4877,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   .intro-text {
     width: 32.5em;
+    margin-bottom: 2em;
   }
 }
 
@@ -4894,6 +4895,18 @@ footer {
 @media only screen and (min-width: 768px) {
   .who-is-this-for {
     margin: 0 0 4em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who-is-this-for {
+    margin: 0 0 2em 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-is-this-for {
+    margin: 0 0 2em 0;
   }
 }
 
@@ -4947,6 +4960,20 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .who-for-sub {
+    margin-bottom: 1em;
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-for-sub {
+    margin-bottom: 1em;
+    font-size: .7em;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .who-content {
     display: -ms-grid;
@@ -4962,6 +4989,24 @@ footer {
     display: grid;
     -ms-grid-columns: auto 11em 2em 11em 2em 11em auto;
         grid-template-columns: auto 11em 2em 11em 2em 11em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 10em 2em 10em 2em 10em auto;
+        grid-template-columns: auto 10em 2em 10em 2em 10em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 9em 2em 9em 2em 9em auto;
+        grid-template-columns: auto 9em 2em 9em 2em 9em auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
