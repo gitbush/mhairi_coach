@@ -391,6 +391,7 @@
     height: 32em;
     padding: 2em 2em;
     @media #{$breakpoint-min-md}{
+        background-color: $gray;
         &:nth-child(1){
             grid-column: 2;
         }
@@ -401,11 +402,20 @@
             grid-column: 6;
         }
     }
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 0;
         padding: .8em 1em;
         height: 26em;
         width: 100%;
+    }
+    @media #{$breakpoint-lg}{
+        height: 22em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 18em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 20em;
     }
 }
 
@@ -417,14 +427,17 @@
     color: $pink;
     font-size: 1.25em;
     margin:  .5em 0 1.5em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
         font-size: .8em;
+    }
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        font-size: .7em;
     }
 }
 
 .how-item-title{
     margin: .8em .7em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 0;
         height: 3.5em;
     }
@@ -434,8 +447,8 @@
     @media #{$breakpoint-min-md}{
         display: grid;
     }
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 2em 0 3em 0;
-        grid-template-columns: 2em 13em 1em 13em 1em 13em 2em;
+        grid-template-columns: auto 13em 1em 13em 1em 13em auto;
     }
 }

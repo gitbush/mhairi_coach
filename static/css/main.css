@@ -5022,6 +5022,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .how-item {
+    background-color: #f0f3f3;
+  }
   .how-item:nth-child(1) {
     -ms-grid-column: 2;
     grid-column: 2;
@@ -5036,12 +5039,30 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .how-item {
     margin: 0;
     padding: .8em 1em;
     height: 26em;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .how-item {
+    height: 22em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-item {
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .how-item {
+    height: 20em;
   }
 }
 
@@ -5055,9 +5076,15 @@ footer {
   margin: .5em 0 1.5em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .how-sub {
     font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .how-sub {
+    font-size: .7em;
   }
 }
 
@@ -5065,7 +5092,7 @@ footer {
   margin: .8em .7em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .how-item-title {
     margin: 0;
     height: 3.5em;
@@ -5079,11 +5106,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .how-content {
     margin: 2em 0 3em 0;
-    -ms-grid-columns: 2em 13em 1em 13em 1em 13em 2em;
-        grid-template-columns: 2em 13em 1em 13em 1em 13em 2em;
+    -ms-grid-columns: auto 13em 1em 13em 1em 13em auto;
+        grid-template-columns: auto 13em 1em 13em 1em 13em auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
