@@ -4,6 +4,7 @@
   var hamburger = {
     navToggle: document.querySelector('.nav-toggle'),
     nav: document.querySelector('nav'),
+    navClose: document.querySelector('.svg-close'),
 
     
 
@@ -11,18 +12,17 @@
       e.preventDefault();
       this.navToggle.classList.toggle('expanded');
       this.nav.classList.toggle('expanded');
+      this.navClose.classList.toggle('expanded');
     }
   };
  
-  console.log(hamburger.navToggle)
 
   hamburger.navToggle.addEventListener('click', function(e) { 
     hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { 
+  hamburger.navClose.addEventListener('click', function(e) { 
     hamburger.doToggle(e); });
 
 }());
-
 
 // aos
 AOS.init({
@@ -44,7 +44,6 @@ if(document.querySelector('.slide-btn')){
       
   }
   document.querySelector('.slide-btn').addEventListener('click', nextSlide)
-  console.log('things slider ok')
 }
 
 

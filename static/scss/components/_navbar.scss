@@ -6,20 +6,20 @@ $nav-toggle-bar-width: 3.6rem;
 $nav-toggle-z-index: 2;
 
 .nav {
-  -webkit-transition: right 0.5s ease;
-  -moz-transition: right 0.5s ease;
-  -ms-transition: right 0.5s ease;
-  -o-transition: right 0.5s ease;
-  transition: right 0.5s ease;
+  -webkit-transition: right 1s ease-in-out;
+  -moz-transition: right 1s ease-in-out;
+  -ms-transition: right 1s ease-in-out;
+  -o-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
   background: $light-pink;
   color: green($color: #000000);
   cursor: pointer;
   right: -25rem;
   padding: 1em 2em 1em 2em;
   position: fixed;
-  top: 0;
-  height: 25em;
-  width: 20em;
+  top: 15px;
+  height: 23em;
+  width: 18em;
   z-index: 99;
   
   @media #{$breakpoint-sm} {
@@ -31,22 +31,22 @@ $nav-toggle-z-index: 2;
   }
   @media #{$breakpoint-md} {
     height: 20em;
-    width: 15em;
+    width: 14em;
   }
   @media #{$breakpoint-lg} {
     padding: 1em 2em 1em 2em;
     height: 17.5em;
-    width: 14em;
+    width: 12.5em;
   }
   @media #{$breakpoint-xl} {
     padding: 1em 1em 1em 1em;
-    height: 15.8em;
+    height: 14em;
     width: 11em;
   }
   @media #{$breakpoint-xxl} {
     padding: 1em 1em 1em 1em;
-    height: 15em;
-    width: 11em;
+    height: 13em;
+    width: 9em;
   }
 }
 
@@ -78,21 +78,21 @@ $nav-toggle-z-index: 2;
 
 .nav-item{
   margin: .5em 0;
-  font-size: 1.2em;
+  font-size: 1.08em;
   @media #{$breakpoint-sm} {
     font-size: 1.1em;
   }
   @media #{$breakpoint-md} {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   @media #{$breakpoint-lg} {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   @media #{$breakpoint-xl} {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   @media #{$breakpoint-xxl} {
-    font-size: 1.34em;
+    font-size: 1em;
   }
   
 }

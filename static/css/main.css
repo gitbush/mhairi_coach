@@ -964,17 +964,17 @@ footer {
 }
 
 .nav {
-  -webkit-transition: right 0.5s ease;
-  transition: right 0.5s ease;
+  -webkit-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
   background: #fbf2ec;
   color: 0;
   cursor: pointer;
   right: -25rem;
   padding: 1em 2em 1em 2em;
   position: fixed;
-  top: 0;
-  height: 25em;
-  width: 20em;
+  top: 15px;
+  height: 23em;
+  width: 18em;
   z-index: 99;
 }
 
@@ -994,7 +994,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav {
     height: 20em;
-    width: 15em;
+    width: 14em;
   }
 }
 
@@ -1002,14 +1002,14 @@ footer {
   .nav {
     padding: 1em 2em 1em 2em;
     height: 17.5em;
-    width: 14em;
+    width: 12.5em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .nav {
     padding: 1em 1em 1em 1em;
-    height: 15.8em;
+    height: 14em;
     width: 11em;
   }
 }
@@ -1017,8 +1017,8 @@ footer {
 @media only screen and (min-width: 1600px) {
   .nav {
     padding: 1em 1em 1em 1em;
-    height: 15em;
-    width: 11em;
+    height: 13em;
+    width: 9em;
   }
 }
 
@@ -1050,7 +1050,7 @@ footer {
 
 .nav-item {
   margin: .5em 0;
-  font-size: 1.2em;
+  font-size: 1.08em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1061,25 +1061,25 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav-item {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav-item {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .nav-item {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .nav-item {
-    font-size: 1.34em;
+    font-size: 1em;
   }
 }
 
