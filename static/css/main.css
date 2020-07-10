@@ -964,8 +964,8 @@ footer {
 }
 
 .nav {
-  -webkit-transition: right 1s ease-in-out;
-  transition: right 1s ease-in-out;
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
   background: #fbf2ec;
   color: 0;
   cursor: pointer;
@@ -1163,8 +1163,8 @@ footer {
   right: 0.3%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   background: black;
   content: '';
   height: 0.1rem;
@@ -1220,7 +1220,8 @@ footer {
 }
 
 .nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
+  -webkit-transform: translateX(-4500px);
+  transform: translateX(-4500px);
 }
 
 .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
@@ -1229,13 +1230,13 @@ footer {
 }
 
 .nav-toggle.expanded .nav-toggle-bar::after {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: translateX(-4500px);
+  transform: translateX(-4500px);
 }
 
 .nav-toggle.expanded .nav-toggle-bar::before {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: translateX(-4500px);
+  transform: translateX(-4500px);
 }
 
 .social-nav-item {
