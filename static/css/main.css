@@ -5113,4 +5113,112 @@ footer {
         grid-template-columns: auto 13em 1em 13em 1em 13em auto;
   }
 }
+
+.signature-package {
+  margin: 4em auto;
+  width: 21em;
+}
+
+.signature-title {
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+.includes-list {
+  padding: 0;
+}
+
+.includes-list-item {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+.fa-check-square {
+  margin-right: 1em;
+}
+
+.leave-with-title {
+  text-align: left;
+  margin: 3em 0 1em 0;
+}
+
+.signature-price {
+  position: relative;
+  background-color: #f0f3f3;
+  height: 13em;
+  text-align: center;
+}
+
+.price-content {
+  margin: auto;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 8em;
+}
+
+.price-number {
+  margin-bottom: .8em;
+}
+
+.price-text {
+  color: #3b403f;
+  font-style: italic;
+}
+
+.signature-button {
+  background-color: #f7d989;
+  width: 16em;
+  margin: 3em auto;
+}
+
+.signature-button a {
+  color: #3b403f;
+  font-size: 1em;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .signature-button a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-button a {
+    font-size: .78em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .signature-button a {
+    font-size: .69em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .signature-button a {
+    font-size: .58em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .signature-button a {
+    font-size: .56em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

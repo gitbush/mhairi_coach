@@ -452,3 +452,96 @@
         grid-template-columns: auto 13em 1em 13em 1em 13em auto;
     }
 }
+
+// ---------------------------------------------------------------
+// Signature package
+// ---------------------------------------------------------------
+
+.signature-package{
+    margin: 4em auto;
+    width: 21em;
+}
+
+.signature-title{
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+.includes-list{
+    padding: 0;
+}
+
+.includes-list-item{
+    list-style: none;
+    margin: 1.5em 0;
+}
+
+.fa-check-square{
+    margin-right: 1em;
+}
+
+.leave-with-title{
+    text-align: left;
+    margin: 3em 0 1em 0;
+}
+
+.signature-price{
+    position: relative;
+    background-color: $gray;
+    height: 13em;
+    text-align: center;
+}
+
+.price-content{
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 8em;
+}
+
+.price-number{
+    margin-bottom: .8em;
+}
+
+.price-text{
+    color: $base-text-color;
+    font-style: italic;
+}
+
+.signature-button{
+    background-color: #f7d989;
+    width: 16em;
+    margin: 3em auto;
+
+    a{
+        color: $base-text-color;
+        font-size: 1em;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        @media #{$breakpoint-sm} {
+            font-size: 1em;
+        }
+        @media #{$breakpoint-md} {
+            font-size: .78em;
+        }
+        @media #{$breakpoint-lg} {
+            font-size: .69em;
+        }
+        @media #{$breakpoint-xl} {
+            font-size: .58em;
+        }
+        @media #{$breakpoint-xxl} {
+            font-size: .56em;
+        }
+    }
+}
