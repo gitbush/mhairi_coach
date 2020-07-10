@@ -17,14 +17,14 @@
     }
     @media #{$breakpoint-xl}{
         display: grid;
-        grid-template-columns:  auto 18em 2em 18em auto;
-        height: 22em;
-        margin: 3em 0 1em 0;
+        grid-template-columns:  auto 17em 2em 17em auto;
+        height: 20em;
+        margin: 2em 0 1em 0;
     }
     @media #{$breakpoint-xxl}{
         display: grid;
         grid-template-columns: auto 16em 1em 16em auto;
-        height: 22em;
+        height: 20em;
         margin: 3em 0 2em 0;
     }
 }
@@ -84,7 +84,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 14em;
+        height: 12em;
         margin: auto;
     }
     @media #{$breakpoint-xl}{
@@ -93,7 +93,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 13em;
+        height: 10em;
         margin: auto;
     }
     @media #{$breakpoint-xxl}{
@@ -102,7 +102,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 10em;
+        height: 9em;
         margin: auto;
     }
     
@@ -645,10 +645,11 @@
         height: 15em;
     }
     @media #{$breakpoint-xl} {
+        margin: 4em 0 2em 0;
         height: 15em;
     }
     @media #{$breakpoint-xxl} {
-        margin: 5em 0 2em 0;
+        margin: 4em 0 2em 0;
     }
 }
 
@@ -707,8 +708,11 @@
 .testimonial-slide-text{
     width: 80%;
     margin: 2em auto;
-    @media #{$breakpoint-sm}, #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+    @media #{$breakpoint-sm}, #{$breakpoint-md}, #{$breakpoint-lg} {
         width: 60%;
+    }
+    @media #{$breakpoint-xl} {
+        width: 50%;
     }
     @media #{$breakpoint-xxl} {
         width: 35%;

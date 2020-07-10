@@ -586,7 +586,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .normal-text {
-    font-size: .58em;
+    font-size: .6em;
   }
 }
 
@@ -4474,10 +4474,10 @@ footer {
   .services-hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 18em 2em 18em auto;
-        grid-template-columns: auto 18em 2em 18em auto;
-    height: 22em;
-    margin: 3em 0 1em 0;
+    -ms-grid-columns: auto 17em 2em 17em auto;
+        grid-template-columns: auto 17em 2em 17em auto;
+    height: 20em;
+    margin: 2em 0 1em 0;
   }
 }
 
@@ -4487,7 +4487,7 @@ footer {
     display: grid;
     -ms-grid-columns: auto 16em 1em 16em auto;
         grid-template-columns: auto 16em 1em 16em auto;
-    height: 22em;
+    height: 20em;
     margin: 3em 0 2em 0;
   }
 }
@@ -4577,7 +4577,7 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 14em;
+    height: 12em;
     margin: auto;
   }
 }
@@ -4589,7 +4589,7 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 13em;
+    height: 10em;
     margin: auto;
   }
 }
@@ -4601,7 +4601,7 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 10em;
+    height: 9em;
     margin: auto;
   }
 }
@@ -5378,13 +5378,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .testimonials {
+    margin: 4em 0 2em 0;
     height: 15em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .testimonials {
-    margin: 5em 0 2em 0;
+    margin: 4em 0 2em 0;
   }
 }
 
@@ -5452,9 +5453,15 @@ footer {
   margin: 2em auto;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 500px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-slide-text {
     width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-slide-text {
+    width: 50%;
   }
 }
 
