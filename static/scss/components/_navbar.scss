@@ -20,7 +20,7 @@ $nav-toggle-z-index: 2;
   top: 15px;
   height: 15em;
   width: 20em;
-  z-index: 1;
+  z-index: 99;
   
   @media #{$breakpoint-min-sm} {
     right: -20rem;
@@ -92,6 +92,9 @@ $nav-toggle-z-index: 2;
   z-index: 2;
   @media #{$breakpoint-sm}{
     top: .6rem;
+  }
+  @media #{$breakpoint-md}, #{$breakpoint-lg}{
+    top: 1.5rem;
   }
   @media #{$breakpoint-xl}{
     top: 1rem;

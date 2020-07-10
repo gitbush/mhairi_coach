@@ -5,24 +5,20 @@
     navToggle: document.querySelector('.nav-toggle'),
     nav: document.querySelector('nav'),
 
+    
+
     doToggle: function(e) {
       e.preventDefault();
       this.navToggle.classList.toggle('expanded');
       this.nav.classList.toggle('expanded');
     }
   };
-  
-  // if(window.innerWidth >= 768){
-  //   let toggleHeader = document.querySelector('.toggle-header').children
-  //   console.log(toggleHeader[1])
-  //   toggleHeader[1].classList.remove('nav-toggle')
-  // }
+ 
+  console.log(hamburger.navToggle)
 
   hamburger.navToggle.addEventListener('click', function(e) { 
-    console.log('yes')
     hamburger.doToggle(e); });
   hamburger.nav.addEventListener('click', function(e) { 
-    console.log('nav')
     hamburger.doToggle(e); });
 
 }());
@@ -66,6 +62,5 @@ if(document.querySelector('.circle-slide-btn')){
       
   }
   document.querySelector('.circle-slide-btn').addEventListener('click', nextSlide2)
-  console.log('testimonials slider ok')
 }
 

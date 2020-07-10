@@ -975,7 +975,7 @@ footer {
   top: 15px;
   height: 15em;
   width: 20em;
-  z-index: 1;
+  z-index: 99;
 }
 
 @media only screen and (min-width: 500px) {
@@ -1062,6 +1062,12 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav-toggle {
     top: .6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-toggle {
+    top: 1.5rem;
   }
 }
 
