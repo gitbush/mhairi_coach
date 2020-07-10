@@ -1572,8 +1572,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 12.5em;
-        grid-template-rows: 12em 12.5em;
+    -ms-grid-rows: 11em 12.5em;
+        grid-template-rows: 11em 12.5em;
   }
 }
 
@@ -1712,8 +1712,9 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-about {
-    -ms-grid-columns: auto 12em (13em)[2] auto;
-        grid-template-columns: auto 12em repeat(2, 13em) auto;
+    -ms-grid-columns: auto 13em (13em)[2] auto;
+        grid-template-columns: auto 13em repeat(2, 13em) auto;
+    margin-top: 0;
     height: 27em;
   }
 }
@@ -3829,8 +3830,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 12.5em;
-        grid-template-rows: 12em 12.5em;
+    -ms-grid-rows: 11em 12.5em;
+        grid-template-rows: 11em 12.5em;
   }
 }
 
@@ -3969,8 +3970,9 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-about {
-    -ms-grid-columns: auto 12em (13em)[2] auto;
-        grid-template-columns: auto 12em repeat(2, 13em) auto;
+    -ms-grid-columns: auto 13em (13em)[2] auto;
+        grid-template-columns: auto 13em repeat(2, 13em) auto;
+    margin-top: 0;
     height: 27em;
   }
 }

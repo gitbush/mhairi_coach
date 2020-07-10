@@ -155,7 +155,7 @@
                 grid-template-rows: 13em 14em;
             }
             @media #{$breakpoint-xl} {
-                grid-template-rows: 12em 12.5em;
+                grid-template-rows: 11em 12.5em;
             }
             @media #{$breakpoint-xxl} {
                 grid-template-rows: 12em 12em;
@@ -254,7 +254,8 @@
         height: 30em;
     }
     @media #{$breakpoint-xl} {
-        grid-template-columns:  auto 12em repeat(2, 13em) auto;
+        grid-template-columns:  auto 13em repeat(2, 13em) auto;
+        margin-top: 0;
         height: 27em;
     }
 }
