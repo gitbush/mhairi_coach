@@ -34,20 +34,22 @@ AOS.init({
   once: true,
 });
 
-// slick carousel
-// $(document).ready(function(){
-//   $('.things-slider').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     fade: true,
-//     cssEase: 'linear'
-//   });
 
-//   $('.slick-next').html("Next thing")
-  
-// });
+// things about me slider
 
+var slides = document.querySelectorAll('.things-slider .slider-item');
+var currentSlide = 0;
+// var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide() {
+    slides[currentSlide].className = 'slider-item slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slider-item slide showing';
+    
+}
+document.querySelector('.slide-btn').addEventListener('click', nextSlide)
+
+// testimonial slider. Services.html
 var slides = document.querySelectorAll('.things-slider .slider-item');
 var currentSlide = 0;
 // var slideInterval = setInterval(nextSlide,2000);
