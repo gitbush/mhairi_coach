@@ -431,7 +431,7 @@
         font-size: .8em;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        font-size: .7em;
+        font-size: .6em;
     }
 }
 
@@ -460,21 +460,21 @@
 .signature-package{
     margin: 4em auto;
     width: 21em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 3em 0;
         width: 100%;
     }
 }
 
 .signature-content{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         display: grid;
         grid-template-columns: auto repeat(2, 19em) auto;
     }
 }
 
 .signature-includes{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         grid-column: 2;
     }
 }
@@ -482,6 +482,9 @@
 .signature-title{
     padding: 0;
     margin-bottom: 1.5em;
+    @media  #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin-bottom: 1em;
+    }
 }
 
 .includes-list{
@@ -492,9 +495,8 @@
     list-style: none;
     margin: 1.5em 0;
     
-    @media #{$breakpoint-md}{
-        margin: 1
-        em 0;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 1em 0;
     }
 }
 
@@ -512,12 +514,26 @@
     background-color: $gray;
     height: 13em;
     text-align: center;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         grid-column: 3;
         width: 15em;
         height: 10em;
         margin: auto;
     }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        width: 14em;
+        height: 10em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 9em;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 12em;
+        height: 8em;
+    }
+
+    
+    
 }
 
 .price-content{
@@ -529,16 +545,28 @@
     right: 0;
     left: 0;
     height: 8em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         height: 6em;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        width: 70%;
+    }
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        height: 5em;
     }
     
 }
 
 .price-number{
     margin-bottom: .8em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         font-size: 1.4em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: 1.2em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: 1em;
     }
     
 }
@@ -553,9 +581,19 @@
     width: 16em;
     margin: 3em auto;
 
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 2em auto 0 0;;
         grid-column: 2;
+        width: 9em;
+    }
+    @media #{$breakpoint-md}{
+        width: 11.5em;
+    }
+    @media #{$breakpoint-lg}{
+        width: 11em;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 1em auto 0 0;
     }
 
     a{

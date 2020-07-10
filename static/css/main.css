@@ -592,7 +592,7 @@ template {
 
 @media only screen and (min-width: 1600px) {
   .normal-text {
-    font-size: .65em;
+    font-size: .6em;
   }
 }
 
@@ -5084,7 +5084,7 @@ footer {
 
 @media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .how-sub {
-    font-size: .7em;
+    font-size: .6em;
   }
 }
 
@@ -5119,14 +5119,14 @@ footer {
   width: 21em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-package {
     margin: 3em 0;
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-content {
     display: -ms-grid;
     display: grid;
@@ -5135,7 +5135,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-includes {
     -ms-grid-column: 2;
     grid-column: 2;
@@ -5147,6 +5147,12 @@ footer {
   margin-bottom: 1.5em;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .signature-title {
+    margin-bottom: 1em;
+  }
+}
+
 .includes-list {
   padding: 0;
 }
@@ -5156,9 +5162,9 @@ footer {
   margin: 1.5em 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .includes-list-item {
-    margin: 1 em 0;
+    margin: 1em 0;
   }
 }
 
@@ -5178,13 +5184,33 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-price {
     -ms-grid-column: 3;
     grid-column: 3;
     width: 15em;
     height: 10em;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .signature-price {
+    width: 14em;
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .signature-price {
+    height: 9em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .signature-price {
+    width: 12em;
+    height: 8em;
   }
 }
 
@@ -5199,9 +5225,21 @@ footer {
   height: 8em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .price-content {
     height: 6em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .price-content {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .price-content {
+    height: 5em;
   }
 }
 
@@ -5209,9 +5247,21 @@ footer {
   margin-bottom: .8em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .price-number {
     font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .price-number {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .price-number {
+    font-size: 1em;
   }
 }
 
@@ -5226,11 +5276,30 @@ footer {
   margin: 3em auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-button {
     margin: 2em auto 0 0;
     -ms-grid-column: 2;
     grid-column: 2;
+    width: 9em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-button {
+    width: 11.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .signature-button {
+    width: 11em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .signature-button {
+    margin: 1em auto 0 0;
   }
 }
 
