@@ -970,19 +970,24 @@ footer {
   color: 0;
   cursor: pointer;
   right: -25rem;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 1em 2em 1em 2em;
   position: fixed;
-  top: 15px;
-  height: 15em;
+  top: 0;
+  height: 25em;
   width: 20em;
   z-index: 99;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav {
-    right: -20rem;
-    height: 24em;
-    width: 15em;
+    height: 21em;
+    width: 17em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    padding: 1em 1.5em 1em 1.5em;
   }
 }
 
@@ -993,29 +998,99 @@ footer {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav {
+    padding: 1em 2em 1em 2em;
+    height: 17.5em;
+    width: 14em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav {
+    padding: 1em 1em 1em 1em;
+    height: 15.8em;
+    width: 11em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .nav {
+    padding: 1em 1em 1em 1em;
     height: 15em;
-    width: 12em;
+    width: 11em;
   }
 }
 
 .nav.expanded {
-  right: 15px;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav.expanded {
+    top: 15px;
+    right: 15px;
+  }
 }
 
 .nav ul {
-  position: absolute;
+  position: relative;
   text-align: start;
   font-size: 15px;
   text-transform: uppercase;
   line-height: 2;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.nav-item {
+  margin: .5em 0;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .nav-item {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-item {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-item {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-item {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .nav-item {
+    font-size: 1.34em;
+  }
+}
+
+.nav-close {
+  text-align: right;
+  margin: 0;
+}
+
+.nav-close svg {
+  width: auto;
+  height: 36px;
 }
 
 .nav-item a {
@@ -1161,6 +1236,30 @@ footer {
 .nav-toggle.expanded .nav-toggle-bar::before {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.social-nav-item {
+  margin: .5em;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-nav-item {
+    margin: .4em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .social-nav-item {
+    font-size: 1.1em;
+  }
+}
+
+.social-nav {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 5px;
 }
 
 .coach-cta-btn {

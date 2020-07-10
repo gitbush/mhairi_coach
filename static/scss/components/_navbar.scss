@@ -15,49 +15,102 @@ $nav-toggle-z-index: 2;
   color: green($color: #000000);
   cursor: pointer;
   right: -25rem;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 1em 2em 1em 2em;
   position: fixed;
-  top: 15px;
-  height: 15em;
+  top: 0;
+  height: 25em;
   width: 20em;
   z-index: 99;
   
-  @media #{$breakpoint-min-sm} {
-    right: -20rem;
-    height: 24em;
-    width: 15em;
+  @media #{$breakpoint-sm} {
+    height: 21em;
+    width: 17em;
+  }
+  @media #{$breakpoint-min-md} {
+    padding: 1em 1.5em 1em 1.5em;
   }
   @media #{$breakpoint-md} {
     height: 20em;
     width: 15em;
   }
-  @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+  @media #{$breakpoint-lg} {
+    padding: 1em 2em 1em 2em;
+    height: 17.5em;
+    width: 14em;
+  }
+  @media #{$breakpoint-xl} {
+    padding: 1em 1em 1em 1em;
+    height: 15.8em;
+    width: 11em;
+  }
+  @media #{$breakpoint-xxl} {
+    padding: 1em 1em 1em 1em;
     height: 15em;
-    width: 12em;
+    width: 11em;
   }
 }
 
-.nav.expanded { right: 15px; }
+.nav.expanded { 
+  right: 0; 
+  @media #{$breakpoint-min-md} {
+    top: 15px;
+    right: 15px; 
+  }
+
+}
 
 .nav ul {
-  position: absolute;
+  position: relative;
   text-align: start;
   font-size: 15px;
   text-transform: uppercase;
   line-height: 2;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   
+}
+
+.nav-item{
+  margin: .5em 0;
+  font-size: 1.2em;
+  @media #{$breakpoint-sm} {
+    font-size: 1.1em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: 1.2em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 1.2em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 1.2em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 1.34em;
+  }
+  
+}
+
+.nav-close{
+  text-align: right;
+  margin: 0;
+
+  svg{
+    width: auto;
+    height: 36px;
+  }
 }
 
 .nav-item a{
   color: $base-text-color;
   line-height: 1.9;
+  
 }
 
 .nav-item a:hover{
@@ -169,3 +222,20 @@ $nav-toggle-z-index: 2;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+.social-nav-item{
+  margin: .5em;
+  font-size: 1.3em;
+  @media #{$breakpoint-xl} {
+    margin: .4em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 1.1em;
+  }
+}
+ .social-nav{
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   bottom: 5px;
+ }
