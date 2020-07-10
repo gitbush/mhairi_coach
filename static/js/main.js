@@ -36,28 +36,36 @@ AOS.init({
 
 
 // things about me slider
-
-var slides = document.querySelectorAll('.things-slider .slider-item');
-var currentSlide = 0;
-// var slideInterval = setInterval(nextSlide,2000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slider-item slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slider-item slide showing';
-    
+if(document.querySelector('.slide-btn')){
+  var slides = document.querySelectorAll('.things-slider .slider-item');
+  var currentSlide = 0;
+  // var slideInterval = setInterval(nextSlide,2000);
+  
+  function nextSlide() {
+      slides[currentSlide].className = 'slider-item slide';
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slider-item slide showing';
+      
+  }
+  document.querySelector('.slide-btn').addEventListener('click', nextSlide)
+  console.log('things slider ok')
 }
-document.querySelector('.slide-btn').addEventListener('click', nextSlide)
+
+
 
 // testimonial slider. Services.html
-var slides = document.querySelectorAll('.things-slider .slider-item');
-var currentSlide = 0;
-// var slideInterval = setInterval(nextSlide,2000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slider-item slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slider-item slide showing';
-    
+if(document.querySelector('.circle-slide-btn')){
+  var slides = document.querySelectorAll('.testimonials-slider .testimonial-item');
+  var currentSlide2 = 0;
+  // var slideInterval = setInterval(nextSlide,2000);
+  
+  function nextSlide2() {
+      slides[currentSlide2].className = 'testimonial-item slide';
+      currentSlide2 = (currentSlide2+1)%slides.length;
+      slides[currentSlide2].className = 'testimonial-item slide test-showing';
+      
+  }
+  document.querySelector('.circle-slide-btn').addEventListener('click', nextSlide2)
+  console.log('testimonials slider ok')
 }
-document.querySelector('.slide-btn').addEventListener('click', nextSlide)
+

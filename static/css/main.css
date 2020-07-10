@@ -5353,11 +5353,38 @@ footer {
 .testimonials {
   text-align: center;
   margin: 7em 0 4em 0;
+  position: relative;
+  height: 20em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonials {
+    height: 19em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonials {
+    height: 17em;
+    margin: 7em 0 2em 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonials {
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonials {
+    height: 15em;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
   .testimonials {
-    margin: 5em 0 4em 0;
+    margin: 5em 0 2em 0;
   }
 }
 
@@ -5399,6 +5426,27 @@ footer {
   }
 }
 
+.testimonials-slider {
+  position: relative;
+}
+
+.testimonial-item {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.test-showing {
+  opacity: 1;
+  z-index: 2;
+}
+
 .testimonial-slide-text {
   width: 80%;
   margin: 2em auto;
@@ -5422,6 +5470,8 @@ footer {
 
 .circle-slide-btn {
   color: #f7d989;
+  position: relative;
+  bottom: -10em;
   height: 4em;
   background-color: white;
   border-radius: 2em;
@@ -5441,15 +5491,30 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .circle-slide-btn {
+    bottom: -9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .circle-slide-btn {
+    font-size: .75em;
+    bottom: -10em;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .circle-slide-btn {
-    font-size: .7em;
+    font-size: .6em;
+    bottom: -12em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .circle-slide-btn {
     font-size: .5em;
+    bottom: -14em;
   }
 }
 /*# sourceMappingURL=main.css.map */
