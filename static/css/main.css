@@ -5119,6 +5119,29 @@ footer {
   width: 21em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-package {
+    margin: 3em 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto (19em)[2] auto;
+        grid-template-columns: auto repeat(2, 19em) auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-includes {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
 .signature-title {
   padding: 0;
   margin-bottom: 1.5em;
@@ -5131,6 +5154,12 @@ footer {
 .includes-list-item {
   list-style: none;
   margin: 1.5em 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .includes-list-item {
+    margin: 1 em 0;
+  }
 }
 
 .fa-check-square {
@@ -5149,6 +5178,16 @@ footer {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-price {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    width: 15em;
+    height: 10em;
+    margin: auto;
+  }
+}
+
 .price-content {
   margin: auto;
   width: 80%;
@@ -5160,8 +5199,20 @@ footer {
   height: 8em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-content {
+    height: 6em;
+  }
+}
+
 .price-number {
   margin-bottom: .8em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-number {
+    font-size: 1.4em;
+  }
 }
 
 .price-text {
@@ -5173,6 +5224,14 @@ footer {
   background-color: #f7d989;
   width: 16em;
   margin: 3em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .signature-button {
+    margin: 2em auto 0 0;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
 }
 
 .signature-button a {

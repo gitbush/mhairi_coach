@@ -460,6 +460,23 @@
 .signature-package{
     margin: 4em auto;
     width: 21em;
+    @media #{$breakpoint-md}{
+        margin: 3em 0;
+        width: 100%;
+    }
+}
+
+.signature-content{
+    @media #{$breakpoint-md}{
+        display: grid;
+        grid-template-columns: auto repeat(2, 19em) auto;
+    }
+}
+
+.signature-includes{
+    @media #{$breakpoint-md}{
+        grid-column: 2;
+    }
 }
 
 .signature-title{
@@ -474,6 +491,11 @@
 .includes-list-item{
     list-style: none;
     margin: 1.5em 0;
+    
+    @media #{$breakpoint-md}{
+        margin: 1
+        em 0;
+    }
 }
 
 .fa-check-square{
@@ -490,6 +512,12 @@
     background-color: $gray;
     height: 13em;
     text-align: center;
+    @media #{$breakpoint-md}{
+        grid-column: 3;
+        width: 15em;
+        height: 10em;
+        margin: auto;
+    }
 }
 
 .price-content{
@@ -501,10 +529,18 @@
     right: 0;
     left: 0;
     height: 8em;
+    @media #{$breakpoint-md}{
+        height: 6em;
+    }
+    
 }
 
 .price-number{
     margin-bottom: .8em;
+    @media #{$breakpoint-md}{
+        font-size: 1.4em;
+    }
+    
 }
 
 .price-text{
@@ -516,6 +552,11 @@
     background-color: #f7d989;
     width: 16em;
     margin: 3em auto;
+
+    @media #{$breakpoint-md}{
+        margin: 2em auto 0 0;;
+        grid-column: 2;
+    }
 
     a{
         color: $base-text-color;
