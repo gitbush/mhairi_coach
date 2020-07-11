@@ -586,13 +586,13 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .normal-text {
-    font-size: .6em;
+    font-size: .65em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .normal-text {
-    font-size: .6em;
+    font-size: .58em;
   }
 }
 
@@ -1079,7 +1079,7 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .nav-item {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 
@@ -1694,8 +1694,8 @@ footer {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 19em 24em;
-      grid-template-rows: 19em 24em;
+  -ms-grid-rows: 19em 24.5em;
+      grid-template-rows: 19em 24.5em;
   height: 100%;
 }
 
@@ -1721,8 +1721,8 @@ footer {
   }
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 15em;
-        grid-template-rows: 12em 15em;
+    -ms-grid-rows: 14em 18em;
+        grid-template-rows: 14em 18em;
   }
 }
 
@@ -1737,8 +1737,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 11em 12.5em;
-        grid-template-rows: 11em 12.5em;
+    -ms-grid-rows: 11em 13em;
+        grid-template-rows: 11em 13em;
   }
 }
 
@@ -1752,8 +1752,8 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
   }
 }
 
@@ -1810,8 +1810,8 @@ footer {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em minmax(auto, 34em) 7em;
-      grid-template-rows: auto 32em minmax(auto, 34em) 7em;
+  -ms-grid-rows: auto 32em minmax(auto, 37em) 7em;
+      grid-template-rows: auto 32em minmax(auto, 37em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1997,7 +1997,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 19em;
+  height: 17em;
   width: 23em;
   margin: auto;
   padding: 1.5em;
@@ -2005,7 +2005,7 @@ footer {
 }
 
 .quote .quote-text {
-  font-size: 1.9em;
+  font-size: 1.8em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
@@ -2016,11 +2016,11 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .quote {
-    height: 18em;
+    height: 14em;
     padding: 1.5em;
   }
   .quote .quote-text {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
@@ -2042,7 +2042,7 @@ footer {
     padding: 1em;
   }
   .quote .quote-text {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -2057,6 +2057,22 @@ footer {
   }
   .quote .quote-text {
     font-size: 1em;
+    padding: 0 2em;
+    margin: 0.6em .6em .1em .6em;
+  }
+  .quote .quote-author {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote {
+    height: 9em;
+    width: 24em;
+    padding: 2.2em 0;
+  }
+  .quote .quote-text {
+    font-size: .9em;
     padding: 0 2em;
     margin: 0.6em .6em .1em .6em;
   }
@@ -2240,7 +2256,7 @@ footer {
   background: transparent;
   position: relative;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.3 !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -2306,7 +2322,7 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .testimonial-parallax .quote-text-dark {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 
@@ -3952,8 +3968,8 @@ footer {
 .home-coaching .coaching-free {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 19em 24em;
-      grid-template-rows: 19em 24em;
+  -ms-grid-rows: 19em 24.5em;
+      grid-template-rows: 19em 24.5em;
   height: 100%;
 }
 
@@ -3979,8 +3995,8 @@ footer {
   }
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 15em;
-        grid-template-rows: 12em 15em;
+    -ms-grid-rows: 14em 18em;
+        grid-template-rows: 14em 18em;
   }
 }
 
@@ -3995,8 +4011,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 11em 12.5em;
-        grid-template-rows: 11em 12.5em;
+    -ms-grid-rows: 11em 13em;
+        grid-template-rows: 11em 13em;
   }
 }
 
@@ -4010,8 +4026,8 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
   }
 }
 
@@ -4068,8 +4084,8 @@ footer {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em minmax(auto, 34em) 7em;
-      grid-template-rows: auto 32em minmax(auto, 34em) 7em;
+  -ms-grid-rows: auto 32em minmax(auto, 37em) 7em;
+      grid-template-rows: auto 32em minmax(auto, 37em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -4255,7 +4271,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 19em;
+  height: 17em;
   width: 23em;
   margin: auto;
   padding: 1.5em;
@@ -4263,7 +4279,7 @@ footer {
 }
 
 .quote .quote-text {
-  font-size: 1.9em;
+  font-size: 1.8em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
@@ -4274,11 +4290,11 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .quote {
-    height: 18em;
+    height: 14em;
     padding: 1.5em;
   }
   .quote .quote-text {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
@@ -4300,7 +4316,7 @@ footer {
     padding: 1em;
   }
   .quote .quote-text {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -4315,6 +4331,22 @@ footer {
   }
   .quote .quote-text {
     font-size: 1em;
+    padding: 0 2em;
+    margin: 0.6em .6em .1em .6em;
+  }
+  .quote .quote-author {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote {
+    height: 9em;
+    width: 24em;
+    padding: 2.2em 0;
+  }
+  .quote .quote-text {
+    font-size: .9em;
     padding: 0 2em;
     margin: 0.6em .6em .1em .6em;
   }
@@ -4498,7 +4530,7 @@ footer {
   background: transparent;
   position: relative;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.3 !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -4564,7 +4596,7 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .testimonial-parallax .quote-text-dark {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 
@@ -4655,7 +4687,7 @@ footer {
     -ms-grid-columns: auto 16em 1em 16em auto;
         grid-template-columns: auto 16em 1em 16em auto;
     height: 20em;
-    margin: 3em 0 2em 0;
+    margin: 3em 0 1em 0;
   }
 }
 
@@ -4715,7 +4747,7 @@ footer {
 
 @media only screen and (max-width: 500px) {
   .services-hero-content {
-    width: 22em;
+    width: 26em;
   }
 }
 
@@ -4732,7 +4764,7 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 15em;
+    height: 13em;
     margin: auto;
   }
 }
@@ -4844,14 +4876,16 @@ footer {
 .services-title {
   font-family: "Roboto", serif;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: .3em;
   color: #3b403f;
   font-size: 2.3em;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-title {
     font-size: 1.9em;
+    font-weight: 700;
   }
 }
 
@@ -4869,14 +4903,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .services-title {
-    font-size: 1.45em;
+    font-size: 1.35em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .services-title {
     letter-spacing: .25em;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
@@ -4972,7 +5006,7 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .intro-title {
-    font-size: 1.28em;
+    font-size: 1.05em;
     width: 27em;
     margin-top: 0;
   }
@@ -5013,7 +5047,7 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .services-intro-subtitle {
-    font-size: .9em;
+    font-size: .8em;
     margin: .5em 1em 1.5em 1em;
   }
 }
@@ -5223,13 +5257,13 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .how-item {
-    height: 18em;
+    height: 19em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .how-item {
-    height: 20em;
+    height: 18em;
   }
 }
 
@@ -5533,13 +5567,14 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonials {
     height: 17em;
-    margin: 7em 0 2em 0;
+    margin: 5em 0 2em 0;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonials {
     height: 15em;
+    margin: 5em 0 2em 0;
   }
 }
 

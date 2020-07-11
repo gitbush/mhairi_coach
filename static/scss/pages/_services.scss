@@ -25,7 +25,7 @@
         display: grid;
         grid-template-columns: auto 16em 1em 16em auto;
         height: 20em;
-        margin: 3em 0 2em 0;
+        margin: 3em 0 1em 0;
     }
 }
 
@@ -64,7 +64,7 @@
     text-align: center;
     margin: auto;
     @media #{$breakpoint-xs}{
-        width: 22em;
+        width: 26em;
     }
     @media #{$breakpoint-sm}{
         width: 32em;
@@ -75,7 +75,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 15em;
+        height: 13em;
         margin: auto;
     }
     @media #{$breakpoint-lg}{
@@ -160,11 +160,13 @@
 .services-title{
     font-family: $font-roboto;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .3em;
     color: $base-text-color;
     font-size: 2.3em;
+    font-weight: 700;
     @media #{$breakpoint-sm}{
         font-size: 1.9em;
+        font-weight: 700;
     }
     @media #{$breakpoint-md}{
         font-size: 1.5em;
@@ -173,11 +175,11 @@
         font-size: 1.5em;
     }
     @media #{$breakpoint-xl}{
-        font-size: 1.45em;
+        font-size: 1.35em;
     }
     @media #{$breakpoint-xxl}{
         letter-spacing: .25em;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
@@ -245,7 +247,7 @@
         margin-top: 0;
     }
     @media #{$breakpoint-xxl}{
-        font-size: 1.28em;
+        font-size: 1.05em;
         width: 27em;
         margin-top: 0;
     }
@@ -271,7 +273,7 @@
         margin: .5em 1em 1.5em 1em;
     }
     @media #{$breakpoint-xxl}{
-        font-size: .9em;
+        font-size: .8em;
         margin: .5em 1em 1.5em 1em;
     }
 }
@@ -412,10 +414,10 @@
         height: 22em;
     }
     @media #{$breakpoint-xl}{
-        height: 18em;
+        height: 19em;
     }
     @media #{$breakpoint-xxl}{
-        height: 20em;
+        height: 18em;
     }
 }
 
@@ -639,10 +641,11 @@
     }
     @media #{$breakpoint-md} {
         height: 17em;
-        margin: 7em 0 2em 0;
+        margin: 5em 0 2em 0;
     }
     @media #{$breakpoint-lg} {
         height: 15em;
+        margin: 5em 0 2em 0;
     }
     @media #{$breakpoint-xl} {
         margin: 4em 0 2em 0;

@@ -131,7 +131,7 @@
     .coaching-1-1,
     .coaching-free{
         display: grid;
-        grid-template-rows: 19em 24em;
+        grid-template-rows: 19em 24.5em;
         height: 100%;
         @media #{$breakpoint-sm}{
             grid-template-rows: 16em 20em;
@@ -150,12 +150,12 @@
         }
         .coaching-1-1,
         .coaching-free{
-            grid-template-rows: 12em 15em;
+            grid-template-rows: 14em 18em;
             @media #{$breakpoint-lg} {
                 grid-template-rows: 13em 14em;
             }
             @media #{$breakpoint-xl} {
-                grid-template-rows: 11em 12.5em;
+                grid-template-rows: 11em 13em;
             }
             @media #{$breakpoint-xxl} {
                 grid-template-rows: 12em 12em;
@@ -163,7 +163,7 @@
         }
     }
     @media #{$breakpoint-xl} {
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
     }  
 }
 
@@ -217,7 +217,7 @@
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 32em minmax(auto, 34em) 7em;
+    grid-template-rows: auto 32em minmax(auto, 37em) 7em;
 
     @media #{$breakpoint-sm} {
         grid-template-rows: auto 36em minmax(auto, 24em) 4em;
@@ -349,13 +349,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 19em;
+    height: 17em;
     width: 23em;
     margin: auto;
     padding: 1.5em;
     background: white;
     .quote-text{
-        font-size: 1.9em;
+        font-size: 1.8em;
         margin: 0.6em .6em 0 .6em;
         letter-spacing: .3em;
     }
@@ -363,10 +363,10 @@
         font-size: .8em;
     }
     @media #{$breakpoint-sm} {
-        height: 18em;
+        height: 14em;
         padding: 1.5em;
         .quote-text{
-            font-size: 1.8em;
+            font-size: 1.7em;
         }
     }
     @media #{$breakpoint-md} {
@@ -382,7 +382,7 @@
         width: 31em;
         padding: 1em;
         .quote-text{
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         .quote-author{
             font-size: .6em;
@@ -394,6 +394,19 @@
         padding: 2.2em 0;
         .quote-text{
             font-size: 1em;
+            padding: 0 2em;
+            margin: 0.6em .6em .1em .6em;
+        }
+        .quote-author{
+            font-size: .6em;
+        }
+    }
+    @media #{$breakpoint-xxl} {
+        height: 9em;
+        width: 24em;
+        padding: 2.2em 0;
+        .quote-text{
+            font-size: .9em;
             padding: 0 2em;
             margin: 0.6em .6em .1em .6em;
         }
@@ -543,7 +556,7 @@
     background: transparent;
     position: relative;
     text-align: center;
-    opacity: 0.3;
+    opacity: 0.3!important;
     @media #{$breakpoint-sm}{
         min-height: 16em;
     }
@@ -584,7 +597,7 @@
     .quote-text-dark{
         font-size: 1.5em;
         @media #{$breakpoint-sm}{
-            font-size: 1.3em;
+            font-size: 1.4em;
         }
         @media #{$breakpoint-md}{
             font-size: 1.2em;
