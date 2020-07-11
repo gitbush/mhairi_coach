@@ -574,8 +574,10 @@
 // ---------------------------------------------------------------
 
 .crazy-about-sect{
-    margin-top: 2em;
+    margin-top: 1em;
+    
 }
+
 .crazy-about-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -624,8 +626,12 @@
     height: 5em;
 
     .sect-title{
+        line-height: 3.2;
         height: auto;
         margin: auto;
+        @media #{$breakpoint-xxl}{
+            line-height: 4.2;
+        }
     }
 }
 
@@ -818,6 +824,7 @@
     margin-bottom: .5em;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
         font-size: 2.2em;
+        margin-top: .5em;
     }
     @media  #{$breakpoint-xxl}{
         font-size: 1.8em;
@@ -880,13 +887,13 @@
     @media #{$breakpoint-lg} {
         font-size: .7em;
         left: -37em;
-        bottom: 6em;
+        bottom: 4em;
         padding: .5em 2em;
     }
     @media #{$breakpoint-xl} {
         font-size: .6em;
         left: -43em;
-        bottom: 7em;
+        bottom: 4em;
         padding: .5em 1.8em;
     }
     @media #{$breakpoint-xxl} {

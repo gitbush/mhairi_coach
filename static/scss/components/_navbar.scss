@@ -79,6 +79,7 @@ $nav-toggle-z-index: 2;
 .nav-item{
   margin: .5em 0;
   font-size: 1.08em;
+  font-family: $font-biko;
   @media #{$breakpoint-sm} {
     font-size: 1.1em;
   }

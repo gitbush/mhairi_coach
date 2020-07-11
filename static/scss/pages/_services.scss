@@ -231,6 +231,7 @@
 
 .intro-title{
     margin-top: 2em;
+    font-family: $font-biko;
     @media #{$breakpoint-md}{
         font-size: 1.2em;
         width: 27em;
@@ -255,6 +256,7 @@
 
 .services-intro-subtitle{
     font-size: 1.5em;
+    font-family: $font-biko;
     color: $pink;
     margin: 1em 1em 1.5em 1em;
     @media #{$breakpoint-sm}{
@@ -427,6 +429,7 @@
 
 .how-sub{
     color: $pink;
+    font-family: $font-biko;
     font-size: 1.25em;
     margin:  .5em 0 1.5em;
     @media #{$breakpoint-md}, #{$breakpoint-lg}{
@@ -658,6 +661,7 @@
 
 .testimonials-title{
     color: $pink;
+    font-family: $font-biko;
 }
 
 .slide-testimonial{

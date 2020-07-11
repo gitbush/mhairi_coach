@@ -61,6 +61,7 @@
 }
 
 .home-hero-text{
+    font-family: $font-biko;
     @media #{$breakpoint-xs}, #{$breakpoint-sm}{
         position: absolute;
         top: 16em;
@@ -68,9 +69,9 @@
         right: 0;
         text-align: center;
         font-size: 1.8em;
-        width: 13em;
+        width: 14em;
         margin: auto;
-        z-index: 99;
+        z-index: 3;
         p {
             display: flex;
             text-transform: uppercase;
@@ -244,7 +245,7 @@
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 32em minmax(auto, 37em) 7em;
+    grid-template-rows: auto 32em minmax(auto, 28em) 7em;
 
     @media #{$breakpoint-sm} {
         grid-template-rows: auto 36em minmax(auto, 24em) 4em;

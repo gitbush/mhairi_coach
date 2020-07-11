@@ -372,6 +372,11 @@ template {
   src: url("../fonts/la parisienne.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'biko';
+  src: url("../fonts/Biko_Regular.otf") format("truetype");
+}
+
 .fw-n {
   font-weight: 400 !important;
 }
@@ -453,31 +458,31 @@ template {
 .logo-3 {
   font-family: "la-parisienne", serif;
   line-height: 1.1;
-  font-size: 2.6em;
+  font-size: 4.6em;
   margin: 10px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .logo-3 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .logo-3 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .logo-3 {
-    font-size: 1.8em;
+    font-size: 2.8em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .logo-3 {
-    font-size: 1.6em;
+    font-size: 2.6em;
   }
 }
 
@@ -513,7 +518,7 @@ template {
 }
 
 .sect-title {
-  font-family: "Roboto", serif;
+  font-family: "biko", serif;
   font-size: 1.4em;
   font-weight: 600;
   padding: 5px;
@@ -548,7 +553,7 @@ template {
 }
 
 .sect-subtitle {
-  font-family: "Roboto", serif;
+  font-family: "biko", serif;
   color: #3b403f;
   font-size: 1.1em;
   text-transform: uppercase;
@@ -580,6 +585,8 @@ template {
 
 .normal-text {
   font-size: 1.18em;
+  letter-spacing: .04em;
+  font-family: "Cabin", serif;
   color: #3b403f;
 }
 
@@ -633,7 +640,7 @@ template {
 }
 
 .cta-title {
-  font-family: "Roboto", serif;
+  font-family: "biko", serif;
   font-size: 2.5em;
   font-weight: 400;
   padding: 5px;
@@ -669,7 +676,7 @@ template {
 }
 
 .cta-subtitle {
-  font-family: "Roboto", serif;
+  font-family: "biko", serif;
   font-size: 1.8em;
   font-weight: 400;
   padding: 5px;
@@ -899,13 +906,13 @@ body {
 
 @media only screen and (min-width: 1200px) {
   #header {
-    height: 160px;
+    height: 180px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   #header {
-    height: 180px;
+    height: 210px;
   }
 }
 
@@ -1074,6 +1081,7 @@ footer {
 .nav-item {
   margin: .5em 0;
   font-size: 1.08em;
+  font-family: "biko", serif;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1626,6 +1634,10 @@ footer {
   }
 }
 
+.home-hero-text {
+  font-family: "biko", serif;
+}
+
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
@@ -1634,9 +1646,9 @@ footer {
     right: 0;
     text-align: center;
     font-size: 1.8em;
-    width: 13em;
+    width: 14em;
     margin: auto;
-    z-index: 99;
+    z-index: 3;
   }
   .home-hero-text p {
     display: -webkit-box;
@@ -1869,8 +1881,8 @@ footer {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em minmax(auto, 37em) 7em;
-      grid-template-rows: auto 32em minmax(auto, 37em) 7em;
+  -ms-grid-rows: auto 32em minmax(auto, 28em) 7em;
+      grid-template-rows: auto 32em minmax(auto, 28em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -3312,7 +3324,7 @@ footer {
 }
 
 .crazy-about-sect {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .crazy-about-content {
@@ -3383,8 +3395,15 @@ footer {
 }
 
 .crazy-about-title .sect-title {
+  line-height: 3.2;
   height: auto;
   margin: auto;
+}
+
+@media only screen and (min-width: 1600px) {
+  .crazy-about-title .sect-title {
+    line-height: 4.2;
+  }
 }
 
 .crazy-about-text {
@@ -3651,6 +3670,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .slide-title {
     font-size: 2.2em;
+    margin-top: .5em;
   }
 }
 
@@ -3737,7 +3757,7 @@ footer {
   .slide-btn {
     font-size: .7em;
     left: -37em;
-    bottom: 6em;
+    bottom: 4em;
     padding: .5em 2em;
   }
 }
@@ -3746,7 +3766,7 @@ footer {
   .slide-btn {
     font-size: .6em;
     left: -43em;
-    bottom: 7em;
+    bottom: 4em;
     padding: .5em 1.8em;
   }
 }
@@ -3955,6 +3975,10 @@ footer {
   }
 }
 
+.home-hero-text {
+  font-family: "biko", serif;
+}
+
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
@@ -3963,9 +3987,9 @@ footer {
     right: 0;
     text-align: center;
     font-size: 1.8em;
-    width: 13em;
+    width: 14em;
     margin: auto;
-    z-index: 99;
+    z-index: 3;
   }
   .home-hero-text p {
     display: -webkit-box;
@@ -4198,8 +4222,8 @@ footer {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em minmax(auto, 37em) 7em;
-      grid-template-rows: auto 32em minmax(auto, 37em) 7em;
+  -ms-grid-rows: auto 32em minmax(auto, 28em) 7em;
+      grid-template-rows: auto 32em minmax(auto, 28em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -5111,6 +5135,7 @@ footer {
 
 .intro-title {
   margin-top: 2em;
+  font-family: "biko", serif;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5147,6 +5172,7 @@ footer {
 
 .services-intro-subtitle {
   font-size: 1.5em;
+  font-family: "biko", serif;
   color: #f58c7c;
   margin: 1em 1em 1.5em 1em;
 }
@@ -5406,6 +5432,7 @@ footer {
 
 .how-sub {
   color: #f58c7c;
+  font-family: "biko", serif;
   font-size: 1.25em;
   margin: .5em 0 1.5em;
 }
@@ -5726,6 +5753,7 @@ footer {
 
 .testimonials-title {
   color: #f58c7c;
+  font-family: "biko", serif;
 }
 
 .slide-testimonial {
