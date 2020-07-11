@@ -1,4 +1,8 @@
-// toggle
+/**
+ * 
+ * Nav toggle
+ */
+
 (function() {
 
   var hamburger = {
@@ -24,14 +28,23 @@
 
 }());
 
-// aos
+/**
+ * 
+ * aos
+ * Animate on scroll inititiate and settings
+ */
+
 AOS.init({
   duration: 600, // values from 0 to 3000, with step 50ms
   once: true,
 });
 
 
-// things about me slider
+/**
+ * 
+ * things about me slider
+ */
+
 if(document.querySelector('.slide-btn')){
   var slides = document.querySelectorAll('.things-slider .slider-item');
   var currentSlide = 0;
@@ -48,7 +61,11 @@ if(document.querySelector('.slide-btn')){
 
 
 
-// testimonial slider. Services.html
+/**
+ * 
+ * testimonial slider. Services.html
+ */
+
 if(document.querySelector('.circle-slide-btn')){
   var slides = document.querySelectorAll('.testimonials-slider .testimonial-item');
   var currentSlide2 = 0;
@@ -63,3 +80,20 @@ if(document.querySelector('.circle-slide-btn')){
   document.querySelector('.circle-slide-btn').addEventListener('click', nextSlide2)
 }
 
+/**
+ * Home hero auto slider 
+ */
+
+var heroSlides = document.querySelectorAll('.home-hero .home-hero-img');
+console.log(heroSlides)
+var currentHeroSlide = 0;
+
+setInterval(function() {
+    heroSlides[currentHeroSlide].className = 'home-hero-img';
+    currentHeroSlide = (currentHeroSlide+1)%heroSlides.length;
+    heroSlides[currentHeroSlide].className = 'home-hero-img hero-showing';
+    
+    if (currentHeroSlide >= heroSlides.length) {
+      currentHeroSlide = 0;
+    }
+}, 4000);

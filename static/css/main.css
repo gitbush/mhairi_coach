@@ -1659,7 +1659,11 @@ footer {
 }
 
 .home-hero-img {
+  -webkit-transition: opacity 1s;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
   height: 34em;
+  opacity: 0;
 }
 
 .home-hero-img img {
@@ -1667,6 +1671,11 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero-showing {
+  opacity: 1;
+  z-index: 2;
 }
 
 .home-coaching {
@@ -3933,7 +3942,11 @@ footer {
 }
 
 .home-hero-img {
+  -webkit-transition: opacity 1s;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
   height: 34em;
+  opacity: 0;
 }
 
 .home-hero-img img {
@@ -3941,6 +3954,11 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero-showing {
+  opacity: 1;
+  z-index: 2;
 }
 
 .home-coaching {
