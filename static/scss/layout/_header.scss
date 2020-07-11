@@ -18,13 +18,16 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        height: 125px;
+        height: 150px;
     }
     @media #{$breakpoint-lg}{
-        height: 130px;
+        height: 160px;
     }
     @media #{$breakpoint-xl}{
-        height: 150px;
+        height: 160px;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 180px;
     }
 
 }

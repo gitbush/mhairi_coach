@@ -12,7 +12,7 @@
     }
     @media #{$breakpoint-sm}{
         position: relative;
-        height: 58em;
+        height: 66em;
     }
     @media #{$breakpoint-min-md} {
         display: grid;
@@ -30,14 +30,9 @@
                 height: 50px;
                 justify-content: center;
                 align-items: center;
-                letter-spacing: .2em;
                 @media #{$breakpoint-min-md} {
                     height: 70px;
                 }
-            }
-            .logo-font {
-                font-size: .9em;
-                font-weight: 700;
             }
     
         }
@@ -90,22 +85,32 @@
                 font-size: 1.1em;
             }
         }
-        .logo-font {
-            font-size: 2.9em;
-        }
         @media #{$breakpoint-sm}{
-            top: 17em;
+            top: 25em;
             width: 16em;
         }
-    
+    }
+    .logo-sub {
+        font-size: 2.9em;
+        font-weight: 400;
+        text-transform: lowercase!important;
+        letter-spacing: 0!important;
+        font-family: $font-la-parisienne!important;
+        @media #{$breakpoint-md}, #{$breakpoint-lg}{
+            font-size: 3.5em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: 3em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: 3em;
+        }
     }
 
-    .logo-font {
-        font-weight: 400;
-        text-transform: lowercase;
-        letter-spacing: 0;
-    }
+    
 }
+
+
 
 .home-hero-img{
     -webkit-transition: opacity 1s;
@@ -162,7 +167,7 @@
     
     @media #{$breakpoint-min-md} {
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr; 
-        margin-top: 3em;
+        margin-top: 5em;
         .coaching-1-1{
             grid-column: coaching-1-1;
         }
@@ -271,14 +276,21 @@
             margin: 0 auto auto auto;
         }
     }
+    @media #{$breakpoint-md} {
+        margin-top: 1em;
+    }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 15em repeat(2, 11em) auto;
         height: 30em;
+        margin-top: 0;
     }
-    @media #{$breakpoint-xl} {
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
         grid-template-columns:  auto 13em repeat(2, 13em) auto;
         margin-top: 0;
         height: 27em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 25em;
     }
 }
 
@@ -287,6 +299,9 @@
     text-align: center;
     padding-top: 3em;
     @media #{$breakpoint-md}, #{$breakpoint-lg} {
+        margin: 2em auto 0 auto;
+    }
+    @media #{$breakpoint-xl} {
         margin: 2em auto 0 auto;
     }
 }
