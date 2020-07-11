@@ -367,6 +367,11 @@ template {
   src: url("../fonts/Alaskan_malamute.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'la-parisienne';
+  src: url("../fonts/la parisienne.ttf") format("truetype");
+}
+
 .fw-n {
   font-weight: 400 !important;
 }
@@ -385,12 +390,12 @@ template {
 }
 
 .logo-font {
-  font-family: "alaskan", serif;
+  font-family: "la-parisienne", serif;
   letter-spacing: .2em;
 }
 
 .logo-1 {
-  font-family: "alaskan", serif;
+  font-family: "la-parisienne", serif;
   line-height: 1.1;
   font-size: 3.9em;
   margin: 0;
@@ -403,7 +408,7 @@ template {
 }
 
 .logo-2 {
-  font-family: "alaskan", serif;
+  font-family: "la-parisienne", serif;
   line-height: 1.1;
   font-size: 3.5em;
   margin: 10px 0;
@@ -434,7 +439,7 @@ template {
 }
 
 .logo-3 {
-  font-family: "alaskan", serif;
+  font-family: "la-parisienne", serif;
   line-height: 1.1;
   font-size: 2.6em;
   margin: 10px 0;
@@ -1531,7 +1536,7 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     position: relative;
-    height: 52em;
+    height: 58em;
   }
 }
 
@@ -1618,6 +1623,7 @@ footer {
     font-size: 1.8em;
     width: 13em;
     margin: auto;
+    z-index: 99;
   }
   .home-hero-text p {
     display: -webkit-box;
@@ -1664,6 +1670,18 @@ footer {
   transition: opacity 1.5s;
   height: 34em;
   opacity: 0;
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-hero-img {
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-hero-img {
+    height: 52em;
+  }
 }
 
 .home-hero-img img {
@@ -1814,7 +1832,7 @@ footer {
 
 .home-about {
   background-color: #f0f3f3;
-  margin-top: 2em;
+  margin-top: 5em;
   padding-bottom: 2em;
   text-align: center;
   display: -ms-grid;
@@ -3814,7 +3832,7 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero {
     position: relative;
-    height: 52em;
+    height: 58em;
   }
 }
 
@@ -3901,6 +3919,7 @@ footer {
     font-size: 1.8em;
     width: 13em;
     margin: auto;
+    z-index: 99;
   }
   .home-hero-text p {
     display: -webkit-box;
@@ -3947,6 +3966,18 @@ footer {
   transition: opacity 1.5s;
   height: 34em;
   opacity: 0;
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-hero-img {
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-hero-img {
+    height: 52em;
+  }
 }
 
 .home-hero-img img {
@@ -4097,7 +4128,7 @@ footer {
 
 .home-about {
   background-color: #f0f3f3;
-  margin-top: 2em;
+  margin-top: 5em;
   padding-bottom: 2em;
   text-align: center;
   display: -ms-grid;

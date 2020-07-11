@@ -7,10 +7,17 @@
   src: url('../fonts/Alaskan_malamute.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'la-parisienne';
+  src: url('../fonts/la parisienne.ttf') format('truetype');
+}
+
 
 $font-parisienne: 'alaskan', serif;
 $font-roboto: 'Roboto', serif;
 $font-cabin: 'Cabin', serif;
+$font-la-parisienne: 'la-parisienne', serif;
+
 
 .fw-n{ 
   font-weight:400 !important;
@@ -30,12 +37,12 @@ $font-cabin: 'Cabin', serif;
 }
 
 .logo-font{
-  font-family: $font-parisienne;
+  font-family: $font-la-parisienne;
   letter-spacing: .2em;
 }
 
 .logo-1{
-  font-family: $font-parisienne;
+  font-family: $font-la-parisienne;
   line-height: 1.1;
   font-size: 3.9em;
   margin: 0;
@@ -45,7 +52,7 @@ $font-cabin: 'Cabin', serif;
 }
 
 .logo-2{
-  font-family: $font-parisienne;
+  font-family: $font-la-parisienne;
   line-height: 1.1;
   font-size: 3.5em;
   margin: 10px 0;
@@ -64,7 +71,7 @@ $font-cabin: 'Cabin', serif;
 }
 
 .logo-3{
-  font-family: $font-parisienne;
+  font-family: $font-la-parisienne;
   line-height: 1.1;
   font-size: 2.6em;
   margin: 10px 0;

@@ -85,7 +85,6 @@ if(document.querySelector('.circle-slide-btn')){
  */
 
 var heroSlides = document.querySelectorAll('.home-hero .home-hero-img');
-console.log(heroSlides)
 var currentHeroSlide = 0;
 
 setInterval(function() {
