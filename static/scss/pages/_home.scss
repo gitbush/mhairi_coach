@@ -91,14 +91,19 @@
             }
         }
         .logo-font {
-            font-size: .7em;
-            font-weight: 700;
+            font-size: 2.9em;
         }
         @media #{$breakpoint-sm}{
             top: 17em;
             width: 16em;
         }
     
+    }
+
+    .logo-font {
+        font-weight: 400;
+        text-transform: lowercase;
+        letter-spacing: 0;
     }
 }
 
@@ -289,8 +294,8 @@
 .home-about-subtitle{
     font-family: $font-roboto;
     font-size: 1.3em;
-    font-weight: 600;
-    padding: 5px;
+    font-weight: 400;
+    padding: 5px 10px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.2em;

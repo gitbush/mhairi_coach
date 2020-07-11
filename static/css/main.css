@@ -397,7 +397,7 @@ template {
 .logo-1 {
   font-family: "la-parisienne", serif;
   line-height: 1.1;
-  font-size: 3.9em;
+  font-size: 6.9em;
   margin: 0;
 }
 
@@ -410,7 +410,7 @@ template {
 .logo-2 {
   font-family: "la-parisienne", serif;
   line-height: 1.1;
-  font-size: 3.5em;
+  font-size: 6.5em;
   margin: 10px 0;
 }
 
@@ -903,7 +903,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  height: 11em;
+  height: 12em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1652,8 +1652,7 @@ footer {
 
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text .logo-font {
-    font-size: .7em;
-    font-weight: 700;
+    font-size: 2.9em;
   }
 }
 
@@ -1662,6 +1661,12 @@ footer {
     top: 17em;
     width: 16em;
   }
+}
+
+.home-hero-text .logo-font {
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0;
 }
 
 .home-hero-img {
@@ -1926,8 +1931,8 @@ footer {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  font-weight: 600;
-  padding: 5px;
+  font-weight: 400;
+  padding: 5px 10px;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.2em;
@@ -3948,8 +3953,7 @@ footer {
 
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text .logo-font {
-    font-size: .7em;
-    font-weight: 700;
+    font-size: 2.9em;
   }
 }
 
@@ -3958,6 +3962,12 @@ footer {
     top: 17em;
     width: 16em;
   }
+}
+
+.home-hero-text .logo-font {
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0;
 }
 
 .home-hero-img {
@@ -4222,8 +4232,8 @@ footer {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  font-weight: 600;
-  padding: 5px;
+  font-weight: 400;
+  padding: 5px 10px;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.2em;
