@@ -2173,7 +2173,7 @@ footer {
 
 .home-cta {
   min-height: 400px;
-  background: rgba(251, 242, 236, 0.6);
+  background: white;
   position: relative;
   text-align: center;
 }
@@ -2210,7 +2210,7 @@ footer {
   height: 21em;
   width: 21em;
   margin: auto;
-  background: white;
+  background: #fbf2ec;
 }
 
 .home-cta-window .normal-text {
@@ -4514,7 +4514,7 @@ footer {
 
 .home-cta {
   min-height: 400px;
-  background: rgba(251, 242, 236, 0.6);
+  background: white;
   position: relative;
   text-align: center;
 }
@@ -4551,7 +4551,7 @@ footer {
   height: 21em;
   width: 21em;
   margin: auto;
-  background: white;
+  background: #fbf2ec;
 }
 
 .home-cta-window .normal-text {
