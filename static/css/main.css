@@ -976,7 +976,7 @@ body {
 
 footer {
   height: 4em;
-  background-color: #fadcd2;
+  background-color: white;
   text-align: center;
   text-transform: uppercase;
 }
@@ -2201,16 +2201,27 @@ footer {
   }
 }
 
+.home-cta-content {
+  background: #fbf2ec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  margin: auto;
+}
+
 .home-cta-window {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 21em;
-  width: 21em;
+  height: 18em;
+  width: 24em;
   margin: auto;
-  background: #fbf2ec;
 }
 
 .home-cta-window .normal-text {
@@ -2220,9 +2231,8 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-cta-window {
-    height: 13em;
-    width: 26em;
     padding: 0 .8em;
+    height: 15em;
   }
   .home-cta-window .normal-text {
     font-size: 1em;
@@ -2234,8 +2244,9 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-cta-window {
-    height: 12em;
     padding: 0 .8em;
+    height: 11em;
+    width: 31em;
   }
   .home-cta-window .normal-text {
     font-size: .8em;
@@ -2244,9 +2255,9 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-cta-window {
-    height: 11em;
-    width: 22em;
     padding: 0 .7em;
+    height: 11em;
+    width: 27em;
   }
   .home-cta-window .normal-text {
     font-size: .8em;
@@ -2258,9 +2269,9 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-cta-window {
-    height: 11em;
-    width: 21em;
     padding: 0 .9em;
+    height: 9em;
+    width: 27em;
   }
   .home-cta-window .normal-text {
     font-size: .7em;
@@ -2288,6 +2299,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-cta-title {
+    font-size: 1.1em;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-cta-title {
     font-size: .9em;
@@ -2306,34 +2323,104 @@ footer {
   }
 }
 
-.cta-btn {
+.home-cta-btn {
   position: absolute;
+  background-color: #f7d989;
+  margin: auto !important;
+  height: 2.6em;
+  width: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 0;
   right: 0;
-  bottom: 3em;
+  bottom: 1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .cta-btn {
+  .home-cta-btn {
     bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cta-btn {
-    bottom: 2em;
+  .home-cta-btn {
+    bottom: 1em;
+    height: 2em;
+    width: 15em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cta-btn {
+  .home-cta-btn {
     bottom: 2em;
+    height: 1.8em;
+    width: 13em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .cta-btn {
-    bottom: 1.6em;
+  .home-cta-btn {
+    bottom: 1em;
+    height: 1.8em;
+    width: 11.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-cta-btn {
+    bottom: 1em;
+    width: 11em;
+  }
+}
+
+.home-cta-btn a {
+  color: #3b403f;
+  font-size: 1em;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-cta-btn a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-cta-btn a {
+    font-size: .78em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-cta-btn a {
+    font-size: .69em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-cta-btn a {
+    font-size: .65em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-cta-btn a {
+    font-size: .6em;
   }
 }
 
@@ -4542,16 +4629,27 @@ footer {
   }
 }
 
+.home-cta-content {
+  background: #fbf2ec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  margin: auto;
+}
+
 .home-cta-window {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 21em;
-  width: 21em;
+  height: 18em;
+  width: 24em;
   margin: auto;
-  background: #fbf2ec;
 }
 
 .home-cta-window .normal-text {
@@ -4561,9 +4659,8 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-cta-window {
-    height: 13em;
-    width: 26em;
     padding: 0 .8em;
+    height: 15em;
   }
   .home-cta-window .normal-text {
     font-size: 1em;
@@ -4575,8 +4672,9 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-cta-window {
-    height: 12em;
     padding: 0 .8em;
+    height: 11em;
+    width: 31em;
   }
   .home-cta-window .normal-text {
     font-size: .8em;
@@ -4585,9 +4683,9 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-cta-window {
-    height: 11em;
-    width: 22em;
     padding: 0 .7em;
+    height: 11em;
+    width: 27em;
   }
   .home-cta-window .normal-text {
     font-size: .8em;
@@ -4599,9 +4697,9 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-cta-window {
-    height: 11em;
-    width: 21em;
     padding: 0 .9em;
+    height: 9em;
+    width: 27em;
   }
   .home-cta-window .normal-text {
     font-size: .7em;
@@ -4629,6 +4727,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-cta-title {
+    font-size: 1.1em;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-cta-title {
     font-size: .9em;
@@ -4647,34 +4751,104 @@ footer {
   }
 }
 
-.cta-btn {
+.home-cta-btn {
   position: absolute;
+  background-color: #f7d989;
+  margin: auto !important;
+  height: 2.6em;
+  width: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 0;
   right: 0;
-  bottom: 3em;
+  bottom: 1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .cta-btn {
+  .home-cta-btn {
     bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cta-btn {
-    bottom: 2em;
+  .home-cta-btn {
+    bottom: 1em;
+    height: 2em;
+    width: 15em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cta-btn {
+  .home-cta-btn {
     bottom: 2em;
+    height: 1.8em;
+    width: 13em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .cta-btn {
-    bottom: 1.6em;
+  .home-cta-btn {
+    bottom: 1em;
+    height: 1.8em;
+    width: 11.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-cta-btn {
+    bottom: 1em;
+    width: 11em;
+  }
+}
+
+.home-cta-btn a {
+  color: #3b403f;
+  font-size: 1em;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-cta-btn a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-cta-btn a {
+    font-size: .78em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-cta-btn a {
+    font-size: .69em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-cta-btn a {
+    font-size: .65em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-cta-btn a {
+    font-size: .6em;
   }
 }
 
