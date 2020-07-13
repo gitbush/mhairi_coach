@@ -3,17 +3,17 @@
 // -----------------------------------------------------------------------------
 
 
-.instagram-footer{
+.contact-footer{
     position: relative;
-    height: 14em;
-    background-color: $gray;
+    height: 8em;
+    background-color: $light-pink;
     text-align: center;
     text-transform: uppercase;
 }
 
 footer{
-    height: 4em;
-    background-color: white;
+    height: 2em;
+    background-color: $gray;
     text-align: center;
     text-transform: uppercase;
 }
@@ -27,5 +27,5 @@ footer{
 
 .fa-long-arrow-alt-up{
     padding-bottom: .3em;
-    font-size: 3.1em;
+    font-size: 2em;
 }
