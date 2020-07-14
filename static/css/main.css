@@ -1130,20 +1130,20 @@ footer {
   font-size: 2em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .back-to-top-md {
     position: absolute;
     top: 9em;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .back-to-top-md .to-top {
     height: 7em;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .back-to-top-md .icon-up-arrow {
     height: 1.3em;
     position: relative;
@@ -1152,13 +1152,27 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) {
+  .back-to-top-md .icon-up-arrow {
+    left: -2.1em;
+    top: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .back-to-top-md .to-top-text {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     font-size: .55em;
     position: absolute;
     left: -2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .back-to-top-md .to-top-text {
+    font-size: .5em;
+    top: 6.5em;
   }
 }
 

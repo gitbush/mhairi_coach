@@ -122,33 +122,41 @@ footer{
 }
 
 .back-to-top-md{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         position: absolute;
         top: 9em;
     }
 
     .to-top{
-        @media #{$breakpoint-md}{
+        @media #{$breakpoint-min-md}{
             height: 7em;
         }
         
     }
 
     .icon-up-arrow{
-        @media #{$breakpoint-md}{
+        @media #{$breakpoint-min-md}{
             height: 1.3em;
             position: relative;
             left: -1.9em;
             top: 2.5em;
         }
+        @media #{$breakpoint-xl}{
+            left: -2.1em;
+            top: 1.8em;
+        }
         
     }
     .to-top-text{
-        @media #{$breakpoint-md}{
+        @media #{$breakpoint-min-md}{
             transform: rotate(90deg);
             font-size: .55em;
             position: absolute;
             left: -2em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .5em;
+            top: 6.5em;
         }
     }    
     
