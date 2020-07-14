@@ -711,6 +711,20 @@ template {
   }
 }
 
+.to-top-text {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+  text-decoration: none;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .to-top-text {
+    font-size: .7em;
+  }
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -1090,9 +1104,16 @@ footer {
 }
 
 .back-to-top {
-  height: 6em;
+  height: 7em;
   text-align: center;
   position: relative;
+}
+
+.icon-up-arrow {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 1em;
+  margin: 1em;
 }
 
 .to-top {
@@ -1100,6 +1121,8 @@ footer {
   bottom: 1em;
   left: 0;
   right: 0;
+  width: 8em;
+  margin: auto;
 }
 
 .fa-long-arrow-alt-up {

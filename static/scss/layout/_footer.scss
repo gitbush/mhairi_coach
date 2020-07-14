@@ -93,12 +93,18 @@ footer{
         height: 1.5em;
         background-color: $gray;
     }
-}
+}   
 
 .back-to-top{
-    height: 6em;
+    height: 7em;
     text-align: center;
     position: relative;
+}
+
+.icon-up-arrow{
+    transform: rotate(-90deg);
+    height: 1em; 
+    margin: 1em;  
 }
 
 .to-top{
@@ -106,6 +112,8 @@ footer{
     bottom: 1em;
     left: 0;
     right: 0;
+    width: 8em;
+    margin: auto;
 }
 
 .fa-long-arrow-alt-up{
