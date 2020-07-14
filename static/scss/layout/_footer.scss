@@ -86,9 +86,19 @@
 }
 
 footer{
-    height: 2em;
-    background-color: $gray;
+    height: 4em;
+    background-color: $light-pink;
     text-align: center;
+    @media #{$breakpoint-min-md}{
+        height: 1.5em;
+        background-color: $gray;
+    }
+}
+
+.back-to-top{
+    height: 6em;
+    text-align: center;
+    position: relative;
 }
 
 .to-top{

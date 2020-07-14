@@ -1077,9 +1077,22 @@ body {
 }
 
 footer {
-  height: 2em;
-  background-color: #f0f3f3;
+  height: 4em;
+  background-color: #fbf2ec;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    height: 1.5em;
+    background-color: #f0f3f3;
+  }
+}
+
+.back-to-top {
+  height: 6em;
+  text-align: center;
+  position: relative;
 }
 
 .to-top {
