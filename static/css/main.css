@@ -968,17 +968,82 @@ body {
 
 .contact-footer {
   position: relative;
-  height: 8em;
-  background-color: #fbf2ec;
+  background-color: white;
   text-align: center;
-  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-footer {
+    height: 18em;
+  }
+}
+
+.cf-content {
+  padding: 3em 4em;
+  position: relative;
+  background-color: #f0f3f3;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .cf-content {
+    padding: 3em 7em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cf-content {
+    background-color: white;
+    padding: 1em 2em;
+    width: 19em;
+    position: absolute;
+    z-index: 2;
+    top: 4em;
+    left: 4em;
+  }
+}
+
+.cf-content .normal-text {
+  font-size: .7em;
+}
+
+.cf-title {
+  margin-bottom: 1.5em;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cf-title {
+    font-size: .8em;
+  }
+}
+
+.cf-button {
+  width: 17em !important;
+  margin: 3em auto 0 auto !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cf-button {
+    width: 11em !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cf-quick-links {
+    background-color: #fbf2ec;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }
 
 footer {
   height: 2em;
   background-color: #f0f3f3;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .to-top {
@@ -1453,7 +1518,7 @@ footer {
 }
 
 .about-cta-btn {
-  height: 35px;
+  height: 30px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;

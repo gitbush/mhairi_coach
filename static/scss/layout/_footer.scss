@@ -5,17 +5,69 @@
 
 .contact-footer{
     position: relative;
-    height: 8em;
-    background-color: $light-pink;
+    background-color: white;
     text-align: center;
-    text-transform: uppercase;
+    @media #{$breakpoint-md}{
+        height: 18em;
+    }
+}
+
+.cf-content{
+    padding: 3em 4em;
+    position: relative;
+    background-color: $gray;
+    text-align: center;
+    @media #{$breakpoint-sm}{
+        padding: 3em 7em;
+    }
+    @media #{$breakpoint-md}{
+        background-color: white;
+        padding: 1em 2em;
+        width: 19em;
+        position: absolute;
+        z-index: 2;
+        top: 4em;
+        left: 4em;
+        // height: 10em;
+    }
+
+    .normal-text{
+        font-size: .7em;
+    }
+}
+
+.cf-title{
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
+    @media #{$breakpoint-md}{
+        font-size: .8em;
+    }
+}
+
+.cf-button{
+    width: 17em!important;
+    margin: 3em auto 0 auto!important;
+    @media #{$breakpoint-md}{
+        width: 11em!important;
+        margin: 0 auto!important;
+    }
+}
+
+.cf-quick-links{
+    @media #{$breakpoint-md}{
+        background-color: $light-pink;
+        height: 50%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    
 }
 
 footer{
     height: 2em;
     background-color: $gray;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .to-top{
