@@ -7,7 +7,7 @@
     position: relative;
     background-color: white;
     text-align: center;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         height: 18em;
     }
 }
@@ -20,41 +20,62 @@
     @media #{$breakpoint-sm}{
         padding: 3em 7em;
     }
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         background-color: white;
         padding: 1em 2em;
-        width: 19em;
+        width: 21em;
         position: absolute;
         z-index: 2;
         top: 4em;
         left: 4em;
         // height: 10em;
     }
+    @media #{$breakpoint-lg}{
+        padding: 1em 2em;
+        width: 20em;
+    }
+    @media #{$breakpoint-xl}{
+        padding: 1.5em 2em;
+        width: 21em;
+        top: 4em;
+        left: 7em;
+    }
 
     .normal-text{
-        font-size: .7em;
+        @media #{$breakpoint-md}{
+            font-size: .7em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .65em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .6em;
+        }
     }
 }
 
 .cf-title{
     margin-bottom: 1.5em;
     font-size: 1.3em;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
         font-size: .8em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .75em;
     }
 }
 
 .cf-button{
     width: 17em!important;
     margin: 3em auto 0 auto!important;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         width: 11em!important;
         margin: 0 auto!important;
     }
 }
 
 .cf-quick-links{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         background-color: $light-pink;
         height: 50%;
         position: absolute;

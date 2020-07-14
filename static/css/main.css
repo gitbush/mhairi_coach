@@ -972,7 +972,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .contact-footer {
     height: 18em;
   }
@@ -991,11 +991,11 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .cf-content {
     background-color: white;
     padding: 1em 2em;
-    width: 19em;
+    width: 21em;
     position: absolute;
     z-index: 2;
     top: 4em;
@@ -1003,8 +1003,38 @@ body {
   }
 }
 
-.cf-content .normal-text {
-  font-size: .7em;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cf-content {
+    padding: 1em 2em;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cf-content {
+    padding: 1.5em 2em;
+    width: 21em;
+    top: 4em;
+    left: 7em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cf-content .normal-text {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cf-content .normal-text {
+    font-size: .65em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cf-content .normal-text {
+    font-size: .6em;
+  }
 }
 
 .cf-title {
@@ -1012,9 +1042,15 @@ body {
   font-size: 1.3em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .cf-title {
     font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cf-title {
+    font-size: .75em;
   }
 }
 
@@ -1023,14 +1059,14 @@ body {
   margin: 3em auto 0 auto !important;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .cf-button {
     width: 11em !important;
     margin: 0 auto !important;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .cf-quick-links {
     background-color: #fbf2ec;
     height: 50%;
