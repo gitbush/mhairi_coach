@@ -95,7 +95,7 @@ footer{
     }
 }   
 
-.back-to-top{
+.back-to-top-footer{
     height: 7em;
     text-align: center;
     position: relative;
@@ -119,4 +119,38 @@ footer{
 .fa-long-arrow-alt-up{
     padding-bottom: .3em;
     font-size: 2em;
+}
+
+.back-to-top-md{
+    @media #{$breakpoint-md}{
+        position: absolute;
+        top: 9em;
+    }
+
+    .to-top{
+        @media #{$breakpoint-md}{
+            height: 7em;
+        }
+        
+    }
+
+    .icon-up-arrow{
+        @media #{$breakpoint-md}{
+            height: 1.3em;
+            position: relative;
+            left: -1.9em;
+            top: 2.5em;
+        }
+        
+    }
+    .to-top-text{
+        @media #{$breakpoint-md}{
+            transform: rotate(90deg);
+            font-size: .55em;
+            position: absolute;
+            left: -2em;
+        }
+    }    
+    
+    
 }

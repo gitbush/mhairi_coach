@@ -1103,7 +1103,7 @@ footer {
   }
 }
 
-.back-to-top {
+.back-to-top-footer {
   height: 7em;
   text-align: center;
   position: relative;
@@ -1128,6 +1128,38 @@ footer {
 .fa-long-arrow-alt-up {
   padding-bottom: .3em;
   font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-md {
+    position: absolute;
+    top: 9em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-md .to-top {
+    height: 7em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-md .icon-up-arrow {
+    height: 1.3em;
+    position: relative;
+    left: -1.9em;
+    top: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-md .to-top-text {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-size: .55em;
+    position: absolute;
+    left: -2em;
+  }
 }
 
 .nav {
