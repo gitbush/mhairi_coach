@@ -257,13 +257,3 @@ $font-la-parisienne: 'la-parisienne', serif;
     }
 }
 
-.to-top-text{
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: .8em;
-  text-decoration: none;
-  color: $base-text-color;
-  @media #{$breakpoint-sm}{
-    font-size: .7em;
-  }
-}

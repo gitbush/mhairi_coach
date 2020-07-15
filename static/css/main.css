@@ -711,20 +711,6 @@ template {
   }
 }
 
-.to-top-text {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: .8em;
-  text-decoration: none;
-  color: #3b403f;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .to-top-text {
-    font-size: .7em;
-  }
-}
-
 /**
  * Set up a decent box model on the root element
  */
@@ -1110,6 +1096,21 @@ footer {
   position: relative;
 }
 
+.to-top-text {
+  text-transform: uppercase;
+  font-family: "biko", serif;
+  letter-spacing: .2em;
+  font-size: .8em;
+  text-decoration: none;
+  color: #3b403f;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .to-top-text {
+    font-size: .7em;
+  }
+}
+
 .icon-up-arrow {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -1155,7 +1156,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .back-to-top-md .icon-up-arrow {
-    left: -2.1em;
+    left: -2.3em;
     top: 1.8em;
   }
 }
@@ -1170,10 +1171,41 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .back-to-top-md .to-top-text {
     font-size: .5em;
-    top: 6.5em;
+    left: -1.8em;
+    top: 7.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .back-to-top-md .to-top-text {
+    font-size: .45em;
+    left: -2.5em;
+    top: 7em;
+  }
+}
+
+footer {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-text {
+  width: 80%;
+  font-size: .75em;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    font-size: .6em;
   }
 }
 

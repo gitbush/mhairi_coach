@@ -101,6 +101,18 @@ footer{
     position: relative;
 }
 
+.to-top-text{
+    text-transform: uppercase;
+    font-family: $font-biko;
+    letter-spacing: .2em;
+    font-size: .8em;
+    text-decoration: none;
+    color: $base-text-color;
+    @media #{$breakpoint-sm}{
+      font-size: .7em;
+    }
+}
+
 .icon-up-arrow{
     transform: rotate(-90deg);
     height: 1em; 
@@ -142,7 +154,7 @@ footer{
             top: 2.5em;
         }
         @media #{$breakpoint-xl}{
-            left: -2.1em;
+            left: -2.3em;
             top: 1.8em;
         }
         
@@ -154,11 +166,29 @@ footer{
             position: absolute;
             left: -2em;
         }
-        @media #{$breakpoint-xl}{
+        @media #{$breakpoint-lg}{
             font-size: .5em;
-            top: 6.5em;
+            left: -1.8em;
+            top: 7.5em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .45em;
+            left: -2.5em;
+            top: 7em;
         }
     }    
-    
-    
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.footer-text{
+    width: 80%;
+    font-size: .75em;
+    margin: auto;
+    @media #{$breakpoint-min-md}{
+        font-size: .6em;
+    }
 }
