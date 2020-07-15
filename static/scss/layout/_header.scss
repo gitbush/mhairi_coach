@@ -16,7 +16,7 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         height: 150px;
     }
