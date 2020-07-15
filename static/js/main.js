@@ -46,20 +46,20 @@ AOS.init({
  */
 
 if(document.querySelector('.slide-btn')){
-  var slides = document.querySelectorAll('.things-slider .slider-item');
+  var thingsSlides = document.querySelectorAll('.things-slider .slider-item');
   var currentSlide = 0;
   // var slideInterval = setInterval(nextSlide,2000);
   
   function nextSlide() {
-      slides[currentSlide].className = 'slider-item slide';
-      currentSlide = (currentSlide+1)%slides.length;
-      slides[currentSlide].className = 'slider-item slide showing';
+      
+      thingsSlides[currentSlide].className = 'slider-item';
+      currentSlide = (currentSlide+1)%thingsSlides.length;
+      thingsSlides[currentSlide].className = 'slider-item showing';
       
   }
   document.querySelector('.slide-btn').addEventListener('click', nextSlide)
+
 }
-
-
 
 /**
  * 
@@ -87,7 +87,9 @@ if(document.querySelector('.circle-slide-btn')){
 var heroSlides = document.querySelectorAll('.home-hero .home-hero-img');
 var currentHeroSlide = 0;
 
-setInterval(function() {
+if(heroSlides.length > 0){
+  console.log(heroSlides)
+  setInterval(function() {
     heroSlides[currentHeroSlide].className = 'home-hero-img';
     currentHeroSlide = (currentHeroSlide+1)%heroSlides.length;
     heroSlides[currentHeroSlide].className = 'home-hero-img hero-showing';
@@ -96,3 +98,6 @@ setInterval(function() {
       currentHeroSlide = 0;
     }
 }, 4000);
+}
+
+

@@ -2741,8 +2741,8 @@ footer {
   .about-hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto (14em)[2] 2em 17em auto;
-        grid-template-columns: auto repeat(2, 14em) 2em 17em auto;
+    -ms-grid-columns: auto (14em)[2] 17em auto;
+        grid-template-columns: auto repeat(2, 14em) 17em auto;
     margin-top: 3em;
     margin-bottom: 3em;
   }
@@ -2859,8 +2859,7 @@ footer {
             align-items: center;
     justify-items: center;
     -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    grid-column: 4/5;
+    grid-column: 4;
     margin: 0;
   }
 }
@@ -3998,6 +3997,7 @@ footer {
 .slide-btn {
   background-color: #fadcd2;
   position: absolute;
+  z-index: 3;
   bottom: 1em;
   left: 0;
   right: 0;

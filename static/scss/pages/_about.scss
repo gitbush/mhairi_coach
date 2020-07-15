@@ -5,7 +5,7 @@
 .about-hero{
     @media #{$breakpoint-md} {
         display: grid;
-        grid-template-columns: auto repeat(2, 14em) 2em 17em auto;
+        grid-template-columns: auto repeat(2, 14em) 17em auto;
         margin-top: 3em;
         margin-bottom: 3em;
     }
@@ -73,7 +73,7 @@
         display: grid;
         align-items: center;
         justify-items: center;
-        grid-column: 4/5;
+        grid-column: 4;
         margin: 0;
     }
     @media #{$breakpoint-lg} {
@@ -864,6 +864,7 @@
 .slide-btn{
     background-color: $dark-pink;
     position: absolute;
+    z-index: 3;
     bottom: 1em;
     left: 0;
     right: 0;
