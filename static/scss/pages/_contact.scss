@@ -126,15 +126,27 @@
 
 .contact-container{
     margin: 4em 0;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         display: grid;
         margin: 4em 0;
         grid-template-columns: auto 23em 2em 15em auto;
     }
+    @media #{$breakpoint-lg}{
+        margin: 2em 0;
+        grid-template-columns: auto 27em 2em 16em auto;
+    }
+    @media #{$breakpoint-xl}{
+        margin: 2em 0;
+        grid-template-columns: auto 25em 2em 14em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        margin: 2em 0;
+        grid-template-columns: auto 24em 2em 13em auto;
+    }
 }
 .contact-form-container{
     text-align: center;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         grid-column: 2;
         
     }
@@ -144,10 +156,13 @@
     width: 90%;
     height: 36em;
     margin: auto;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         grid-column: 4;
         height: 100%;
-        
+        width: 100%;  
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        height: 90%;
     }
 
     img{
@@ -166,7 +181,7 @@
 .contact-title{
     font-size: 2.8em;
 
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         font-family: $font-la-parisienne;
         letter-spacing: 0;
         font-size: 4.5em;
@@ -184,21 +199,34 @@
     @media #{$breakpoint-md}{
         margin-bottom: 3em;
     }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin-bottom: 2em;
+    }
     
 }
 
 .form-grid{
     width: 90%;
     margin: auto;
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:  3em 3em 8em;
+        width: 100%;
+    }
+    @media #{$breakpoint-lg}{
+        grid-template-rows:  2.5em 2.5em 8em;
+    }
+    @media #{$breakpoint-xl}{
+        grid-template-rows:  2.5em 2.5em 6em;
+    }
+    @media #{$breakpoint-xxl}{
+        grid-template-rows:  2.2em 2.2em 6em;
     }
 }
 
 .full-name{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         grid-column: 1;
         grid-row: 1;
     }
@@ -206,28 +234,28 @@
 }
 
 .email{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         grid-column: 2;
         grid-row: 1;
     }
 }
 
 .service{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         grid-column: 1;
         grid-row: 2;
     }
 }
 
 .hear{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         grid-column: 2;
         grid-row: 2;
     }
 }
 
 .message{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         height: 100%!important;
         grid-column: 1/3;
         grid-row: 3;
@@ -235,8 +263,8 @@
 }
 
 #message{
-    @media #{$breakpoint-md}{
-        height: 100%;
+    @media #{$breakpoint-min-md}{
+        height: 100%!important;
     }
 }
 
@@ -254,17 +282,22 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         font-size: .7rem;
         padding: .375rem;
         height: 100%;
-        margin: auto;
-        
+        margin: auto; 
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        font-size: .6rem;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .5rem;
     }
 }
 
 .form-group{
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         margin: 0;
         height: 100%;
         
@@ -276,7 +309,7 @@
     border: none;
     height: 2px;
     background-color: rgba(186,197,202,1);
-    @media #{$breakpoint-md}{
+    @media #{$breakpoint-min-md}{
         width: 100%;
         margin: 0;
         
