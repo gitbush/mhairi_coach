@@ -6521,6 +6521,7 @@ footer {
     font-size: 4.5em;
     text-transform: lowercase;
     font-weight: 400;
+    height: 1em;
   }
 }
 
@@ -6531,13 +6532,19 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-form-subtitle {
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .form-grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: .7fr .7fr 3fr;
-        grid-template-rows: .7fr .7fr 3fr;
+    -ms-grid-rows: 3em 3em 8em;
+        grid-template-rows: 3em 3em 8em;
   }
 }
 
@@ -6614,7 +6621,7 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .form-field {
-    font-size: .8rem;
+    font-size: .7rem;
     padding: .375rem;
     height: 100%;
     margin: auto;
@@ -6631,7 +6638,7 @@ footer {
 .form-hr {
   width: 24em;
   border: none;
-  height: 3px;
+  height: 2px;
   background-color: #bac5ca;
 }
 
@@ -6640,5 +6647,14 @@ footer {
     width: 100%;
     margin: 0;
   }
+}
+
+.contact-btn {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-family: "biko", serif;
+  letter-spacing: .2em;
+  margin: 1.5em 0;
 }
 /*# sourceMappingURL=main.css.map */
