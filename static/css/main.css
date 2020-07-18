@@ -1850,6 +1850,13 @@ footer {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-hero {
+    -ms-grid-columns: auto minmax(7em, 13em) (minmax(3em, 5em))[2] minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 13em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+  }
+}
+
 .home-hero-text {
   font-family: "biko", serif;
 }
@@ -1996,8 +2003,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
     margin-top: 5em;
   }
   .home-coaching .coaching-1-1 {
@@ -2016,8 +2023,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 13em 14em;
-        grid-template-rows: 13em 14em;
+    -ms-grid-rows: 13em 14.5em;
+        grid-template-rows: 13em 14.5em;
   }
 }
 
@@ -2032,15 +2039,22 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1600px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 12em;
-        grid-template-rows: 12em 12em;
+    -ms-grid-rows: 12em 11em;
+        grid-template-rows: 12em 11em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-coaching {
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
   }
 }
 
@@ -2162,9 +2176,9 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about {
-    -ms-grid-columns: auto 15em (11em)[2] auto;
-        grid-template-columns: auto 15em repeat(2, 11em) auto;
-    height: 30em;
+    -ms-grid-columns: auto 16em (12em)[2] auto;
+        grid-template-columns: auto 16em repeat(2, 12em) auto;
+    height: 29em;
     margin-top: 0;
   }
 }
@@ -2180,6 +2194,8 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .home-about {
+    -ms-grid-columns: auto 12em (12em)[2] auto;
+        grid-template-columns: auto 12em repeat(2, 12em) auto;
     height: 25em;
   }
 }
@@ -4281,6 +4297,13 @@ footer {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-hero {
+    -ms-grid-columns: auto minmax(7em, 13em) (minmax(3em, 5em))[2] minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 13em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+  }
+}
+
 .home-hero-text {
   font-family: "biko", serif;
 }
@@ -4427,8 +4450,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
     margin-top: 5em;
   }
   .home-coaching .coaching-1-1 {
@@ -4447,8 +4470,8 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 13em 14em;
-        grid-template-rows: 13em 14em;
+    -ms-grid-rows: 13em 14.5em;
+        grid-template-rows: 13em 14.5em;
   }
 }
 
@@ -4463,15 +4486,22 @@ footer {
 @media only screen and (min-width: 768px) and (min-width: 1600px) {
   .home-coaching .coaching-1-1,
   .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 12em;
-        grid-template-rows: 12em 12em;
+    -ms-grid-rows: 12em 11em;
+        grid-template-rows: 12em 11em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-coaching {
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
   }
 }
 
@@ -4593,9 +4623,9 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about {
-    -ms-grid-columns: auto 15em (11em)[2] auto;
-        grid-template-columns: auto 15em repeat(2, 11em) auto;
-    height: 30em;
+    -ms-grid-columns: auto 16em (12em)[2] auto;
+        grid-template-columns: auto 16em repeat(2, 12em) auto;
+    height: 29em;
     margin-top: 0;
   }
 }
@@ -4611,6 +4641,8 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .home-about {
+    -ms-grid-columns: auto 12em (12em)[2] auto;
+        grid-template-columns: auto 12em repeat(2, 12em) auto;
     height: 25em;
   }
 }

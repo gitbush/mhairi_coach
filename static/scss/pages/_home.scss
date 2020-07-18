@@ -58,6 +58,10 @@
             grid-row: 1 / 2;
         }
     }
+    @media #{$breakpoint-lg}{
+        // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
+        grid-template-columns: auto minmax(7em, 13em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+    }
 }
 
 .home-hero-text{
@@ -167,7 +171,7 @@
     }
     
     @media #{$breakpoint-min-md} {
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 13em) 3em [coaching-free] minmax(auto, 13em) 2fr; 
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr; 
         margin-top: 5em;
         .coaching-1-1{
             grid-column: coaching-1-1;
@@ -180,19 +184,23 @@
         .coaching-free{
             grid-template-rows: 14em 18em;
             @media #{$breakpoint-lg} {
-                grid-template-rows: 13em 14em;
+                grid-template-rows: 13em 14.5em;
             }
             @media #{$breakpoint-xl} {
                 grid-template-rows: 11em 13em;
             }
             @media #{$breakpoint-xxl} {
-                grid-template-rows: 12em 12em;
+                grid-template-rows: 12em 11em;
             }
         }
     }
+     
     @media #{$breakpoint-xl} {
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
     }  
+    @media #{$breakpoint-xxl} {
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
+    } 
 }
 
 .coaching-img{
@@ -281,8 +289,8 @@
         margin-top: 1em;
     }
     @media #{$breakpoint-lg} {
-        grid-template-columns: auto 15em repeat(2, 11em) auto;
-        height: 30em;
+        grid-template-columns: auto 16em repeat(2, 12em) auto;
+        height: 29em;
         margin-top: 0;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
@@ -291,6 +299,7 @@
         height: 27em;
     }
     @media #{$breakpoint-xxl} {
+        grid-template-columns:  auto 12em repeat(2, 12em) auto;
         height: 25em;
     }
 }
