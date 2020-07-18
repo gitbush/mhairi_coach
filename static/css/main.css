@@ -6738,4 +6738,17 @@ footer {
   letter-spacing: .2em;
   margin: 1.5em 0;
 }
+
+.faq-section {
+  text-align: center;
+}
+
+.faq-content {
+  width: 70%;
+  margin: auto;
+}
+
+.faq-item {
+  margin: 5em 0;
+}
 /*# sourceMappingURL=main.css.map */
