@@ -24,7 +24,7 @@
     @media #{$breakpoint-xxl} {
         display: grid;
         grid-template-columns: auto repeat(2, 12em) 3em 14em auto;
-        margin-top: 3em;
+        margin-top: 2em;
         margin-bottom: 3em;
     }
 }

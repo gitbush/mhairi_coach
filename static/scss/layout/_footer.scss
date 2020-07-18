@@ -154,8 +154,8 @@ footer{
             top: 2.5em;
         }
         @media #{$breakpoint-xl}{
-            left: -2.3em;
-            top: 1.8em;
+            left: -2.5em;
+            top: 1.5em;
         }
         
     }
@@ -173,6 +173,11 @@ footer{
         }
         @media #{$breakpoint-xl}{
             font-size: .45em;
+            left: -2.5em;
+            top: 7em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .4em;
             left: -2.5em;
             top: 7em;
         }

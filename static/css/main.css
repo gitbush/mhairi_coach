@@ -1156,8 +1156,8 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .back-to-top-md .icon-up-arrow {
-    left: -2.3em;
-    top: 1.8em;
+    left: -2.5em;
+    top: 1.5em;
   }
 }
 
@@ -1182,6 +1182,14 @@ footer {
 @media only screen and (min-width: 1200px) {
   .back-to-top-md .to-top-text {
     font-size: .45em;
+    left: -2.5em;
+    top: 7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .back-to-top-md .to-top-text {
+    font-size: .4em;
     left: -2.5em;
     top: 7em;
   }
@@ -2824,7 +2832,7 @@ footer {
     display: grid;
     -ms-grid-columns: auto (12em)[2] 3em 14em auto;
         grid-template-columns: auto repeat(2, 12em) 3em 14em auto;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 3em;
   }
 }
