@@ -333,11 +333,62 @@
     text-align: center;
 }
 
+.faq-title{
+    @media #{$breakpoint-min-md}{
+        margin: 1em 0 .5em 0;
+    }
+ 
+}
+
 .faq-content{
     width: 70%;
     margin: auto;
+    @media #{$breakpoint-min-md}{
+        display: grid;
+        width: 90%;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        width: 80%;
+        
+    }
+    @media #{$breakpoint-xxl}{
+        width: 60%;
+        
+    }
 }
 
 .faq-item{
     margin: 5em 0;
+    @media #{$breakpoint-min-md}{
+        margin: 1em .5em;
+        
+    }
+    @media #{$breakpoint-xxl}{
+        margin: 1em .5em;
+        
+    }
+    
+}
+
+.faq-sub{
+    @media #{$breakpoint-md}{
+        height: 4.5em; 
+        font-size: .75em;
+    }
+    @media #{$breakpoint-lg}{
+        height: 5em;
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 3em;
+        font-size: .7em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 2.5em;
+        font-size: .55em;
+        
+    }
 }

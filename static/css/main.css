@@ -6743,12 +6743,83 @@ footer {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .faq-title {
+    margin: 1em 0 .5em 0;
+  }
+}
+
 .faq-content {
   width: 70%;
   margin: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .faq-content {
+    display: -ms-grid;
+    display: grid;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .faq-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .faq-content {
+    width: 60%;
+  }
+}
+
 .faq-item {
   margin: 5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .faq-item {
+    margin: 1em .5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .faq-item {
+    margin: 1em .5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-sub {
+    height: 4.5em;
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-sub {
+    height: 5em;
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq-sub {
+    height: 3em;
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .faq-sub {
+    height: 2.5em;
+    font-size: .55em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
