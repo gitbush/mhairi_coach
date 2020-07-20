@@ -3464,7 +3464,217 @@ footer {
   }
 }
 
-.numbers-sect {
+#new-numbers.numbers-sect {
+  background-color: #fadcd2;
+  height: 58em;
+  position: relative;
+  opacity: .9;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #new-numbers.numbers-sect {
+    height: 47em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  #new-numbers.numbers-sect {
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect {
+    height: 8em;
+  }
+}
+
+#new-numbers.numbers-sect .numbers-content {
+  font-family: "Cabin", serif;
+  text-transform: uppercase;
+  background: transparent;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 49em;
+  right: 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #new-numbers.numbers-sect .numbers-content {
+    height: 39em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  #new-numbers.numbers-sect .numbers-content {
+    height: 100%;
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect .numbers-content {
+    height: 100%;
+    width: 80vw;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect .numbers-content {
+    height: 100%;
+    width: 75vw;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #new-numbers.numbers-sect .numbers-content {
+    height: 100%;
+    width: 60vw;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+#new-numbers.numbers-sect .numbers-item {
+  text-align: center;
+  height: 13em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #new-numbers.numbers-sect .numbers-item {
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #new-numbers.numbers-sect .numbers-item {
+    height: 6em;
+    margin: auto .8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #new-numbers.numbers-sect .numbers-item {
+    height: 7em;
+    margin: auto .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect .numbers-item {
+    height: 6em;
+    margin: auto .8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #new-numbers.numbers-sect .numbers-item {
+    height: 6em;
+    margin: auto .8em;
+  }
+}
+
+#new-numbers.numbers-sect .numbers-text {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #new-numbers.numbers-sect .numbers-text {
+    font-size: 3.4em;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #new-numbers.numbers-sect .numbers-text {
+    font-size: .8em;
+    margin-bottom: 0;
+    height: 7em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #new-numbers.numbers-sect .numbers-text {
+    font-size: .8em;
+    margin-bottom: 0.3em;
+    height: 7.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect .numbers-text {
+    font-size: .75em;
+    margin-bottom: 0.3em;
+    height: 7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #new-numbers.numbers-sect .numbers-text {
+    font-size: .7em;
+    margin-bottom: 0.3em;
+  }
+}
+
+#new-numbers.numbers-sect .number-desc {
+  font-size: 1em;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: .2em;
+  width: 50%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #new-numbers.numbers-sect .number-desc {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #new-numbers.numbers-sect .number-desc {
+    font-size: .6em;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #new-numbers.numbers-sect .number-desc {
+    font-size: .6em;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #new-numbers.numbers-sect .number-desc {
+    font-size: .6em;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #new-numbers.numbers-sect .number-desc {
+    font-size: .5em;
+    text-align: center;
+    width: 60%;
+  }
+}
+
+#old-numbers.numbers-sect {
   background-color: #fadcd2;
   height: 50em;
   position: relative;
@@ -3472,24 +3682,24 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .numbers-sect {
+  #old-numbers.numbers-sect {
     height: 47em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .numbers-sect {
+  #old-numbers.numbers-sect {
     height: 10em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .numbers-sect {
+  #old-numbers.numbers-sect {
     height: 8em;
   }
 }
 
-.numbers-content {
+#old-numbers.numbers-sect .numbers-content {
   font-family: "Cabin", serif;
   text-transform: uppercase;
   background: transparent;
@@ -3503,13 +3713,13 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .numbers-content {
+  #old-numbers.numbers-sect .numbers-content {
     height: 39em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .numbers-content {
+  #old-numbers.numbers-sect .numbers-content {
     height: 100%;
     width: 90vw;
     display: -ms-grid;
@@ -3520,7 +3730,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .numbers-content {
+  #old-numbers.numbers-sect .numbers-content {
     height: 100%;
     width: 80vw;
     display: -ms-grid;
@@ -3531,7 +3741,7 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  .numbers-content {
+  #old-numbers.numbers-sect .numbers-content {
     height: 100%;
     width: 75vw;
     display: -ms-grid;
@@ -3542,7 +3752,7 @@ footer {
 }
 
 @media only screen and (min-width: 1600px) {
-  .numbers-content {
+  #old-numbers.numbers-sect .numbers-content {
     height: 100%;
     width: 60vw;
     display: -ms-grid;
@@ -3552,85 +3762,85 @@ footer {
   }
 }
 
-.numbers-item {
+#old-numbers.numbers-sect .numbers-item {
   text-align: center;
   height: 11em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .numbers-item {
+  #old-numbers.numbers-sect .numbers-item {
     height: 10em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .numbers-item {
+  #old-numbers.numbers-sect .numbers-item {
     height: 6em;
     margin: auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .numbers-item {
+  #old-numbers.numbers-sect .numbers-item {
     height: 5em;
     margin: auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .numbers-item {
+  #old-numbers.numbers-sect .numbers-item {
     height: 5em;
     margin: auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .numbers-item {
+  #old-numbers.numbers-sect .numbers-item {
     height: 4.5em;
     margin: auto;
   }
 }
 
-.numbers-text {
+#old-numbers.numbers-sect .numbers-text {
   font-size: 3.8em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .numbers-text {
+  #old-numbers.numbers-sect .numbers-text {
     font-size: 3.4em;
     margin-bottom: 0;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .numbers-text {
+  #old-numbers.numbers-sect .numbers-text {
     font-size: 2.2em;
     margin-bottom: 0;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .numbers-text {
+  #old-numbers.numbers-sect .numbers-text {
     font-size: 2.2em;
     margin-bottom: 0.3em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .numbers-text {
+  #old-numbers.numbers-sect .numbers-text {
     font-size: 1.7em;
     margin-bottom: 0.3em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .numbers-text {
+  #old-numbers.numbers-sect .numbers-text {
     font-size: 1.6em;
     margin-bottom: 0.3em;
   }
 }
 
-.number-desc {
+#old-numbers.numbers-sect .number-desc {
   font-size: 1em;
   letter-spacing: .2em;
   width: 50%;
@@ -3638,13 +3848,13 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .number-desc {
+  #old-numbers.numbers-sect .number-desc {
     font-size: .9em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .number-desc {
+  #old-numbers.numbers-sect .number-desc {
     font-size: .7em;
     text-align: center;
     width: 80%;
@@ -3652,7 +3862,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .number-desc {
+  #old-numbers.numbers-sect .number-desc {
     font-size: .65em;
     text-align: center;
     width: 80%;
@@ -3660,7 +3870,7 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  .number-desc {
+  #old-numbers.numbers-sect .number-desc {
     font-size: .6em;
     text-align: center;
     width: 80%;
@@ -3668,7 +3878,7 @@ footer {
 }
 
 @media only screen and (min-width: 1600px) {
-  .number-desc {
+  #old-numbers.numbers-sect .number-desc {
     font-size: .5em;
     text-align: center;
     width: 60%;
