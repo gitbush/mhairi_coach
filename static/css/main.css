@@ -3476,14 +3476,14 @@ footer {
 
 #new-numbers.numbers-sect {
   background-color: #fadcd2;
-  height: 58em;
+  height: 46em;
   position: relative;
   opacity: .9;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   #new-numbers.numbers-sect {
-    height: 47em;
+    height: 36em;
   }
 }
 
@@ -3508,13 +3508,14 @@ footer {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 49em;
+  height: 33em;
+  width: 90vw;
   right: 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   #new-numbers.numbers-sect .numbers-content {
-    height: 39em;
+    height: 26em;
   }
 }
 
@@ -3596,13 +3597,13 @@ footer {
 }
 
 #new-numbers.numbers-sect .numbers-text {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   #new-numbers.numbers-sect .numbers-text {
-    font-size: 3.4em;
-    margin-bottom: 0;
+    font-size: 1.2em;
+    margin-bottom: 1em;
   }
 }
 
