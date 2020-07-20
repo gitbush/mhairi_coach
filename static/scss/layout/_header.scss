@@ -32,6 +32,17 @@
 
 }
 
+.header-link{
+    
+    color: black;
+
+    &:hover{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+}
+
 .logo-xs-container{
     display: flex;
     text-align: center;

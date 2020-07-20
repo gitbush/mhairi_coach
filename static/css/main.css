@@ -917,6 +917,16 @@ body {
   }
 }
 
+.header-link {
+  color: black;
+}
+
+.header-link:hover {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .logo-xs-container {
   display: -webkit-box;
   display: -ms-flexbox;
