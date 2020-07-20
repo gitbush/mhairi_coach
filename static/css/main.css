@@ -1994,7 +1994,8 @@ footer {
 }
 
 .home-coaching .coaching-1-1,
-.home-coaching .coaching-free {
+.home-coaching .coaching-free,
+.home-coaching .coaching-why {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 19em 24.5em;
@@ -2004,7 +2005,8 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 16em 20em;
         grid-template-rows: 16em 20em;
   }
@@ -2012,8 +2014,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
     margin: 3em 0;
   }
   .home-coaching .coaching-1-1 {
@@ -2022,8 +2024,12 @@ footer {
   .home-coaching .coaching-free {
     grid-column: coaching-free;
   }
+  .home-coaching .coaching-why {
+    grid-column: coaching-why;
+  }
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 14em 18em;
         grid-template-rows: 14em 18em;
   }
@@ -2031,7 +2037,8 @@ footer {
 
 @media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 13em 14.5em;
         grid-template-rows: 13em 14.5em;
   }
@@ -2039,31 +2046,33 @@ footer {
 
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
-    -ms-grid-rows: 11em 13em;
-        grid-template-rows: 11em 13em;
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
+    -ms-grid-rows: 11em 13.5em;
+        grid-template-rows: 11em 13.5em;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-width: 1600px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 11em;
-        grid-template-rows: 12em 11em;
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
+    -ms-grid-rows: 12em 11.5em;
+        grid-template-rows: 12em 11.5em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
   }
 }
 
@@ -4443,7 +4452,8 @@ footer {
 }
 
 .home-coaching .coaching-1-1,
-.home-coaching .coaching-free {
+.home-coaching .coaching-free,
+.home-coaching .coaching-why {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 19em 24.5em;
@@ -4453,7 +4463,8 @@ footer {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 16em 20em;
         grid-template-rows: 16em 20em;
   }
@@ -4461,8 +4472,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
-    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
-        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) 2fr;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
     margin: 3em 0;
   }
   .home-coaching .coaching-1-1 {
@@ -4471,8 +4482,12 @@ footer {
   .home-coaching .coaching-free {
     grid-column: coaching-free;
   }
+  .home-coaching .coaching-why {
+    grid-column: coaching-why;
+  }
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 14em 18em;
         grid-template-rows: 14em 18em;
   }
@@ -4480,7 +4495,8 @@ footer {
 
 @media only screen and (min-width: 768px) and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
     -ms-grid-rows: 13em 14.5em;
         grid-template-rows: 13em 14.5em;
   }
@@ -4488,31 +4504,33 @@ footer {
 
 @media only screen and (min-width: 768px) and (min-width: 1200px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
-    -ms-grid-rows: 11em 13em;
-        grid-template-rows: 11em 13em;
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
+    -ms-grid-rows: 11em 13.5em;
+        grid-template-rows: 11em 13.5em;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-width: 1600px) {
   .home-coaching .coaching-1-1,
-  .home-coaching .coaching-free {
-    -ms-grid-rows: 12em 11em;
-        grid-template-rows: 12em 11em;
+  .home-coaching .coaching-free,
+  .home-coaching .coaching-why {
+    -ms-grid-rows: 12em 11.5em;
+        grid-template-rows: 12em 11.5em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 3em [coaching-free] minmax(auto, 12em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 3em [coaching-free] minmax(auto, 11em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
   }
 }
 
